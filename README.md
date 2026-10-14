@@ -20,6 +20,15 @@ Native captures using the labelled simulator and synthetic demo presets; no peda
 
 ## Build and run
 
+For an installable preview, use the [GitHub releases](https://github.com/geordyd/gp200-linux/releases). Packages target Linux **x86_64**, Ubuntu 24.04 or a compatible runtime with glibc 2.39 or newer. Choose the AppImage, make it executable and run it:
+
+```sh
+chmod +x GP200-Linux-0.1.0-x86_64.AppImage
+./GP200-Linux-0.1.0-x86_64.AppImage
+```
+
+If FUSE is unavailable, run it with `--appimage-extract-and-run`. The portable `.tar.gz` is an alternative: extract it and run `python3 install-user.py` from its folder. Checksums accompany both downloads. See [release instructions](docs/releasing.md) for runtime requirements and package validation.
+
 Build on Linux with Rustup, which uses the pinned toolchain in [`rust-toolchain.toml`](rust-toolchain.toml). You also need a C compiler, a C++20 compiler, `pkg-config`, ALSA development headers and D-Bus development headers. The GUI needs a Wayland or X11 desktop and OpenGL/Mesa. Native file dialogs use `xdg-desktop-portal` with a backend for your desktop.
 
 ```sh
@@ -41,7 +50,7 @@ cargo run --locked -p gp200-cli -- --help
 
 The interface is English, with persistent dark, light and system themes and adjustable display scale. See the [user guide](docs/user-guide.md) for editing, connection and backup basics.
 
-Release automation targets Linux x86_64 AppImage and portable `.tar.gz` packages. No public binary release has been published yet. See [release instructions](docs/releasing.md) for packaging and validation.
+Release automation builds Linux x86_64 AppImage and portable `.tar.gz` packages, checks them using the native simulator, and prepares a draft prerelease for review.
 
 ## What is available
 

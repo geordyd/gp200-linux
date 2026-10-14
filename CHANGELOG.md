@@ -1,8 +1,8 @@
 # Changelog
 
-Changes to GP200 Linux are recorded here. Version 0.1.0 is not yet a published release.
+Changes to GP200 Linux are recorded here.
 
-## 0.1.0 — Unreleased
+## 0.1.0 — 2026-10-14 (preview)
 
 - Native Rust/egui Linux editor with an English interface, dark/light/system themes and adjustable scale.
 - Lossless preset drafts, Undo/Redo, A/B comparison, preset diffs, selected settings merge and local draft recovery.
