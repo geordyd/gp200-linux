@@ -1,0 +1,27 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+Name=GP200 Linux
+GenericName=Multieffects pedal editor
+Comment=Edit GP-200 presets and manage a local sound library
+Exec=/usr/bin/env -- @EXEC@ --open %f
+Icon=gp200-studio
+Terminal=false
+Categories=AudioVideo;Audio;Music;
+MimeType=application/x-gp200-preset;application/x-gp200-studio-bundle;application/x-gp200-studio-backup;
+StartupNotify=true
+StartupWMClass=gp200-studio
+Keywords=GP-200;Valeton;guitar;effects;presets;MIDI;
+Actions=Offline;Simulator;X11;
+
+[Desktop Action Offline]
+Name=Open offline
+Exec=/usr/bin/env -- @EXEC@
+
+[Desktop Action Simulator]
+Name=Open simulator
+Exec=/usr/bin/env -- @EXEC@ --demo
+
+[Desktop Action X11]
+Name=Open with X11
+Exec=/usr/bin/env -- @EXEC@ --x11

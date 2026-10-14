@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-gp200-preset">
+    <comment>GP-200 native preset</comment>
+    <glob pattern="*.prst"/>
+    <magic priority="70"><match type="string" offset="0" value="TSRP"/></magic>
+  </mime-type>
+  <mime-type type="application/x-gp200-studio-bundle">
+    <comment>GP200 Linux library bundle</comment>
+    <glob pattern="*.gp200bundle"/>
+    <sub-class-of type="application/zip"/>
+  </mime-type>
+  <mime-type type="application/x-gp200-studio-backup">
+    <comment>GP200 Linux device archive</comment>
+    <glob pattern="*.gp200backup"/>
+    <sub-class-of type="application/zip"/>
+  </mime-type>
+</mime-info>

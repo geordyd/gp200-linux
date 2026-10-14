@@ -1,0 +1,42 @@
+[package]
+name = "gp200-gui"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+default = ["firmware-linux-completion"]
+dependent-model-trials = ["gp200-app/dependent-model-trials", "gp200-transport/dependent-model-trials"]
+factory-amp-trials = ["gp200-app/factory-amp-trials", "gp200-transport/factory-amp-trials"]
+firmware-entry-study = ["gp200-transport/firmware-entry-study"]
+firmware-linux-completion = ["firmware-entry-study", "gp200-transport/firmware-linux-completion"]
+
+[dependencies]
+eframe.workspace = true
+rfd.workspace = true
+image.workspace = true
+gp200-domain.workspace = true
+gp200-protocol.workspace = true
+gp200-transport.workspace = true
+gp200-catalog.workspace = true
+gp200-sim.workspace = true
+gp200-app.workspace = true
+gp200-library.workspace = true
+gp200-assets.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[target.'cfg(target_os = "linux")'.dependencies]
+rustix = { version = "=1.1.5", features = ["process"] }
+
+[lints]
+workspace = true
+
+[[example]]
+name = "firmware_entry_observation"
+required-features = ["firmware-entry-study"]
+
+[[example]]
+name = "firmware_linux_completion"
+required-features = ["firmware-linux-completion"]

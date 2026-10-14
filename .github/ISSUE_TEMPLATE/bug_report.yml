@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible GP200 Linux problem
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the expected and actual behavior, with steps to reproduce.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Application version or commit
+    validations:
+      required: true
+  - type: input
+    id: desktop
+    attributes:
+      label: Linux distribution and desktop
+      placeholder: Ubuntu 24.04, KDE Plasma, Wayland
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Device and diagnostics
+      description: Include GP-200 model, manually reported firmware version, app diagnostics and relevant logs. Remove personal file paths and identifying data. State whether this happened offline, with the simulator or on a connected pedal.

@@ -1,0 +1,1811 @@
+{
+  "schema_version": 1,
+  "device_model": "GP-200",
+  "backend_mode": "Simulator",
+  "source_date": "2026-10-10",
+  "scope": "Preset bytes only. No globals, assets, firmware identity, audio or DSP. Replies are reframed; generated timing is synthetic.",
+  "bank_sha256": "f96a9748defb98128360ab91c77b2cb07b7c8cd96a01d36573d901ecce4a965c",
+  "current_source": "assets/demo/read-current-payload.bin",
+  "current_sha256": "84ca815ed3d9713ab98e92f58b1388cc19273d47cd39b7bce1b067670e558d1a",
+  "slots": [
+    {
+      "slot": 0,
+      "offset": 0,
+      "length": 1176,
+      "sha256": "2e0fc6839b75ce23dbed632e1736e58a478213b17c6bcf39ab274bf70e9930b1",
+      "source": "analysis/implementation/bank-baseline/slot-000.payload"
+    },
+    {
+      "slot": 1,
+      "offset": 1176,
+      "length": 1176,
+      "sha256": "6ab156950420aaa6820e59b8320271003e010e46d5a82095766c4c31564deea1",
+      "source": "analysis/implementation/bank-baseline/slot-001.payload"
+    },
+    {
+      "slot": 2,
+      "offset": 2352,
+      "length": 1176,
+      "sha256": "ab545f72dbed35da08ded82cb7301213465d2be9265ba21d657787e6e26f3018",
+      "source": "analysis/implementation/bank-baseline/slot-002.payload"
+    },
+    {
+      "slot": 3,
+      "offset": 3528,
+      "length": 1176,
+      "sha256": "d3aba4f2d3aef7b5acdb77bdc1cbbd3a59c46a62258a76225a67f3afb41bb6d5",
+      "source": "analysis/implementation/bank-baseline/slot-003.payload"
+    },
+    {
+      "slot": 4,
+      "offset": 4704,
+      "length": 1176,
+      "sha256": "c95db677b0d5983de0d26292aa902854f762bbc7ba4f7bf4d2b43bc9dd959fc0",
+      "source": "analysis/implementation/bank-baseline/slot-004.payload"
+    },
+    {
+      "slot": 5,
+      "offset": 5880,
+      "length": 1176,
+      "sha256": "b271a0d17bc2c5c658854be262e8c48eaee4469af3b56ea7c33e7312891fca03",
+      "source": "analysis/implementation/bank-baseline/slot-005.payload"
+    },
+    {
+      "slot": 6,
+      "offset": 7056,
+      "length": 1176,
+      "sha256": "a13cb2f58a04c6f2c702752df00db208841c5ed032f8cc847c24b90fdaabd62e",
+      "source": "analysis/implementation/bank-baseline/slot-006.payload"
+    },
+    {
+      "slot": 7,
+      "offset": 8232,
+      "length": 1176,
+      "sha256": "4493708e748bb17545cdc9c600f3b789700ed83ef4f40147fb705f1c57869b1d",
+      "source": "analysis/implementation/bank-baseline/slot-007.payload"
+    },
+    {
+      "slot": 8,
+      "offset": 9408,
+      "length": 1176,
+      "sha256": "e1350b914687b1d317ca9975f7cb922fb80e9976ed5a29842c98a2214a233301",
+      "source": "analysis/implementation/bank-baseline/slot-008.payload"
+    },
+    {
+      "slot": 9,
+      "offset": 10584,
+      "length": 1176,
+      "sha256": "bfb0822ddc13508fa664ab8f0c03d27d9acc6fba567393d1fe8dced862507a39",
+      "source": "analysis/implementation/bank-baseline/slot-009.payload"
+    },
+    {
+      "slot": 10,
+      "offset": 11760,
+      "length": 1176,
+      "sha256": "b4d93f3c1d9ae7bbc571d5930977d078536f5b613994d0d7f663b9ca1a41e9ba",
+      "source": "analysis/implementation/bank-baseline/slot-010.payload"
+    },
+    {
+      "slot": 11,
+      "offset": 12936,
+      "length": 1176,
+      "sha256": "2220d89b19ae4d9997ccb2d639e1ed0cb3b52369b6a46c9847ca012ed9a35dcf",
+      "source": "analysis/implementation/bank-baseline/slot-011.payload"
+    },
+    {
+      "slot": 12,
+      "offset": 14112,
+      "length": 1176,
+      "sha256": "94b89154deda637d16159e8ab02e05263c8f359ac448ce5503a23175d6727536",
+      "source": "analysis/implementation/bank-baseline/slot-012.payload"
+    },
+    {
+      "slot": 13,
+      "offset": 15288,
+      "length": 1176,
+      "sha256": "27222ccac3adf274b28fd5237a07ccb288a3aeb5c00613b5f74f7f9c0d68d25f",
+      "source": "analysis/implementation/bank-baseline/slot-013.payload"
+    },
+    {
+      "slot": 14,
+      "offset": 16464,
+      "length": 1176,
+      "sha256": "53f6a695fd0fb5f1136af0c3b7d6f6b45c22392b5cc5c14ef6d288eacf9acc98",
+      "source": "analysis/implementation/bank-baseline/slot-014.payload"
+    },
+    {
+      "slot": 15,
+      "offset": 17640,
+      "length": 1176,
+      "sha256": "0a9c97264de885af22fe4ba0f5d004d311a4917f3160d63486c438393666b9ea",
+      "source": "analysis/implementation/bank-baseline/slot-015.payload"
+    },
+    {
+      "slot": 16,
+      "offset": 18816,
+      "length": 1176,
+      "sha256": "aa827520468bf9c455d6f98e8e70b0e09f10f51fecacece5b0cb020f7530e007",
+      "source": "analysis/implementation/bank-baseline/slot-016.payload"
+    },
+    {
+      "slot": 17,
+      "offset": 19992,
+      "length": 1176,
+      "sha256": "af5eb8193ddd6414aa7bc37a070f2249e4760229a44bd701c9709e3d6bd50809",
+      "source": "analysis/implementation/bank-baseline/slot-017.payload"
+    },
+    {
+      "slot": 18,
+      "offset": 21168,
+      "length": 1176,
+      "sha256": "313111a039d1a3b6884e1033d615a6fdd3deb8b0bca4b0a0e3aca257a1481c24",
+      "source": "analysis/implementation/bank-baseline/slot-018.payload"
+    },
+    {
+      "slot": 19,
+      "offset": 22344,
+      "length": 1176,
+      "sha256": "7fc2fe299e28ce8462d4737ced6895b21ebaa6eeeb1fc1db8123bc8f799d33f3",
+      "source": "analysis/implementation/bank-baseline/slot-019.payload"
+    },
+    {
+      "slot": 20,
+      "offset": 23520,
+      "length": 1176,
+      "sha256": "16dc956f81b23a2174578988f97ed5b0ddf0ff783241643bfd1f25f740582fcf",
+      "source": "analysis/implementation/bank-baseline/slot-020.payload"
+    },
+    {
+      "slot": 21,
+      "offset": 24696,
+      "length": 1176,
+      "sha256": "dbe24e7d74269c060f9e04226687b9cc3429c07a032a12b81d02dfa4580e174c",
+      "source": "analysis/implementation/bank-baseline/slot-021.payload"
+    },
+    {
+      "slot": 22,
+      "offset": 25872,
+      "length": 1176,
+      "sha256": "d347ec9934f9ee8c60c625a9b8e50369fce8f47c9f2277c814bb47170040ee38",
+      "source": "analysis/implementation/bank-baseline/slot-022.payload"
+    },
+    {
+      "slot": 23,
+      "offset": 27048,
+      "length": 1176,
+      "sha256": "e73677180e16a53ad2fcdc840a1093bf1f168a07ebc751bf07d2e7303b62a188",
+      "source": "analysis/implementation/bank-baseline/slot-023.payload"
+    },
+    {
+      "slot": 24,
+      "offset": 28224,
+      "length": 1176,
+      "sha256": "d1c2354219a6d0914ccb1a0f25c8fb470e5ba2976a12b3a4a30b3fab7402dacc",
+      "source": "analysis/implementation/bank-baseline/slot-024.payload"
+    },
+    {
+      "slot": 25,
+      "offset": 29400,
+      "length": 1176,
+      "sha256": "cba9ddb49ba2d3ff51bc5650fce656e48ff46e3d9c29d87a129d82921bfe8672",
+      "source": "analysis/implementation/bank-baseline/slot-025.payload"
+    },
+    {
+      "slot": 26,
+      "offset": 30576,
+      "length": 1176,
+      "sha256": "c22782de7067f1cd6ce080c39154550ca605685fae2a2a6aeb86894f11de7c0f",
+      "source": "analysis/implementation/bank-baseline/slot-026.payload"
+    },
+    {
+      "slot": 27,
+      "offset": 31752,
+      "length": 1176,
+      "sha256": "bc020c2316bffe7e84ae7880d61af6d7e03d2c02650e2624027918610ac00eef",
+      "source": "analysis/implementation/bank-baseline/slot-027.payload"
+    },
+    {
+      "slot": 28,
+      "offset": 32928,
+      "length": 1176,
+      "sha256": "0ab27a789b4f940cafe35c7e58f647398399c40b5c072ef9ee18f6471bef52ef",
+      "source": "analysis/implementation/bank-baseline/slot-028.payload"
+    },
+    {
+      "slot": 29,
+      "offset": 34104,
+      "length": 1176,
+      "sha256": "24abad9763514360db45f75b7cba7ac5c2c135bcb402e62e111f79d64a93eb85",
+      "source": "analysis/implementation/bank-baseline/slot-029.payload"
+    },
+    {
+      "slot": 30,
+      "offset": 35280,
+      "length": 1176,
+      "sha256": "997e0d547dccd8acad33705f9282646079b64d37499bcac2a2afa29476e6544e",
+      "source": "analysis/implementation/bank-baseline/slot-030.payload"
+    },
+    {
+      "slot": 31,
+      "offset": 36456,
+      "length": 1176,
+      "sha256": "9f7378b43f67e1884c1c347e3e35c62797bc86e254b5904c330de029e6184ddf",
+      "source": "analysis/implementation/bank-baseline/slot-031.payload"
+    },
+    {
+      "slot": 32,
+      "offset": 37632,
+      "length": 1176,
+      "sha256": "7ca474fa7a0da8625630869486f416adcb1852cb065981b629891c02cf8d1827",
+      "source": "analysis/implementation/bank-baseline/slot-032.payload"
+    },
+    {
+      "slot": 33,
+      "offset": 38808,
+      "length": 1176,
+      "sha256": "3a3085e4ef0c8e134b980a74b851e6d5e91a3e194a724ccbcf016c5fbfe9cace",
+      "source": "analysis/implementation/bank-baseline/slot-033.payload"
+    },
+    {
+      "slot": 34,
+      "offset": 39984,
+      "length": 1176,
+      "sha256": "7d08c2dfc5c9a0ad6f409a0821388fbeb69962447cb8afca6b44050252931757",
+      "source": "analysis/implementation/bank-baseline/slot-034.payload"
+    },
+    {
+      "slot": 35,
+      "offset": 41160,
+      "length": 1176,
+      "sha256": "67d3ba0dfa380133762d21424c014733c03176a726e169a4a2c1b94233c2c856",
+      "source": "analysis/implementation/bank-baseline/slot-035.payload"
+    },
+    {
+      "slot": 36,
+      "offset": 42336,
+      "length": 1176,
+      "sha256": "6a9359403426ff06755e991d448bb740b8d5a5347bf68daa145fd5b6a5e973fb",
+      "source": "analysis/implementation/bank-baseline/slot-036.payload"
+    },
+    {
+      "slot": 37,
+      "offset": 43512,
+      "length": 1176,
+      "sha256": "bc4866a64611c3322c3d4ca88b92fcd50ddc8c4b8c69974a7a06f90a0eaf2bc3",
+      "source": "analysis/implementation/bank-baseline/slot-037.payload"
+    },
+    {
+      "slot": 38,
+      "offset": 44688,
+      "length": 1176,
+      "sha256": "e516a10588507a2e15d81e01726597a8379409aa95bfea3c20e6226a68fc7a94",
+      "source": "analysis/implementation/bank-baseline/slot-038.payload"
+    },
+    {
+      "slot": 39,
+      "offset": 45864,
+      "length": 1176,
+      "sha256": "669059243f011cebedb87650a4b8a8e22cd46e184680fd9d49fe567b338efdbd",
+      "source": "analysis/implementation/bank-baseline/slot-039.payload"
+    },
+    {
+      "slot": 40,
+      "offset": 47040,
+      "length": 1176,
+      "sha256": "d96082b79b622ec1391a45c1aeca9cc1d36c7bc40bfb1ff2109f2d4d450c93c4",
+      "source": "analysis/implementation/bank-baseline/slot-040.payload"
+    },
+    {
+      "slot": 41,
+      "offset": 48216,
+      "length": 1176,
+      "sha256": "d8dc7e0c83713dbd5ec94e5fd3c87143aeac213186cee26bb915888d960c878b",
+      "source": "analysis/implementation/bank-baseline/slot-041.payload"
+    },
+    {
+      "slot": 42,
+      "offset": 49392,
+      "length": 1176,
+      "sha256": "06fca5fb8000e508edf5a05454eefaee5deaf40dc05e0c8484d401806c27d833",
+      "source": "analysis/implementation/bank-baseline/slot-042.payload"
+    },
+    {
+      "slot": 43,
+      "offset": 50568,
+      "length": 1176,
+      "sha256": "62e2c7b2d9146781923db6499fba121c6e5f653ae36cc243b03bebba85d3bef4",
+      "source": "analysis/implementation/bank-baseline/slot-043.payload"
+    },
+    {
+      "slot": 44,
+      "offset": 51744,
+      "length": 1176,
+      "sha256": "f834d628d49098bb47c9d8875a7a37c23f7b47f4d3db44fedcbf3caae91d194c",
+      "source": "analysis/implementation/bank-baseline/slot-044.payload"
+    },
+    {
+      "slot": 45,
+      "offset": 52920,
+      "length": 1176,
+      "sha256": "f27175147ff2ad26e0298aae60ecb59020df2e13dba7bb042f8385b6d72a56d7",
+      "source": "analysis/implementation/bank-baseline/slot-045.payload"
+    },
+    {
+      "slot": 46,
+      "offset": 54096,
+      "length": 1176,
+      "sha256": "431069ceff8149ad6b094f2e3223721368bef54c4e8404cc549b11cd710daf66",
+      "source": "analysis/implementation/bank-baseline/slot-046.payload"
+    },
+    {
+      "slot": 47,
+      "offset": 55272,
+      "length": 1176,
+      "sha256": "30c44f859ea76e2f3bb26e0d1eafb9cfec63f8c3e1021893a624d74e76a35ee3",
+      "source": "analysis/implementation/bank-baseline/slot-047.payload"
+    },
+    {
+      "slot": 48,
+      "offset": 56448,
+      "length": 1176,
+      "sha256": "ad52a1b220fec72061636a138bca5ece90084c68fc1135b957ed78571d0a42eb",
+      "source": "analysis/implementation/bank-baseline/slot-048.payload"
+    },
+    {
+      "slot": 49,
+      "offset": 57624,
+      "length": 1176,
+      "sha256": "1d8299a9bf3c4befc26ed8a255e1c97056a15873ef27f3955fbf509390dec10f",
+      "source": "analysis/implementation/bank-baseline/slot-049.payload"
+    },
+    {
+      "slot": 50,
+      "offset": 58800,
+      "length": 1176,
+      "sha256": "5fc2736d815e0b05740a130e3abd9689e218dc52b638719142ce0df52842a01d",
+      "source": "analysis/implementation/bank-baseline/slot-050.payload"
+    },
+    {
+      "slot": 51,
+      "offset": 59976,
+      "length": 1176,
+      "sha256": "ae23fe1c085fb053d5899d38bc9dafb907ac52dc55f1c5dc7e942f4037581ae2",
+      "source": "analysis/implementation/bank-baseline/slot-051.payload"
+    },
+    {
+      "slot": 52,
+      "offset": 61152,
+      "length": 1176,
+      "sha256": "05464b6b7e604c74fe164a432964c3aa1cbd9777cd5928155a674cadcec0f404",
+      "source": "analysis/implementation/bank-baseline/slot-052.payload"
+    },
+    {
+      "slot": 53,
+      "offset": 62328,
+      "length": 1176,
+      "sha256": "a49433720905de74f75d08223ca56cb59a2e223f6829129f969bad0fc8bf63b3",
+      "source": "analysis/implementation/bank-baseline/slot-053.payload"
+    },
+    {
+      "slot": 54,
+      "offset": 63504,
+      "length": 1176,
+      "sha256": "0986c1385dbc38385429c8f0a08e471745a460012f05bf17ea19a45d17c44581",
+      "source": "analysis/implementation/bank-baseline/slot-054.payload"
+    },
+    {
+      "slot": 55,
+      "offset": 64680,
+      "length": 1176,
+      "sha256": "c752911e79cdc4244482b43c3e190cec898fe95fb5cce18981aaedf1618a2fc8",
+      "source": "analysis/implementation/bank-baseline/slot-055.payload"
+    },
+    {
+      "slot": 56,
+      "offset": 65856,
+      "length": 1176,
+      "sha256": "040032db7fdd1c19eb131ad48449a5a8f11159e99df0442cdab7acf6015e5b4f",
+      "source": "analysis/implementation/bank-baseline/slot-056.payload"
+    },
+    {
+      "slot": 57,
+      "offset": 67032,
+      "length": 1176,
+      "sha256": "db94b6e00de719cff1cec1c203e2a74d739ff2a104d4bd0b4673a67209bdad6f",
+      "source": "analysis/implementation/bank-baseline/slot-057.payload"
+    },
+    {
+      "slot": 58,
+      "offset": 68208,
+      "length": 1176,
+      "sha256": "3a3a24fdd8ef1a44499ad72e3584c844bf427912b3c80d5eee6e1775ebc85c58",
+      "source": "analysis/implementation/bank-baseline/slot-058.payload"
+    },
+    {
+      "slot": 59,
+      "offset": 69384,
+      "length": 1176,
+      "sha256": "9ae7e9884a6a67e7ecd038ed03231204863a62af683323229ef56cb7577b83a3",
+      "source": "analysis/implementation/bank-baseline/slot-059.payload"
+    },
+    {
+      "slot": 60,
+      "offset": 70560,
+      "length": 1176,
+      "sha256": "75d62315e21f6247eb7c7d2bdfaeb4f16c6fae233cb3901b97d18157d9a716c6",
+      "source": "analysis/implementation/bank-baseline/slot-060.payload"
+    },
+    {
+      "slot": 61,
+      "offset": 71736,
+      "length": 1176,
+      "sha256": "6e1cff93d46c61a4dc4154723bed7bc5dd561b3aa3d3ecbd0133929ca155cfc6",
+      "source": "analysis/implementation/bank-baseline/slot-061.payload"
+    },
+    {
+      "slot": 62,
+      "offset": 72912,
+      "length": 1176,
+      "sha256": "8476279a1a24658708be9cdcc2426f7d739395fbbae196924cd4f75fc4cc6da4",
+      "source": "analysis/implementation/bank-baseline/slot-062.payload"
+    },
+    {
+      "slot": 63,
+      "offset": 74088,
+      "length": 1176,
+      "sha256": "bd204cc523c3929752baa4f79c83e129dfc50d9baacafbd419d9ffd424f3ff06",
+      "source": "analysis/implementation/bank-baseline/slot-063.payload"
+    },
+    {
+      "slot": 64,
+      "offset": 75264,
+      "length": 1176,
+      "sha256": "9a3d70f22103a22f740762d543889d2e8e9af6b901160346f5c5b0a477188ba7",
+      "source": "analysis/implementation/bank-baseline/slot-064.payload"
+    },
+    {
+      "slot": 65,
+      "offset": 76440,
+      "length": 1176,
+      "sha256": "3fa67b1cd0bd1909e406fef75e64b8a9a6147d779a5a0b88c8565db6f8ef3c48",
+      "source": "analysis/implementation/bank-baseline/slot-065.payload"
+    },
+    {
+      "slot": 66,
+      "offset": 77616,
+      "length": 1176,
+      "sha256": "0e4754304d225f1714d90d94ed5ea685ec5cdb6cb8ea353e9f050bd9cc661881",
+      "source": "analysis/implementation/bank-baseline/slot-066.payload"
+    },
+    {
+      "slot": 67,
+      "offset": 78792,
+      "length": 1176,
+      "sha256": "fc3ee13beee1d142da46cc71b07e6859510b4180429d992c3e77e18f1dcaf148",
+      "source": "analysis/implementation/bank-baseline/slot-067.payload"
+    },
+    {
+      "slot": 68,
+      "offset": 79968,
+      "length": 1176,
+      "sha256": "fbccdd8bd35b3e94b044e4feeb36bb118eb5eba200389a99b85f0c1fc3a0dd96",
+      "source": "analysis/implementation/bank-baseline/slot-068.payload"
+    },
+    {
+      "slot": 69,
+      "offset": 81144,
+      "length": 1176,
+      "sha256": "bb808bf3a65161a823897e1c340f04480bd590862a0a62813f2c45562803d98b",
+      "source": "analysis/implementation/bank-baseline/slot-069.payload"
+    },
+    {
+      "slot": 70,
+      "offset": 82320,
+      "length": 1176,
+      "sha256": "8518d2aafe7084d6130579319cab030469e454fb0215ae71c9ad5701cddb8fdb",
+      "source": "analysis/implementation/bank-baseline/slot-070.payload"
+    },
+    {
+      "slot": 71,
+      "offset": 83496,
+      "length": 1176,
+      "sha256": "ad0d3eed3d01b3a66c73af23f1e788425ebcfcf21cf650b442b00ebe9d72f5e1",
+      "source": "analysis/implementation/bank-baseline/slot-071.payload"
+    },
+    {
+      "slot": 72,
+      "offset": 84672,
+      "length": 1176,
+      "sha256": "16338a2208c4e8b04974f47a165f1a381722d8b3aa40373f91f8243be2efc28b",
+      "source": "analysis/implementation/bank-baseline/slot-072.payload"
+    },
+    {
+      "slot": 73,
+      "offset": 85848,
+      "length": 1176,
+      "sha256": "b073dbe65d9050a755f98194b40689cbe4010f4c08e577f436fefd2ed9ad9622",
+      "source": "analysis/implementation/bank-baseline/slot-073.payload"
+    },
+    {
+      "slot": 74,
+      "offset": 87024,
+      "length": 1176,
+      "sha256": "af6f293e0c0b57dc626cbbcc256fcc1c09f168cd387017cacc281ff3a3791e82",
+      "source": "analysis/implementation/bank-baseline/slot-074.payload"
+    },
+    {
+      "slot": 75,
+      "offset": 88200,
+      "length": 1176,
+      "sha256": "27cacd8c878fffeb1ac89f79535e17712b1ce496238f575deec6efa38ab29b09",
+      "source": "analysis/implementation/bank-baseline/slot-075.payload"
+    },
+    {
+      "slot": 76,
+      "offset": 89376,
+      "length": 1176,
+      "sha256": "4a80172015d79de58cd3d4e1b741b944fad8a68af11349567ade1faf4df0ae80",
+      "source": "analysis/implementation/bank-baseline/slot-076.payload"
+    },
+    {
+      "slot": 77,
+      "offset": 90552,
+      "length": 1176,
+      "sha256": "b7f4d3a5ee67abaca2e2a17a5fd0bf36fe32e69b8474939bb7a995bd4d276bf6",
+      "source": "analysis/implementation/bank-baseline/slot-077.payload"
+    },
+    {
+      "slot": 78,
+      "offset": 91728,
+      "length": 1176,
+      "sha256": "3e0f7a852ff0232fed1a175011823cb44f864836db8c038de0dcef101c544e4f",
+      "source": "analysis/implementation/bank-baseline/slot-078.payload"
+    },
+    {
+      "slot": 79,
+      "offset": 92904,
+      "length": 1176,
+      "sha256": "8fc9013473c9d8ecc353a8587d588e63ee1b79145b546ed1ffd9185e9f6628f1",
+      "source": "analysis/implementation/bank-baseline/slot-079.payload"
+    },
+    {
+      "slot": 80,
+      "offset": 94080,
+      "length": 1176,
+      "sha256": "aa86e6d8e8fc1af3c08f64fbebf40f52718fa34664ea3ee094eafaaf82635967",
+      "source": "analysis/implementation/bank-baseline/slot-080.payload"
+    },
+    {
+      "slot": 81,
+      "offset": 95256,
+      "length": 1176,
+      "sha256": "fd659af6a4112035370cb8a160b2e827207436f623d8f85d6a34e0ed24361302",
+      "source": "analysis/implementation/bank-baseline/slot-081.payload"
+    },
+    {
+      "slot": 82,
+      "offset": 96432,
+      "length": 1176,
+      "sha256": "ab65d5380a105d6b08e2c629f4eab78b59757e3348181e855ed40c32a8e778f1",
+      "source": "analysis/implementation/bank-baseline/slot-082.payload"
+    },
+    {
+      "slot": 83,
+      "offset": 97608,
+      "length": 1176,
+      "sha256": "1d49e77735b1ab172195fcad167b041b62d84e35619bcc6f7ddeeeb4246a7376",
+      "source": "analysis/implementation/bank-baseline/slot-083.payload"
+    },
+    {
+      "slot": 84,
+      "offset": 98784,
+      "length": 1176,
+      "sha256": "d640a100ed5babcb21b025e6603551cfc20b01ec7294c72d1bfd2523a5fccfa4",
+      "source": "analysis/implementation/bank-baseline/slot-084.payload"
+    },
+    {
+      "slot": 85,
+      "offset": 99960,
+      "length": 1176,
+      "sha256": "ecdaa989605fb6c2deec09ebcb30eaf9668774bf816e7e5d4b117a888ede7d40",
+      "source": "analysis/implementation/bank-baseline/slot-085.payload"
+    },
+    {
+      "slot": 86,
+      "offset": 101136,
+      "length": 1176,
+      "sha256": "02024cf04a0a73ea47e9d7758b7d0983293bf5b1430397a350a33f5b1d575957",
+      "source": "analysis/implementation/bank-baseline/slot-086.payload"
+    },
+    {
+      "slot": 87,
+      "offset": 102312,
+      "length": 1176,
+      "sha256": "49a0d8f49a36ec94fdffd46511ab64854bef8714b36282b8e33a69ffcd90af83",
+      "source": "analysis/implementation/bank-baseline/slot-087.payload"
+    },
+    {
+      "slot": 88,
+      "offset": 103488,
+      "length": 1176,
+      "sha256": "2f94eab16885664c538f2f5d0ddd53008f8522be73b254a1da302111f7ad415b",
+      "source": "analysis/implementation/bank-baseline/slot-088.payload"
+    },
+    {
+      "slot": 89,
+      "offset": 104664,
+      "length": 1176,
+      "sha256": "ba08a0f5b3196a04fb447c707b5846acc87cfd8b17f0e121f26265f2e7a3180a",
+      "source": "analysis/implementation/bank-baseline/slot-089.payload"
+    },
+    {
+      "slot": 90,
+      "offset": 105840,
+      "length": 1176,
+      "sha256": "8ad374b0c9bc72002ed26de56aaf3c8bc9ca441acb9a3052cefba4b0db7fce06",
+      "source": "analysis/implementation/bank-baseline/slot-090.payload"
+    },
+    {
+      "slot": 91,
+      "offset": 107016,
+      "length": 1176,
+      "sha256": "ab1eeaafef6311310cdc0e8602f5eda0c98ee72fb3fa48a5f99292085b7825f3",
+      "source": "analysis/implementation/bank-baseline/slot-091.payload"
+    },
+    {
+      "slot": 92,
+      "offset": 108192,
+      "length": 1176,
+      "sha256": "41818dba60cddcf6f509722674d939fcacef81422469189eb4ab779ecb1b37ec",
+      "source": "analysis/implementation/bank-baseline/slot-092.payload"
+    },
+    {
+      "slot": 93,
+      "offset": 109368,
+      "length": 1176,
+      "sha256": "13ef9f715d816701b3a4ab60da056f4c9377e6f63f9e692f60037dcfd224bf63",
+      "source": "analysis/implementation/bank-baseline/slot-093.payload"
+    },
+    {
+      "slot": 94,
+      "offset": 110544,
+      "length": 1176,
+      "sha256": "3d4fce79b11572fa7bf6f9cba726b73b44e4d5f54dcaed193b9ff523999217a5",
+      "source": "analysis/implementation/bank-baseline/slot-094.payload"
+    },
+    {
+      "slot": 95,
+      "offset": 111720,
+      "length": 1176,
+      "sha256": "1890f1b8e8c9c74c278a3c240231a2a7d0f24a4f30bea65a24784f62bedf68dd",
+      "source": "analysis/implementation/bank-baseline/slot-095.payload"
+    },
+    {
+      "slot": 96,
+      "offset": 112896,
+      "length": 1176,
+      "sha256": "da65485eafc4624a6e2839e9a6a1e0409a252fe9a7bac3b6cecc75273f1403ca",
+      "source": "analysis/implementation/bank-baseline/slot-096.payload"
+    },
+    {
+      "slot": 97,
+      "offset": 114072,
+      "length": 1176,
+      "sha256": "44725d6f472a32ac4cc20211a45617d930cb77c651c10c13d654ae393f5973c7",
+      "source": "analysis/implementation/bank-baseline/slot-097.payload"
+    },
+    {
+      "slot": 98,
+      "offset": 115248,
+      "length": 1176,
+      "sha256": "fa9322f559fb4dbe4d12db01640dded35d37e06168d56a225c23b0654d217aa0",
+      "source": "analysis/implementation/bank-baseline/slot-098.payload"
+    },
+    {
+      "slot": 99,
+      "offset": 116424,
+      "length": 1176,
+      "sha256": "09c2ae634c9a198b7ad2698739a7bc065686c678359d77a497b8f9ee68a6cfe6",
+      "source": "analysis/implementation/bank-baseline/slot-099.payload"
+    },
+    {
+      "slot": 100,
+      "offset": 117600,
+      "length": 1176,
+      "sha256": "07f21de55e54613bfc93645ea9215a01daeef9e2249cac6f064b1416a1835a76",
+      "source": "analysis/implementation/bank-baseline/slot-100.payload"
+    },
+    {
+      "slot": 101,
+      "offset": 118776,
+      "length": 1176,
+      "sha256": "ee45f045a72c48072ec6ea9cf2075087b75f27e5e376b76e9e314dcc81eb46cf",
+      "source": "analysis/implementation/bank-baseline/slot-101.payload"
+    },
+    {
+      "slot": 102,
+      "offset": 119952,
+      "length": 1176,
+      "sha256": "e2db2ee4223ef97d4c8bc978d8ebd86c04b541d8ebfa044126557f6ffa1cde8a",
+      "source": "analysis/implementation/bank-baseline/slot-102.payload"
+    },
+    {
+      "slot": 103,
+      "offset": 121128,
+      "length": 1176,
+      "sha256": "c7d0c37d795bfa47fb5462d4b92506ef6e7a4d89185224e861d2a0e5e77dcc64",
+      "source": "analysis/implementation/bank-baseline/slot-103.payload"
+    },
+    {
+      "slot": 104,
+      "offset": 122304,
+      "length": 1176,
+      "sha256": "844b58dc8113c188f5ede7b7a82e26aaecb0c4edb3ef786c166718f7b9e3dadd",
+      "source": "analysis/implementation/bank-baseline/slot-104.payload"
+    },
+    {
+      "slot": 105,
+      "offset": 123480,
+      "length": 1176,
+      "sha256": "9a165402dcac9a9dbe12cb3fb06c33c9ea59a51a61fa2e1936e0b1d27732b031",
+      "source": "analysis/implementation/bank-baseline/slot-105.payload"
+    },
+    {
+      "slot": 106,
+      "offset": 124656,
+      "length": 1176,
+      "sha256": "c44abef6b93735aa7c915795e09cfc91deb7748ccd1c5824461c538e1ce65d32",
+      "source": "analysis/implementation/bank-baseline/slot-106.payload"
+    },
+    {
+      "slot": 107,
+      "offset": 125832,
+      "length": 1176,
+      "sha256": "c28ea3788bceb032f79e637ed69d0ab82e76e362573525a765351ad936e3e4d4",
+      "source": "analysis/implementation/bank-baseline/slot-107.payload"
+    },
+    {
+      "slot": 108,
+      "offset": 127008,
+      "length": 1176,
+      "sha256": "4540b97c7268dfd58b2deca221f8c7c5b31f606137435656a0e242265e589450",
+      "source": "analysis/implementation/bank-baseline/slot-108.payload"
+    },
+    {
+      "slot": 109,
+      "offset": 128184,
+      "length": 1176,
+      "sha256": "237df84eee37b167e3b5ee33cb71e0c50900382aba068b6b2cb53099451cb38d",
+      "source": "analysis/implementation/bank-baseline/slot-109.payload"
+    },
+    {
+      "slot": 110,
+      "offset": 129360,
+      "length": 1176,
+      "sha256": "0fe151b3c79dfab7ba19e14aec4afb3cfccec5f39ce12bbc44d7e9dffafc2b5b",
+      "source": "analysis/implementation/bank-baseline/slot-110.payload"
+    },
+    {
+      "slot": 111,
+      "offset": 130536,
+      "length": 1176,
+      "sha256": "23f5322b7616cbc8978ac8591077a5ae9be273d182f6f5dcd40dcb7654c4a1ec",
+      "source": "analysis/implementation/bank-baseline/slot-111.payload"
+    },
+    {
+      "slot": 112,
+      "offset": 131712,
+      "length": 1176,
+      "sha256": "58a9fe9bfa381030231cfea47caca01874032b043f2db0440b9056a881407d3e",
+      "source": "analysis/implementation/bank-baseline/slot-112.payload"
+    },
+    {
+      "slot": 113,
+      "offset": 132888,
+      "length": 1176,
+      "sha256": "71097655cbe18792bd19e4049670f3fe37bfd9b8447dc4c04fcb2efa3ef3943c",
+      "source": "analysis/implementation/bank-baseline/slot-113.payload"
+    },
+    {
+      "slot": 114,
+      "offset": 134064,
+      "length": 1176,
+      "sha256": "d10e4d80786dab8b9531dd333744bb1a4229e07fc6a2c3acb9e905978397b226",
+      "source": "analysis/implementation/bank-baseline/slot-114.payload"
+    },
+    {
+      "slot": 115,
+      "offset": 135240,
+      "length": 1176,
+      "sha256": "2a97b38a913bf3f8b85c06587e594dccc6b81a20ab5ddf251d156e0d09cd566c",
+      "source": "analysis/implementation/bank-baseline/slot-115.payload"
+    },
+    {
+      "slot": 116,
+      "offset": 136416,
+      "length": 1176,
+      "sha256": "be80b2c9f63e1368616e5ac4199587958833adf911d9caded3d6761a731f77da",
+      "source": "analysis/implementation/bank-baseline/slot-116.payload"
+    },
+    {
+      "slot": 117,
+      "offset": 137592,
+      "length": 1176,
+      "sha256": "a1366172a755e6604de8037ad43ecf0d47333be9710e8e66bf628bdb35a17f74",
+      "source": "analysis/implementation/bank-baseline/slot-117.payload"
+    },
+    {
+      "slot": 118,
+      "offset": 138768,
+      "length": 1176,
+      "sha256": "0ffb257292a60b2f3cdad5ad269fdcd805a22bd441a2936bdf90a23112a90302",
+      "source": "analysis/implementation/bank-baseline/slot-118.payload"
+    },
+    {
+      "slot": 119,
+      "offset": 139944,
+      "length": 1176,
+      "sha256": "9644bd0cda7bbeab5e9b2141fb46ba256a0553213a44b1a0edbaa39187ce4cee",
+      "source": "analysis/implementation/bank-baseline/slot-119.payload"
+    },
+    {
+      "slot": 120,
+      "offset": 141120,
+      "length": 1176,
+      "sha256": "72198556440c9a38956794c1683fa02854532e0c5da0911764860a75566a3e8a",
+      "source": "analysis/implementation/bank-baseline/slot-120.payload"
+    },
+    {
+      "slot": 121,
+      "offset": 142296,
+      "length": 1176,
+      "sha256": "a6265c5e04bd43686b93e50165e88c3a66b1c4cdac47eb5f7a618793fff8f76c",
+      "source": "analysis/implementation/bank-baseline/slot-121.payload"
+    },
+    {
+      "slot": 122,
+      "offset": 143472,
+      "length": 1176,
+      "sha256": "9c9f24ccb8a4841ed9647e45baa1d32b0d130025c22111bb2ef8fee97512bffa",
+      "source": "analysis/implementation/bank-baseline/slot-122.payload"
+    },
+    {
+      "slot": 123,
+      "offset": 144648,
+      "length": 1176,
+      "sha256": "2f4cf9f66a22419dad9782704f60b7ac78391f4f7ee3c68c5e972112da43ba1d",
+      "source": "analysis/implementation/bank-baseline/slot-123.payload"
+    },
+    {
+      "slot": 124,
+      "offset": 145824,
+      "length": 1176,
+      "sha256": "276b3d835ee4323887b814ee720cc91788ecd4512e14578e4ec27970bdc1a30b",
+      "source": "analysis/implementation/bank-baseline/slot-124.payload"
+    },
+    {
+      "slot": 125,
+      "offset": 147000,
+      "length": 1176,
+      "sha256": "894232db28f72e4dc701987a8a0ea81e7183a8bdca174b393255e0e7717cf73e",
+      "source": "analysis/implementation/bank-baseline/slot-125.payload"
+    },
+    {
+      "slot": 126,
+      "offset": 148176,
+      "length": 1176,
+      "sha256": "6b120b0e1efd191b17a6113a9eda20327c6b80f71b9cfb796fd9e87ba0c05d8e",
+      "source": "analysis/implementation/bank-baseline/slot-126.payload"
+    },
+    {
+      "slot": 127,
+      "offset": 149352,
+      "length": 1176,
+      "sha256": "187f9681f8199e0a7557f5461f4c7fc3fc7f63bd378dda357e4f8ebdd51fc5f3",
+      "source": "analysis/implementation/bank-baseline/slot-127.payload"
+    },
+    {
+      "slot": 128,
+      "offset": 150528,
+      "length": 1176,
+      "sha256": "927a14d128d327eb9c68f78280f7186d963f80da37f7654d690ed8607b275dcd",
+      "source": "analysis/implementation/bank-baseline/slot-128.payload"
+    },
+    {
+      "slot": 129,
+      "offset": 151704,
+      "length": 1176,
+      "sha256": "c70f142aa11e84ce6a66fab395d06a50708c02d199d7a5f125bba67d4f6087b7",
+      "source": "analysis/implementation/bank-baseline/slot-129.payload"
+    },
+    {
+      "slot": 130,
+      "offset": 152880,
+      "length": 1176,
+      "sha256": "bc5131fb81161a75d6fe0ed0281fd938cf7be4ef17ee8efddfe72d11a72bf0e8",
+      "source": "analysis/implementation/bank-baseline/slot-130.payload"
+    },
+    {
+      "slot": 131,
+      "offset": 154056,
+      "length": 1176,
+      "sha256": "806120a0b9cbfba5c9ccb22fb385a9f916972b28a62c15d23d2192212d23f9ac",
+      "source": "analysis/implementation/bank-baseline/slot-131.payload"
+    },
+    {
+      "slot": 132,
+      "offset": 155232,
+      "length": 1176,
+      "sha256": "7f7d18d07522b63d0f1689a71ae6239642fba2898127ca69e064c360481a5bc7",
+      "source": "analysis/implementation/bank-baseline/slot-132.payload"
+    },
+    {
+      "slot": 133,
+      "offset": 156408,
+      "length": 1176,
+      "sha256": "82e129772a943dc0b654ca26e5e09055efce5df7a9154db8ab6b39df7464efd6",
+      "source": "analysis/implementation/bank-baseline/slot-133.payload"
+    },
+    {
+      "slot": 134,
+      "offset": 157584,
+      "length": 1176,
+      "sha256": "c43aa0931c392d273484a46e8af61616a2bc9d32ccbc03e837200de73ecc3b7b",
+      "source": "analysis/implementation/bank-baseline/slot-134.payload"
+    },
+    {
+      "slot": 135,
+      "offset": 158760,
+      "length": 1176,
+      "sha256": "dc996cf1e598f2c20b871be4e7458afe094c89c0e433b14297a14db8507074ee",
+      "source": "analysis/implementation/bank-baseline/slot-135.payload"
+    },
+    {
+      "slot": 136,
+      "offset": 159936,
+      "length": 1176,
+      "sha256": "89df10f850ad2a6b494a6603e06c2824e76a0159f0a816891e657c2d449f9ed6",
+      "source": "analysis/implementation/bank-baseline/slot-136.payload"
+    },
+    {
+      "slot": 137,
+      "offset": 161112,
+      "length": 1176,
+      "sha256": "b88755ceb7bf860b269727c6b2b7ee3c331bc2dedd889c963b7991201b9ec985",
+      "source": "analysis/implementation/bank-baseline/slot-137.payload"
+    },
+    {
+      "slot": 138,
+      "offset": 162288,
+      "length": 1176,
+      "sha256": "d8636e1fbe3e42d76c8dc7b03584c3c0ebce851945c3a88deab28fe382bd33b3",
+      "source": "analysis/implementation/bank-baseline/slot-138.payload"
+    },
+    {
+      "slot": 139,
+      "offset": 163464,
+      "length": 1176,
+      "sha256": "527a5a713f9718d960124ea19b90db4a52b808f59b19383710c5112aeeb4b48a",
+      "source": "analysis/implementation/bank-baseline/slot-139.payload"
+    },
+    {
+      "slot": 140,
+      "offset": 164640,
+      "length": 1176,
+      "sha256": "6cbc4dfc52a1079a1c26e7e052af2e870c317a5c008ad46f3c65f7a98a286982",
+      "source": "analysis/implementation/bank-baseline/slot-140.payload"
+    },
+    {
+      "slot": 141,
+      "offset": 165816,
+      "length": 1176,
+      "sha256": "e7197354732b00ffe9a8a873fa0fab55fe60a36f477225a2c5a12dd271a7ce5c",
+      "source": "analysis/implementation/bank-baseline/slot-141.payload"
+    },
+    {
+      "slot": 142,
+      "offset": 166992,
+      "length": 1176,
+      "sha256": "924de0b9a2dd12ecccde2b6445e177411802723baf6161a4424ca340d5c8af83",
+      "source": "analysis/implementation/bank-baseline/slot-142.payload"
+    },
+    {
+      "slot": 143,
+      "offset": 168168,
+      "length": 1176,
+      "sha256": "723a817a7745c7fdf8a63def860cd4b447ac121cde86110e16dee52464896868",
+      "source": "analysis/implementation/bank-baseline/slot-143.payload"
+    },
+    {
+      "slot": 144,
+      "offset": 169344,
+      "length": 1176,
+      "sha256": "c76e3a105c31d60bde0ac882d748a0e3f933a9582f0d84984e40b0ac6e312c34",
+      "source": "analysis/implementation/bank-baseline/slot-144.payload"
+    },
+    {
+      "slot": 145,
+      "offset": 170520,
+      "length": 1176,
+      "sha256": "35ba3c5f58ab272022dfb13aa85f1e02cf0d4b3d3b384cbf38bc948f1386ffbe",
+      "source": "analysis/implementation/bank-baseline/slot-145.payload"
+    },
+    {
+      "slot": 146,
+      "offset": 171696,
+      "length": 1176,
+      "sha256": "4caf199d324668953aec513340d1bee0170d97f21b6b83c8406a15cf2914807f",
+      "source": "analysis/implementation/bank-baseline/slot-146.payload"
+    },
+    {
+      "slot": 147,
+      "offset": 172872,
+      "length": 1176,
+      "sha256": "31788eb582972ab54e6bafa3680ff3e7afbfd71e617015c63308d8fc1d8c2f8f",
+      "source": "analysis/implementation/bank-baseline/slot-147.payload"
+    },
+    {
+      "slot": 148,
+      "offset": 174048,
+      "length": 1176,
+      "sha256": "ad5ac3bce7b29a84dd3338937c2c77911824236a31d6e810aedbedcad1735d1c",
+      "source": "analysis/implementation/bank-baseline/slot-148.payload"
+    },
+    {
+      "slot": 149,
+      "offset": 175224,
+      "length": 1176,
+      "sha256": "ca83617baca80b8e18e6e27718172c48bf87cc7db23939dc4c3e377abe0c6905",
+      "source": "analysis/implementation/bank-baseline/slot-149.payload"
+    },
+    {
+      "slot": 150,
+      "offset": 176400,
+      "length": 1176,
+      "sha256": "a2d5d6547ee325322063f20877a7e557f7adfd1b864c09adb6cb8ebf4237c7d2",
+      "source": "analysis/implementation/bank-baseline/slot-150.payload"
+    },
+    {
+      "slot": 151,
+      "offset": 177576,
+      "length": 1176,
+      "sha256": "7eb9fd709df7de45d49ad07396fe875e68c464c62a89656095f2b48478be60a8",
+      "source": "analysis/implementation/bank-baseline/slot-151.payload"
+    },
+    {
+      "slot": 152,
+      "offset": 178752,
+      "length": 1176,
+      "sha256": "8c8d2b25f883b470d51dc7d634f864d9bc56b6a7bf351cea3cb7e3b94e7a68b4",
+      "source": "analysis/implementation/bank-baseline/slot-152.payload"
+    },
+    {
+      "slot": 153,
+      "offset": 179928,
+      "length": 1176,
+      "sha256": "872bc7a3aa8d06c74442c0a2412abe293f13166b2905ade225e51d624b0e23f3",
+      "source": "analysis/implementation/bank-baseline/slot-153.payload"
+    },
+    {
+      "slot": 154,
+      "offset": 181104,
+      "length": 1176,
+      "sha256": "87a725016472d6aad674f80b25aeff091a9a89486729297b16a0d8894dcd976e",
+      "source": "analysis/implementation/bank-baseline/slot-154.payload"
+    },
+    {
+      "slot": 155,
+      "offset": 182280,
+      "length": 1176,
+      "sha256": "d8855bb4ecdf492b50a345671d467951f8390274d76db728bec05fd7c1d7eec0",
+      "source": "analysis/implementation/bank-baseline/slot-155.payload"
+    },
+    {
+      "slot": 156,
+      "offset": 183456,
+      "length": 1176,
+      "sha256": "9ca4716f79d782ad035fb879dbc2ccf88dcac89b21e752ed746eaa2e40cb2e3d",
+      "source": "analysis/implementation/bank-baseline/slot-156.payload"
+    },
+    {
+      "slot": 157,
+      "offset": 184632,
+      "length": 1176,
+      "sha256": "0646fd37a7d1c239909689690a2d862cddf3cf148dcb3dbdc2a3ae79e51e517f",
+      "source": "analysis/implementation/bank-baseline/slot-157.payload"
+    },
+    {
+      "slot": 158,
+      "offset": 185808,
+      "length": 1176,
+      "sha256": "83bf7f308dd1dddf1eb44b359b902949de80a5aa2f209dc007cf0f209dd0f394",
+      "source": "analysis/implementation/bank-baseline/slot-158.payload"
+    },
+    {
+      "slot": 159,
+      "offset": 186984,
+      "length": 1176,
+      "sha256": "d67f0660ed9ac2646d2c8b523e089b8fff60d10fbedfa64dc8ef833f277a2e2b",
+      "source": "analysis/implementation/bank-baseline/slot-159.payload"
+    },
+    {
+      "slot": 160,
+      "offset": 188160,
+      "length": 1176,
+      "sha256": "a677a86c85676b5467dec55e369cbffef1f6d6b9c247d0f87431f2011bb6818d",
+      "source": "analysis/implementation/bank-baseline/slot-160.payload"
+    },
+    {
+      "slot": 161,
+      "offset": 189336,
+      "length": 1176,
+      "sha256": "dbbc851c2361b6804a1e836fdf871218a47e5185e8952f81cd4189bb39958ae7",
+      "source": "analysis/implementation/bank-baseline/slot-161.payload"
+    },
+    {
+      "slot": 162,
+      "offset": 190512,
+      "length": 1176,
+      "sha256": "b32baecccd0674f0fb4b4978e8d11b72aa6d93c06406c9723e999cf7f61dccac",
+      "source": "analysis/implementation/bank-baseline/slot-162.payload"
+    },
+    {
+      "slot": 163,
+      "offset": 191688,
+      "length": 1176,
+      "sha256": "54039586eeb101a384650db6dccfa660e0cedb1a48225764fa174371a7f5f01c",
+      "source": "analysis/implementation/bank-baseline/slot-163.payload"
+    },
+    {
+      "slot": 164,
+      "offset": 192864,
+      "length": 1176,
+      "sha256": "dc328ff1851ebe59021cc1e3f21b6d586adedd5bc54a39e0a2996210e12e6786",
+      "source": "analysis/implementation/bank-baseline/slot-164.payload"
+    },
+    {
+      "slot": 165,
+      "offset": 194040,
+      "length": 1176,
+      "sha256": "d67f6ceb5738f7e3947a1a067dd34111678751a6222fbdca1c1dc218f952885e",
+      "source": "analysis/implementation/bank-baseline/slot-165.payload"
+    },
+    {
+      "slot": 166,
+      "offset": 195216,
+      "length": 1176,
+      "sha256": "f7ff6245c1407f585451973eb8d476afdccf6bcf2075edfa42bbbac124ef151b",
+      "source": "analysis/implementation/bank-baseline/slot-166.payload"
+    },
+    {
+      "slot": 167,
+      "offset": 196392,
+      "length": 1176,
+      "sha256": "fa86d1fba998156d3bd131fb9c11db3a9358fa6efd77dca4755cb7eb7dbf68ef",
+      "source": "analysis/implementation/bank-baseline/slot-167.payload"
+    },
+    {
+      "slot": 168,
+      "offset": 197568,
+      "length": 1176,
+      "sha256": "ee92468590bb830f94834713408e44236910b79e480dc07a54a60a1f9024f879",
+      "source": "analysis/implementation/bank-baseline/slot-168.payload"
+    },
+    {
+      "slot": 169,
+      "offset": 198744,
+      "length": 1176,
+      "sha256": "87fa4827c22bef402e61819f4e6f078df2504f6aa75b6e7244ba1dffeaf8372a",
+      "source": "analysis/implementation/bank-baseline/slot-169.payload"
+    },
+    {
+      "slot": 170,
+      "offset": 199920,
+      "length": 1176,
+      "sha256": "58dc07796661a9f7468772738c04fa0c4720affd0bd48393712349c769857e5f",
+      "source": "analysis/implementation/bank-baseline/slot-170.payload"
+    },
+    {
+      "slot": 171,
+      "offset": 201096,
+      "length": 1176,
+      "sha256": "990feebe46a873a15615884fc7aacfd08e67c936b97be06a27abcb7de58775ac",
+      "source": "analysis/implementation/bank-baseline/slot-171.payload"
+    },
+    {
+      "slot": 172,
+      "offset": 202272,
+      "length": 1176,
+      "sha256": "8f31ace2a129b6ae22b6d7a5fed73c91b3e3437ddd82495fc1ac563a01f96beb",
+      "source": "analysis/implementation/bank-baseline/slot-172.payload"
+    },
+    {
+      "slot": 173,
+      "offset": 203448,
+      "length": 1176,
+      "sha256": "a93afc0e302a24e222e17ba6a20b218f9b5b73434b60526996a25d0609675f9f",
+      "source": "analysis/implementation/bank-baseline/slot-173.payload"
+    },
+    {
+      "slot": 174,
+      "offset": 204624,
+      "length": 1176,
+      "sha256": "1255ac7ee90770b21efb0f6f704a75993838a106d4a38b757ac30d8b27dc8d3b",
+      "source": "analysis/implementation/bank-baseline/slot-174.payload"
+    },
+    {
+      "slot": 175,
+      "offset": 205800,
+      "length": 1176,
+      "sha256": "af3deda674ee4da6180ee14261d335fd90016705781e4df43dd8503eb93d63bb",
+      "source": "analysis/implementation/bank-baseline/slot-175.payload"
+    },
+    {
+      "slot": 176,
+      "offset": 206976,
+      "length": 1176,
+      "sha256": "2be4cde6c9d9f61d95e19899b12fac4ef7b927153be4497d03b3ae3653b71a4e",
+      "source": "analysis/implementation/bank-baseline/slot-176.payload"
+    },
+    {
+      "slot": 177,
+      "offset": 208152,
+      "length": 1176,
+      "sha256": "6e5f49fb297180132ff59ba30be6ef807b4ba80749322c18648281fef052d523",
+      "source": "analysis/implementation/bank-baseline/slot-177.payload"
+    },
+    {
+      "slot": 178,
+      "offset": 209328,
+      "length": 1176,
+      "sha256": "a30f88ff9ecd4166955e61d202063988f337a110f01ce95d2814c1dddc4e206e",
+      "source": "analysis/implementation/bank-baseline/slot-178.payload"
+    },
+    {
+      "slot": 179,
+      "offset": 210504,
+      "length": 1176,
+      "sha256": "b05320eb4a8bf3da9e8889a7ce3a221a54de3a9b618ae946a970d0c0c154f713",
+      "source": "analysis/implementation/bank-baseline/slot-179.payload"
+    },
+    {
+      "slot": 180,
+      "offset": 211680,
+      "length": 1176,
+      "sha256": "d117be36e00f2c85d205be1e842d081d6b1e3f6d1be768bb1651fde40f9a1ab6",
+      "source": "analysis/implementation/bank-baseline/slot-180.payload"
+    },
+    {
+      "slot": 181,
+      "offset": 212856,
+      "length": 1176,
+      "sha256": "9fb2f9a93855b3c9650456d347a15ced72126941ba9f4fb7159e38a4977e5792",
+      "source": "analysis/implementation/bank-baseline/slot-181.payload"
+    },
+    {
+      "slot": 182,
+      "offset": 214032,
+      "length": 1176,
+      "sha256": "0a27ebe7c838822726dcd60517b308c4599b8fe2855030513b3986ad8c966142",
+      "source": "analysis/implementation/bank-baseline/slot-182.payload"
+    },
+    {
+      "slot": 183,
+      "offset": 215208,
+      "length": 1176,
+      "sha256": "6ab51e4421f5d5f8e26b8032b170750e0ac5a63ff33c3b8d9d4158fe14d5ef19",
+      "source": "analysis/implementation/bank-baseline/slot-183.payload"
+    },
+    {
+      "slot": 184,
+      "offset": 216384,
+      "length": 1176,
+      "sha256": "82fbe103fe9b21d7d2d178976c18d25ce12c10be4eae7c7af6808f115ea58081",
+      "source": "analysis/implementation/bank-baseline/slot-184.payload"
+    },
+    {
+      "slot": 185,
+      "offset": 217560,
+      "length": 1176,
+      "sha256": "1d7e3c0663f2347f96fc65832891767e18eeafcd18ca38438b46cef57522d5e2",
+      "source": "analysis/implementation/bank-baseline/slot-185.payload"
+    },
+    {
+      "slot": 186,
+      "offset": 218736,
+      "length": 1176,
+      "sha256": "e412da70e3924ff630bd78f2bc4c2a259b4b8b39404e8168a98c0297b47d4656",
+      "source": "analysis/implementation/bank-baseline/slot-186.payload"
+    },
+    {
+      "slot": 187,
+      "offset": 219912,
+      "length": 1176,
+      "sha256": "03d32ebc685b419e0925fb7035111be997660b9868af4963af15a794e08a4c20",
+      "source": "analysis/implementation/bank-baseline/slot-187.payload"
+    },
+    {
+      "slot": 188,
+      "offset": 221088,
+      "length": 1176,
+      "sha256": "30907bffbecd179d7fb60c64e88f8ae89efd658b950d6ad3dd9257dcb4224e4a",
+      "source": "analysis/implementation/bank-baseline/slot-188.payload"
+    },
+    {
+      "slot": 189,
+      "offset": 222264,
+      "length": 1176,
+      "sha256": "dbec6b22798998172fb818c07d995d2e4014677c74298f0f7c2831a26684431f",
+      "source": "analysis/implementation/bank-baseline/slot-189.payload"
+    },
+    {
+      "slot": 190,
+      "offset": 223440,
+      "length": 1176,
+      "sha256": "760226fd7909b8ab555ef4f6be10042c7edcfb73d97b3d6d3c0f438f6361d87f",
+      "source": "analysis/implementation/bank-baseline/slot-190.payload"
+    },
+    {
+      "slot": 191,
+      "offset": 224616,
+      "length": 1176,
+      "sha256": "d8612c3336ac764eabb1f5dea33c84b625d2c8640d4cccba01955fe94695a60e",
+      "source": "analysis/implementation/bank-baseline/slot-191.payload"
+    },
+    {
+      "slot": 192,
+      "offset": 225792,
+      "length": 1176,
+      "sha256": "d80f3725ecbcd7245f371e70baeacb30869a304a9ca78106d827d84a3e1b74e5",
+      "source": "analysis/implementation/bank-baseline/slot-192.payload"
+    },
+    {
+      "slot": 193,
+      "offset": 226968,
+      "length": 1176,
+      "sha256": "5ce9a2bfdd271945cee88606c5a20e0043fd6ff8105fe42b29fa605d469705b0",
+      "source": "analysis/implementation/bank-baseline/slot-193.payload"
+    },
+    {
+      "slot": 194,
+      "offset": 228144,
+      "length": 1176,
+      "sha256": "9db72b5f17b6ed8ee5184ad9f31b9698866ae73cfc02acbc2abe6ccbd3d943cd",
+      "source": "analysis/implementation/bank-baseline/slot-194.payload"
+    },
+    {
+      "slot": 195,
+      "offset": 229320,
+      "length": 1176,
+      "sha256": "f7fe1533f7a3ae90d09dcb22cdaeaad3ca875d0b65bfe6fa7a8e373c4d030655",
+      "source": "analysis/implementation/bank-baseline/slot-195.payload"
+    },
+    {
+      "slot": 196,
+      "offset": 230496,
+      "length": 1176,
+      "sha256": "1755a3d993c15cee0f9471ee4084669a2beb56ef8568ad33912d44a05c068032",
+      "source": "analysis/implementation/bank-baseline/slot-196.payload"
+    },
+    {
+      "slot": 197,
+      "offset": 231672,
+      "length": 1176,
+      "sha256": "1c7991245f0e049bfc5b71903705e5bc2136c872b90dcf9f90b2d3b8ac52f5dc",
+      "source": "analysis/implementation/bank-baseline/slot-197.payload"
+    },
+    {
+      "slot": 198,
+      "offset": 232848,
+      "length": 1176,
+      "sha256": "744800ff5d2cbd59305723512707a5fb65e37f3bfea30c1fab852af6961a2a7b",
+      "source": "analysis/implementation/bank-baseline/slot-198.payload"
+    },
+    {
+      "slot": 199,
+      "offset": 234024,
+      "length": 1176,
+      "sha256": "afbe7b1373636a100d100ddf2cb2f57f332bf87207460cb4a8d6d98329a1a7c4",
+      "source": "analysis/implementation/bank-baseline/slot-199.payload"
+    },
+    {
+      "slot": 200,
+      "offset": 235200,
+      "length": 1176,
+      "sha256": "0547d8928203ed2777580c4f6a35e608c417cce8d557616f8e59da3bfc67e1cf",
+      "source": "analysis/implementation/bank-baseline/slot-200.payload"
+    },
+    {
+      "slot": 201,
+      "offset": 236376,
+      "length": 1176,
+      "sha256": "45b2d2ececc8b304610c1b3e1f281b99c82c7971c8e7a36224e35a68616e01cb",
+      "source": "analysis/implementation/bank-baseline/slot-201.payload"
+    },
+    {
+      "slot": 202,
+      "offset": 237552,
+      "length": 1176,
+      "sha256": "5eb9a1dead8f2d39383f0f6554988542afcf5f542a500fa4f6639a3e4e83a682",
+      "source": "analysis/implementation/bank-baseline/slot-202.payload"
+    },
+    {
+      "slot": 203,
+      "offset": 238728,
+      "length": 1176,
+      "sha256": "4ddd0e4ab349d955fbd54df1de2200b525d3eb50e624236e10dff66bc483d119",
+      "source": "analysis/implementation/bank-baseline/slot-203.payload"
+    },
+    {
+      "slot": 204,
+      "offset": 239904,
+      "length": 1176,
+      "sha256": "74e5f41a9c01e123374565c50d293977028398306db79062ec5828a97a59540d",
+      "source": "analysis/implementation/bank-baseline/slot-204.payload"
+    },
+    {
+      "slot": 205,
+      "offset": 241080,
+      "length": 1176,
+      "sha256": "b4668478109bd26d957668cbdea752829b72cc5718931bfbcb39b7b89d29b5eb",
+      "source": "analysis/implementation/bank-baseline/slot-205.payload"
+    },
+    {
+      "slot": 206,
+      "offset": 242256,
+      "length": 1176,
+      "sha256": "663c83cdd05c88bd655776bbc88d2988a9379d73a210d2bec0a7e5dcc60c3358",
+      "source": "analysis/implementation/bank-baseline/slot-206.payload"
+    },
+    {
+      "slot": 207,
+      "offset": 243432,
+      "length": 1176,
+      "sha256": "0acaca3a2622c3c71efd2013d615b0339fd08779dec858ba2e2dfcc6d14f69b4",
+      "source": "analysis/implementation/bank-baseline/slot-207.payload"
+    },
+    {
+      "slot": 208,
+      "offset": 244608,
+      "length": 1176,
+      "sha256": "25a462232af573127581259e5cad4a18cd2d5db812486df41e83c1c54c409c53",
+      "source": "analysis/implementation/bank-baseline/slot-208.payload"
+    },
+    {
+      "slot": 209,
+      "offset": 245784,
+      "length": 1176,
+      "sha256": "12282755c4993793741149bdcd195757494e8ef11166c4816e60474417fd152b",
+      "source": "analysis/implementation/bank-baseline/slot-209.payload"
+    },
+    {
+      "slot": 210,
+      "offset": 246960,
+      "length": 1176,
+      "sha256": "02d5e54bc3264b2f4138d973a23cffa05c4e196caeaf2206f210f8e9cd326aa8",
+      "source": "analysis/implementation/bank-baseline/slot-210.payload"
+    },
+    {
+      "slot": 211,
+      "offset": 248136,
+      "length": 1176,
+      "sha256": "39ad91b4e4cc2db1db350997f8ac03be6f39e93f70eabdb6f507a56d00f7741c",
+      "source": "analysis/implementation/bank-baseline/slot-211.payload"
+    },
+    {
+      "slot": 212,
+      "offset": 249312,
+      "length": 1176,
+      "sha256": "665f617136c6717bb8f558af25be4178c700ed5323b03997d66e4e42c3cec350",
+      "source": "analysis/implementation/bank-baseline/slot-212.payload"
+    },
+    {
+      "slot": 213,
+      "offset": 250488,
+      "length": 1176,
+      "sha256": "faa516174b5bfb5cbc18dd2c5b4ed34b9626df12728d97099c06974f68830dc2",
+      "source": "analysis/implementation/bank-baseline/slot-213.payload"
+    },
+    {
+      "slot": 214,
+      "offset": 251664,
+      "length": 1176,
+      "sha256": "5903c0b8f0e032068bd2b31dd981b5baeb602d63e1acd73dda1394a6be953242",
+      "source": "analysis/implementation/bank-baseline/slot-214.payload"
+    },
+    {
+      "slot": 215,
+      "offset": 252840,
+      "length": 1176,
+      "sha256": "b13e330cf4af813785a27298121bc241e4e2e5ab0887418a511d03e3a5f0e197",
+      "source": "analysis/implementation/bank-baseline/slot-215.payload"
+    },
+    {
+      "slot": 216,
+      "offset": 254016,
+      "length": 1176,
+      "sha256": "6f226ba845e5de506c8edb0407819cadcd128227331a2358d69bd5031647595d",
+      "source": "analysis/implementation/bank-baseline/slot-216.payload"
+    },
+    {
+      "slot": 217,
+      "offset": 255192,
+      "length": 1176,
+      "sha256": "91ec856c676098cd07457e3f964c84f188a88f94bcbe2ba2b74f1987c04df245",
+      "source": "analysis/implementation/bank-baseline/slot-217.payload"
+    },
+    {
+      "slot": 218,
+      "offset": 256368,
+      "length": 1176,
+      "sha256": "eee8316dfd5aff88e7b4ac078ee85d2f871cd6cb3ff6ba3a9ce9344f082b443d",
+      "source": "analysis/implementation/bank-baseline/slot-218.payload"
+    },
+    {
+      "slot": 219,
+      "offset": 257544,
+      "length": 1176,
+      "sha256": "1b0fa5b0aefb181c728ec07a7b3744abf3bf676914162fe91d81ee5e62f12d76",
+      "source": "analysis/implementation/bank-baseline/slot-219.payload"
+    },
+    {
+      "slot": 220,
+      "offset": 258720,
+      "length": 1176,
+      "sha256": "c3ccac98c0ed2bbf4a26da552651e2287bbc1c3a7c8d2ee3ddf0b43131657934",
+      "source": "analysis/implementation/bank-baseline/slot-220.payload"
+    },
+    {
+      "slot": 221,
+      "offset": 259896,
+      "length": 1176,
+      "sha256": "3b0addb47bc012c408fa620ae157138f76a50789b93f18b8f60613c40083efde",
+      "source": "analysis/implementation/bank-baseline/slot-221.payload"
+    },
+    {
+      "slot": 222,
+      "offset": 261072,
+      "length": 1176,
+      "sha256": "6c6c7791ea2b12ef35d5447d9c6ef34fd624035c3c7c5ea6aed68cf28d686657",
+      "source": "analysis/implementation/bank-baseline/slot-222.payload"
+    },
+    {
+      "slot": 223,
+      "offset": 262248,
+      "length": 1176,
+      "sha256": "38c62be435cd2e3f73b87fc6e6c79c7c67469acc5c81010c4a605aed02da668e",
+      "source": "analysis/implementation/bank-baseline/slot-223.payload"
+    },
+    {
+      "slot": 224,
+      "offset": 263424,
+      "length": 1176,
+      "sha256": "3cd78ec854f14c475b02ea4537dcc0bac2e6d9d9e0f4740d159d33d547ece0cb",
+      "source": "analysis/implementation/bank-baseline/slot-224.payload"
+    },
+    {
+      "slot": 225,
+      "offset": 264600,
+      "length": 1176,
+      "sha256": "ed2066734bc085de21c2655a373787a2fe23d2c397de8bc20a937a78c4b0134d",
+      "source": "analysis/implementation/bank-baseline/slot-225.payload"
+    },
+    {
+      "slot": 226,
+      "offset": 265776,
+      "length": 1176,
+      "sha256": "b5823134d208f37bbfc6d72d888d4453f309a23c31c8abbf4a9000d90ff6f816",
+      "source": "analysis/implementation/bank-baseline/slot-226.payload"
+    },
+    {
+      "slot": 227,
+      "offset": 266952,
+      "length": 1176,
+      "sha256": "d33cad0ca2b7989defe433214340e48e52e20aca18136443a93f9e3e443a2126",
+      "source": "analysis/implementation/bank-baseline/slot-227.payload"
+    },
+    {
+      "slot": 228,
+      "offset": 268128,
+      "length": 1176,
+      "sha256": "23ccb91056a65620b9f92ff3842aeba5d1f0f24cc0c4a0fcdc62d6aff2905069",
+      "source": "analysis/implementation/bank-baseline/slot-228.payload"
+    },
+    {
+      "slot": 229,
+      "offset": 269304,
+      "length": 1176,
+      "sha256": "1e305cc6bd187c3320a52c1f092c30e39450265e339c6d93321661c10edae755",
+      "source": "analysis/implementation/bank-baseline/slot-229.payload"
+    },
+    {
+      "slot": 230,
+      "offset": 270480,
+      "length": 1176,
+      "sha256": "a477af66f28ff6034e9d419cea884553a4700575a77cb84cf97f7fbbaaeab4e7",
+      "source": "analysis/implementation/bank-baseline/slot-230.payload"
+    },
+    {
+      "slot": 231,
+      "offset": 271656,
+      "length": 1176,
+      "sha256": "fb199fc836f5d2c7ddbe6034bde66b74f57771aedbeee6b05d642c326b9de71f",
+      "source": "analysis/implementation/bank-baseline/slot-231.payload"
+    },
+    {
+      "slot": 232,
+      "offset": 272832,
+      "length": 1176,
+      "sha256": "ab6a83c25c4505e7a685296771cd34d3c5f0e67f06a4188c504085cf1cd56371",
+      "source": "analysis/implementation/bank-baseline/slot-232.payload"
+    },
+    {
+      "slot": 233,
+      "offset": 274008,
+      "length": 1176,
+      "sha256": "b02942089bad9dcea00ad251941cc2fd4306d8953c8108737578fe14083d1b24",
+      "source": "analysis/implementation/bank-baseline/slot-233.payload"
+    },
+    {
+      "slot": 234,
+      "offset": 275184,
+      "length": 1176,
+      "sha256": "76751a1e1d9fd6605f5f25bfa65110d5b6ab4ee167d38a58de630017f18a7d88",
+      "source": "analysis/implementation/bank-baseline/slot-234.payload"
+    },
+    {
+      "slot": 235,
+      "offset": 276360,
+      "length": 1176,
+      "sha256": "b01ecda615c0355375ed4519312afe59fa97db04fb04a6e9c9d42b5c755267ba",
+      "source": "analysis/implementation/bank-baseline/slot-235.payload"
+    },
+    {
+      "slot": 236,
+      "offset": 277536,
+      "length": 1176,
+      "sha256": "a2896dcb140cd1b3c79a6c23c44548105b9c651388576a62c0ceb18cce218239",
+      "source": "analysis/implementation/bank-baseline/slot-236.payload"
+    },
+    {
+      "slot": 237,
+      "offset": 278712,
+      "length": 1176,
+      "sha256": "043a19c4062e71402a36ba4688607745328f491f958d50f9e788c894bf1d6900",
+      "source": "analysis/implementation/bank-baseline/slot-237.payload"
+    },
+    {
+      "slot": 238,
+      "offset": 279888,
+      "length": 1176,
+      "sha256": "d9d71c064e18d71598e8528da0965aa72f554d68d7c8328b6ddbe61afc3dcda0",
+      "source": "analysis/implementation/bank-baseline/slot-238.payload"
+    },
+    {
+      "slot": 239,
+      "offset": 281064,
+      "length": 1176,
+      "sha256": "e2fb1edcf996baf78e4e0c2d01a9016bdd659ab6e1977db42bd2f0daefc8531d",
+      "source": "analysis/implementation/bank-baseline/slot-239.payload"
+    },
+    {
+      "slot": 240,
+      "offset": 282240,
+      "length": 1176,
+      "sha256": "1e24de79243437f8dc86e5ec374ee7332d415cb1f8c5fba180c592f97f6d8712",
+      "source": "analysis/implementation/bank-baseline/slot-240.payload"
+    },
+    {
+      "slot": 241,
+      "offset": 283416,
+      "length": 1176,
+      "sha256": "c49b9567f7841059eb9b082e925d602640a428df43b810a941156f83f799f4bb",
+      "source": "analysis/implementation/bank-baseline/slot-241.payload"
+    },
+    {
+      "slot": 242,
+      "offset": 284592,
+      "length": 1176,
+      "sha256": "3f452a3936e39478d2c2a39ef084740ec3284f9bca4833afa61fa6195a97c029",
+      "source": "analysis/implementation/bank-baseline/slot-242.payload"
+    },
+    {
+      "slot": 243,
+      "offset": 285768,
+      "length": 1176,
+      "sha256": "9d31f48e115c3540f1d9f2a17a7c39ad7f1e3358cc6f4a8cbe7a7f097811bb70",
+      "source": "analysis/implementation/bank-baseline/slot-243.payload"
+    },
+    {
+      "slot": 244,
+      "offset": 286944,
+      "length": 1176,
+      "sha256": "82b9bcbca1847ac997ef15eb0ba2a1eb6ca498918a7b5ac65e865ce1e5c7e482",
+      "source": "analysis/implementation/bank-baseline/slot-244.payload"
+    },
+    {
+      "slot": 245,
+      "offset": 288120,
+      "length": 1176,
+      "sha256": "003ae6ac2acd7ea99224507a81a294158318d7fe73bb3681c5c8500c97531a6d",
+      "source": "analysis/implementation/bank-baseline/slot-245.payload"
+    },
+    {
+      "slot": 246,
+      "offset": 289296,
+      "length": 1176,
+      "sha256": "9df3c6a1f7d0a1620c5ea5af8493a135c873a70be96151bfa0ab55d58f2be145",
+      "source": "analysis/implementation/bank-baseline/slot-246.payload"
+    },
+    {
+      "slot": 247,
+      "offset": 290472,
+      "length": 1176,
+      "sha256": "582a821ecaa9629780dc2c52903214c0d0a8c32faa72ace30a60b8f0b892c91b",
+      "source": "analysis/implementation/bank-baseline/slot-247.payload"
+    },
+    {
+      "slot": 248,
+      "offset": 291648,
+      "length": 1176,
+      "sha256": "752daecfd9b70a720f4e3e68781974f6b5f1041fdacdd5fb5558060d95e69914",
+      "source": "analysis/implementation/bank-baseline/slot-248.payload"
+    },
+    {
+      "slot": 249,
+      "offset": 292824,
+      "length": 1176,
+      "sha256": "575580ee784d98aa49a0dfeb1369e99cd8b47e18f86208c12c3651ee7a993b99",
+      "source": "analysis/implementation/bank-baseline/slot-249.payload"
+    },
+    {
+      "slot": 250,
+      "offset": 294000,
+      "length": 1176,
+      "sha256": "2c6f4b12ca7b90654efa0bcb5a79fade587dac76db463e818e5e0c018d4d45f6",
+      "source": "analysis/implementation/bank-baseline/slot-250.payload"
+    },
+    {
+      "slot": 251,
+      "offset": 295176,
+      "length": 1176,
+      "sha256": "c89f0d60c37f42bd80c5444e3289b34644840462ab089d0182f2a2191bea03b4",
+      "source": "analysis/implementation/bank-baseline/slot-251.payload"
+    },
+    {
+      "slot": 252,
+      "offset": 296352,
+      "length": 1176,
+      "sha256": "a7600a196bc880b5899f23393ae79fd34e5ecbaddf15eee95840ed3426069f6b",
+      "source": "analysis/implementation/bank-baseline/slot-252.payload"
+    },
+    {
+      "slot": 253,
+      "offset": 297528,
+      "length": 1176,
+      "sha256": "db3ce3003b324c5e5113b1d49e7a2ed007a96fcd5fadd6f8f055e2a94c9abf4e",
+      "source": "analysis/implementation/bank-baseline/slot-253.payload"
+    },
+    {
+      "slot": 254,
+      "offset": 298704,
+      "length": 1176,
+      "sha256": "9d7905345c99843581ef06a1ddf7c0c6d7c4d963a80a86325ad7d9016995a769",
+      "source": "analysis/implementation/bank-baseline/slot-254.payload"
+    },
+    {
+      "slot": 255,
+      "offset": 299880,
+      "length": 1176,
+      "sha256": "a12a2a9ecb13c15593ce862f6c6b2a31a3674840cfddc6f9de544586c730f748",
+      "source": "analysis/implementation/bank-baseline/slot-255.payload"
+    }
+  ],
+  "device_clear": {
+    "path": "device-cleared.payload.bin",
+    "sha256": "8a5b83f40a4e6fa86342d5e0eefaf93d0fe65d9e5a5137051542a36c1b9236af",
+    "source": "crates/gp200-transport/src/fixtures/device-cleared.payload.bin",
+    "evidence": "analysis/implementation/clear-changed-scratch-roundtrip/result.json",
+    "scope": "Actual inactive stored slot clear result, not host initialization defaults"
+  }
+}

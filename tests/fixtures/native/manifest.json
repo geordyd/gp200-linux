@@ -1,0 +1,24 @@
+{
+  "kind": "independent-constructed-fixtures-not-official-export",
+  "generator": "generate_constructed.py",
+  "raw_source": "assets/demo/read-current-payload.bin",
+  "raw_source_sha256": "84ca815ed3d9713ab98e92f58b1388cc19273d47cd39b7bce1b067670e558d1a",
+  "source_executable_sha256": "c06e9b1634b8dbb3f44d1726c691fc497867b977601d3ad67b02dc025a87ceb5",
+  "writer_address": "0x5dfab0",
+  "fixtures": [
+    {
+      "path": "constructed-mode1.prst",
+      "bytes": 1224,
+      "sha256": "fa36cee1e830911fbaed095a6f3be3d0cc5ca41a8651bbaee4c4a39690ffe289",
+      "additive_checksum": 22708,
+      "description": "Constructed mode 1; hardware-captured raw stream, opaque header bytes."
+    },
+    {
+      "path": "constructed-mode2.prst",
+      "bytes": 3032,
+      "sha256": "907e07997a42d0f35358a6bf1217b1ef6c91b2ed5caad173e6e2985d07fe520d",
+      "additive_checksum": 251620,
+      "description": "Constructed mode 2; synthetic opaque RISU bytes, not a genuine User IR."
+    }
+  ]
+}

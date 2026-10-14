@@ -1,0 +1,330 @@
+{
+  "purpose": "Lossless settings baselines; not a firmware identity or universal device profile",
+  "query": "kind11 empty1006",
+  "files": [
+    {
+      "file": "baseline.payload.bin",
+      "sha256": "ab28305636054758acdf3155677fb206651cdd8f017cf7b9b332c0855041c01e",
+      "source": "analysis/implementation/global-baseline",
+      "bytes": 846,
+      "classification": "read-only-connected-GP-200",
+      "wire_kind": 18
+    },
+    {
+      "file": "repeat.payload.bin",
+      "sha256": "94b527d8ba13732fbfa7b47e22421d320d4224f17b17bf7f50031b399f929771",
+      "source": "analysis/implementation/global-baseline-repeat",
+      "bytes": 846,
+      "classification": "read-only-connected-GP-200",
+      "wire_kind": 18
+    },
+    {
+      "file": "repeat-2.payload.bin",
+      "sha256": "a1f4a1c8e33ff2e4781d07f8b39afdffd539bba6991898dd99a8e1279b523005",
+      "source": "analysis/implementation/global-baseline-repeat-2",
+      "bytes": 846,
+      "classification": "read-only-connected-GP-200",
+      "wire_kind": 18
+    },
+    {
+      "file": "repeat-3.payload.bin",
+      "sha256": "b0ed11cfb46705cd95133388d4595d569180fb76d89bb3bd0b9d41a1b2efe199",
+      "source": "analysis/implementation/global-baseline-repeat-3",
+      "bytes": 846,
+      "classification": "read-only-connected-GP-200",
+      "wire_kind": 18
+    },
+    {
+      "file": "repeat-4.payload.bin",
+      "sha256": "5b3f2b9add6ef168e474e6de7c53cbdc5d774f68a0d1a0e83c7aa6bb88afa6ac",
+      "source": "analysis/implementation/global-baseline-repeat-4",
+      "bytes": 846,
+      "classification": "read-only-connected-GP-200",
+      "wire_kind": 18
+    },
+    {
+      "file": "display-mode-before.payload.bin",
+      "sha256": "813014275d404cec31c15385368ef5addf44f97b97fbb7b92aa654a7b7a67044",
+      "source": "analysis/implementation/global-display-mode/globals-before.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "display-mode",
+      "stage": "before"
+    },
+    {
+      "file": "display-mode-after.payload.bin",
+      "sha256": "d2194a0e72b1972e52fb053cc91496aa47b6ea193da5ebf1f15483f22f76cbee",
+      "source": "analysis/implementation/global-display-mode/globals-after.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "display-mode",
+      "stage": "after"
+    },
+    {
+      "file": "display-mode-restored.payload.bin",
+      "sha256": "6a9664a6b53fd449fc5b2fe1f54263b9ded02dd055527b1abffbc99229746200",
+      "source": "analysis/implementation/global-display-mode/globals-restored.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "display-mode",
+      "stage": "restored"
+    },
+    {
+      "file": "input-level-before.payload.bin",
+      "sha256": "06ca31ad96dd572c9961a61e61eb5680a320dac117b7de68782d177a3b775440",
+      "source": "analysis/implementation/global-input-level/globals-before.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "input-level",
+      "stage": "before"
+    },
+    {
+      "file": "input-level-after.payload.bin",
+      "sha256": "7af5aa350b67b4f61d289c58829ad0b4942cb20ba960c2a0f6525eda1cecc64f",
+      "source": "analysis/implementation/global-input-level/globals-after.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "input-level",
+      "stage": "after"
+    },
+    {
+      "file": "input-level-restored.payload.bin",
+      "sha256": "bd260a51c62d7cdedc8a597b15412418d35a6fe3fcc9e3f83374252f687aa8b0",
+      "source": "analysis/implementation/global-input-level/globals-restored.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "input-level",
+      "stage": "restored"
+    },
+    {
+      "file": "eq-band-gain-before.payload.bin",
+      "sha256": "0b1df0a287a40fbfec29cc6f3b9aa4c3478edfa6379c47e750463bd2207482f7",
+      "source": "analysis/implementation/global-eq-band-gain/globals-before.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "eq-band-gain",
+      "stage": "before"
+    },
+    {
+      "file": "eq-band-gain-after.payload.bin",
+      "sha256": "bac2e43f9f88b31fac475e69c64fbdb34eb5dd3d64cf1d415888a6dbb23372e9",
+      "source": "analysis/implementation/global-eq-band-gain/globals-after.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "eq-band-gain",
+      "stage": "after"
+    },
+    {
+      "file": "eq-band-gain-restored.payload.bin",
+      "sha256": "d76a657db7b4038eef7d7cd9c92f50e138043f541a1db1c904216eae8e99af0e",
+      "source": "analysis/implementation/global-eq-band-gain/globals-restored.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "eq-band-gain",
+      "stage": "restored"
+    },
+    {
+      "file": "stopped-drum-tempo-before.payload.bin",
+      "sha256": "612ddc8d204e465a83711d16dd5f74c3d174505c2d03656bf9740e7b75afe823",
+      "source": "analysis/implementation/global-drum-tempo/globals-before.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-tempo",
+      "stage": "before"
+    },
+    {
+      "file": "stopped-drum-tempo-after.payload.bin",
+      "sha256": "9ea8721a4ef3359913a931165426464f98b8e9d3a3fed82f76e834b76c4bab19",
+      "source": "analysis/implementation/global-drum-tempo/globals-after.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-tempo",
+      "stage": "after"
+    },
+    {
+      "file": "stopped-drum-tempo-restored.payload.bin",
+      "sha256": "9a69c05e5c44bfa4d1067725b38edd1249e8dd36726916d58a0ccab747760461",
+      "source": "analysis/implementation/global-drum-tempo/globals-restored.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-tempo",
+      "stage": "restored"
+    },
+    {
+      "file": "stopped-drum-volume-before.payload.bin",
+      "sha256": "75b186596630d02c1391c9d0399cbfab027ea5f3ec99b10bff5b878ae2a15014",
+      "source": "analysis/implementation/global-stopped-drum-volume/globals-before.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-volume",
+      "stage": "before"
+    },
+    {
+      "file": "stopped-drum-volume-after.payload.bin",
+      "sha256": "0035f78f4d1b21bab9b150f6bea87e6fd75a7d521ed7d738be1d33399865933a",
+      "source": "analysis/implementation/global-stopped-drum-volume/globals-after.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-volume",
+      "stage": "after"
+    },
+    {
+      "file": "stopped-drum-volume-restored.payload.bin",
+      "sha256": "54dda28a463e69e3c5a6332b7d26b1183ad66092405ecac86ed5f9dd8c574432",
+      "source": "analysis/implementation/global-stopped-drum-volume/globals-restored.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-volume",
+      "stage": "restored"
+    },
+    {
+      "file": "stopped-drum-pattern-before.payload.bin",
+      "sha256": "3ab3795d3425623346f1babf5ee7a9bc57674df6667a8aa8f218472441a56b34",
+      "source": "analysis/implementation/global-stopped-drum-pattern/globals-before.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-pattern",
+      "stage": "before"
+    },
+    {
+      "file": "stopped-drum-pattern-after.payload.bin",
+      "sha256": "fca056b60a92d58538ab7c0bf44a65b5546c9ca5101520f8d00d5dd59b7aab25",
+      "source": "analysis/implementation/global-stopped-drum-pattern/globals-after.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-pattern",
+      "stage": "after"
+    },
+    {
+      "file": "stopped-drum-pattern-restored.payload.bin",
+      "sha256": "fee9a2ad20e030a648a87aa460170326308b9ba042e57f651e41721ac54619ab",
+      "source": "analysis/implementation/global-stopped-drum-pattern/globals-restored.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "stopped-drum-pattern",
+      "stage": "restored"
+    },
+    {
+      "file": "quiet-drum-play-before.payload.bin",
+      "sha256": "e757d2c469503c8b59ba835df012d240c4ead41943b16d2c3c66ad5e4d3af129",
+      "source": "analysis/implementation/global-quiet-drum-play/globals-before.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "quiet-drum-play",
+      "stage": "before"
+    },
+    {
+      "file": "quiet-drum-play-after.payload.bin",
+      "sha256": "efa2b4b8df82557330565b56c4ef05753fc90333cecb84f1f3e18b8daf90cef4",
+      "source": "analysis/implementation/global-quiet-drum-play/globals-after.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "quiet-drum-play",
+      "stage": "after"
+    },
+    {
+      "file": "quiet-drum-play-restored.payload.bin",
+      "sha256": "ec0ee3d9b024573ad575161a31617c29252bff44a58be6f2c6d63b4d002d9699",
+      "source": "analysis/implementation/global-quiet-drum-play/globals-restored.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "quiet-drum-play",
+      "stage": "restored"
+    },
+    {
+      "file": "quiet-drum-play-playing.payload.bin",
+      "sha256": "6d7edbc0cd8d43addf6190c6cbf58c91c63a3e435148fa51a5d17988c96dc7c4",
+      "source": "analysis/implementation/global-quiet-drum-play/globals-playing.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "quiet-drum-play",
+      "stage": "playing"
+    },
+    {
+      "file": "quiet-drum-play-stopped.payload.bin",
+      "sha256": "78da5fdbcb16ec4b43e4a72405926391f2f96459268840f5f8378dc45f8eba2c",
+      "source": "analysis/implementation/global-quiet-drum-play/globals-stopped.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "quiet-drum-play",
+      "stage": "stopped"
+    },
+    {
+      "file": "inactive-footswitch-before.payload.bin",
+      "sha256": "6ea31f7596d0e6a06fcd5bb51328081926ca0caf59fed80c17efd0d4eb60ff01",
+      "source": "analysis/implementation/global-inactive-footswitch/globals-before.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "inactive-footswitch",
+      "stage": "before"
+    },
+    {
+      "file": "inactive-footswitch-after.payload.bin",
+      "sha256": "4b53fdf9f00374bf1df80cd2145677e7c26297b033450efb7b831665d0af29e4",
+      "source": "analysis/implementation/global-inactive-footswitch/globals-after.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "inactive-footswitch",
+      "stage": "after"
+    },
+    {
+      "file": "inactive-footswitch-restored.payload.bin",
+      "sha256": "5d591968812afc86bb31339a855a805ea5e55f26cb6bfd12d84c593ad380f493",
+      "source": "analysis/implementation/global-inactive-footswitch/globals-restored.payload.bin",
+      "bytes": 846,
+      "classification": "connected-GP-200-reversible-global-control",
+      "wire_kind": 18,
+      "profile": "inactive-footswitch",
+      "stage": "restored"
+    }
+  ],
+  "comparison_exclusions": {
+    "1007": [
+      54,
+      55,
+      56
+    ],
+    "1002": [
+      6,
+      7
+    ],
+    "000a": "2/3 and bytes after first NUL in name16"
+  },
+  "opaque_notice": "1007body54/55 observed varying; 56 omitted by nativecopier. All unknown bytes remain in raw snapshots.",
+  "positive_profiles": [
+    "display-mode",
+    "input-level",
+    "eq-band-gain",
+    "stopped-drum-tempo",
+    "stopped-drum-volume",
+    "stopped-drum-pattern",
+    "quiet-drum-play",
+    "inactive-footswitch"
+  ],
+  "proof_limit": "Control-state equivalence with enumerated exclusions, not whole raw restoration, firmware identity, power-cycle persistence or all-field hardware parity."
+}

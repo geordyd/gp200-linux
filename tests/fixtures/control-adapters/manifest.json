@@ -1,0 +1,150 @@
+{
+  "kind": "independent Python wire requests validated by actual GP-200 readback; not Windows runtime captures",
+  "firmware": null,
+  "proofs": [
+    {
+      "profile": "mod-sync-paired",
+      "source": "analysis/implementation/control-mod-sync-paired/current-before.payload.bin",
+      "fixture": "mod-sync-paired-before.payload.bin",
+      "sha256": "a8a22be1b423a85b0fe2698db6eff8604a944228767bd35f580e91c223d9a1ce",
+      "result": "analysis/implementation/control-mod-sync-paired/result.json",
+      "requests": [
+        {
+          "source": "analysis/implementation/control-mod-sync-paired/step-00-request.bin",
+          "fixture": "mod-sync-paired-step-00-request.bin",
+          "sha256": "80dffde7da50b90ad3ae737ec5d6b80a708a2b879434680f6b55fd4fd31215da"
+        },
+        {
+          "source": "analysis/implementation/control-mod-sync-paired/step-01-request.bin",
+          "fixture": "mod-sync-paired-step-01-request.bin",
+          "sha256": "6f5e840e3c09e238b909e4b723e61dfcbd1b0120b4078df077e226cdcf0e3a42"
+        },
+        {
+          "source": "analysis/implementation/control-mod-sync-paired/step-02-request.bin",
+          "fixture": "mod-sync-paired-step-02-request.bin",
+          "sha256": "8148b041a5c42a4c056526bee0e73be76ac05d68b2739941e0bc22bbe5ab7e21"
+        },
+        {
+          "source": "analysis/implementation/control-mod-sync-paired/step-03-request.bin",
+          "fixture": "mod-sync-paired-step-03-request.bin",
+          "sha256": "025db3d4396304f7d1ad4f55cec849bcb2563553a312fdeb53356ce096c5c375"
+        },
+        {
+          "source": "analysis/implementation/control-mod-sync-paired/step-04-request.bin",
+          "fixture": "mod-sync-paired-step-04-request.bin",
+          "sha256": "d984f0954fd29ea8b5981a10adf9b874a400b30791f7994fcc225514cbf0259c"
+        },
+        {
+          "source": "analysis/implementation/control-mod-sync-paired/step-05-request.bin",
+          "fixture": "mod-sync-paired-step-05-request.bin",
+          "sha256": "6f5e840e3c09e238b909e4b723e61dfcbd1b0120b4078df077e226cdcf0e3a42"
+        }
+      ]
+    },
+    {
+      "profile": "dly-sync-paired",
+      "source": "analysis/implementation/control-dly-sync-paired/current-before.payload.bin",
+      "fixture": "dly-sync-paired-before.payload.bin",
+      "sha256": "fcd0f13835f2d472e0981790deabb3a54bcba7477b65a5143a0d01cbc2feacf9",
+      "result": "analysis/implementation/control-dly-sync-paired/result.json",
+      "requests": [
+        {
+          "source": "analysis/implementation/control-dly-sync-paired/step-00-request.bin",
+          "fixture": "dly-sync-paired-step-00-request.bin",
+          "sha256": "18bb59f56aee2e197826eb2ce2d2f4ded09f9a2afc505a8f82fd5a55b1ece7f7"
+        },
+        {
+          "source": "analysis/implementation/control-dly-sync-paired/step-01-request.bin",
+          "fixture": "dly-sync-paired-step-01-request.bin",
+          "sha256": "711f558c9728db90b0e17ed74375d4edea43899f8ef2787e26f588d23a28731e"
+        },
+        {
+          "source": "analysis/implementation/control-dly-sync-paired/step-02-request.bin",
+          "fixture": "dly-sync-paired-step-02-request.bin",
+          "sha256": "609ae25d0b365fd0c3aae65947611fefe4a4e38f811a7e10243a4fcb48e90da4"
+        },
+        {
+          "source": "analysis/implementation/control-dly-sync-paired/step-03-request.bin",
+          "fixture": "dly-sync-paired-step-03-request.bin",
+          "sha256": "f50fb7dde22474e40240ded21e1bdb72cca82026d3c9d55b762088f325a22294"
+        },
+        {
+          "source": "analysis/implementation/control-dly-sync-paired/step-04-request.bin",
+          "fixture": "dly-sync-paired-step-04-request.bin",
+          "sha256": "1b3ba4ea44c53a0d1338ed76d5d30e61fdedb6dfae70731ed7f9a110a79ba8a0"
+        },
+        {
+          "source": "analysis/implementation/control-dly-sync-paired/step-05-request.bin",
+          "fixture": "dly-sync-paired-step-05-request.bin",
+          "sha256": "711f558c9728db90b0e17ed74375d4edea43899f8ef2787e26f588d23a28731e"
+        }
+      ]
+    },
+    {
+      "profile": "cab-low",
+      "source": "analysis/implementation/control-cab-low/current-before.payload.bin",
+      "fixture": "cab-low-before.payload.bin",
+      "sha256": "be9496138d126e2074b63c1716622eb3eb7cfe81aaa7931bcbd33c13fbfbbaec",
+      "result": "analysis/implementation/control-cab-low/result.json",
+      "requests": [
+        {
+          "source": "analysis/implementation/control-cab-low/step-00-request.bin",
+          "fixture": "cab-low-step-00-request.bin",
+          "sha256": "a5c9f6e54acc7126b6bcca7c637e6550a9e708178421a2a63dfd3e6b9e56603a"
+        },
+        {
+          "source": "analysis/implementation/control-cab-low/step-01-request.bin",
+          "fixture": "cab-low-step-01-request.bin",
+          "sha256": "f592d80aecbfd31238ac08780341fc6fd050583c9ac8873767f9f8d7bd525b1a"
+        }
+      ]
+    },
+    {
+      "profile": "cab-high",
+      "source": "analysis/implementation/control-cab-high/current-before.payload.bin",
+      "fixture": "cab-high-before.payload.bin",
+      "sha256": "c8181abd2981683ae6cc791c8c3dc9cd4e05387845fb7035b201c8fa15e1bba5",
+      "result": "analysis/implementation/control-cab-high/result.json",
+      "requests": [
+        {
+          "source": "analysis/implementation/control-cab-high/step-00-request.bin",
+          "fixture": "cab-high-step-00-request.bin",
+          "sha256": "717f296846089134b60f877623e270f1bcd5fde245908f064c2b94a1ad742888"
+        },
+        {
+          "source": "analysis/implementation/control-cab-high/step-01-request.bin",
+          "fixture": "cab-high-step-01-request.bin",
+          "sha256": "356bef68e766bcad521e688188fa07658b53cf68cd852e92f4fcf4fb3d72fd09"
+        }
+      ]
+    },
+    {
+      "profile": "wah-eq",
+      "source": "analysis/implementation/control-wah-eq/current-before.payload.bin",
+      "fixture": "wah-eq-before.payload.bin",
+      "sha256": "f11080a52b7be0b6cbf4f46ef6539cf2128f320c7264004e1dedbeeb7f76b95a",
+      "result": "analysis/implementation/control-wah-eq/result.json",
+      "requests": [
+        {
+          "source": "analysis/implementation/control-wah-eq/step-00-request.bin",
+          "fixture": "wah-eq-step-00-request.bin",
+          "sha256": "2eac3d6f26ec32b96d3b2592bd743b96275ff80de8683ffeb14944c61bb743e3"
+        }
+      ]
+    },
+    {
+      "profile": "dly-trail",
+      "source": "analysis/implementation/control-dly-trail/current-before.payload.bin",
+      "fixture": "dly-trail-before.payload.bin",
+      "sha256": "7c9b34cdf6050f6c03d628064d36c838e32de8fd393f05f56198464b20785f1d",
+      "result": "analysis/implementation/control-dly-trail/result.json",
+      "requests": [
+        {
+          "source": "analysis/implementation/control-dly-trail/step-00-request.bin",
+          "fixture": "dly-trail-step-00-request.bin",
+          "sha256": "00512ecf2e26419ea71fe833a53e9f4f7d06f85c441176274558c79001c5e54e"
+        }
+      ]
+    }
+  ]
+}

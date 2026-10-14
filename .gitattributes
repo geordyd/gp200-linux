@@ -1,0 +1,4 @@
+# Retain upstream fixture and native-source whitespace.
+tests/fixtures/assets/upstream-*.nam whitespace=-blank-at-eof
+crates/gp200-assets/native/r8brain/** whitespace=-blank-at-eol
+packaging/licenses/** whitespace=-blank-at-eof

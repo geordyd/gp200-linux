@@ -1,0 +1,142 @@
+[
+  {
+    "file": "nr-before.payload.bin",
+    "module": 4,
+    "source": "analysis/implementation/model-nr-roundtrip/after-select.payload.bin",
+    "sha256": "177f831b687b71ccca703932ab1a16f992b0444a64c74a34296669486c8a4a08",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "nr-after.payload.bin",
+    "module": 4,
+    "source": "analysis/implementation/model-nr-roundtrip/after-model.payload.bin",
+    "sha256": "68cd53465a878925bbc087fd65db531f621880232ce72a7e4a018a480e4df8d8",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "cab-before.payload.bin",
+    "module": 5,
+    "source": "analysis/implementation/model-cab-supzep-preserve/current-before.payload.bin",
+    "sha256": "e2bd23bbc9e6bebd0ad6f258190590ce81796851c663714e5a45d43b92620f88",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "cab-after.payload.bin",
+    "module": 5,
+    "source": "analysis/implementation/model-cab-supzep-preserve/edited.payload.bin",
+    "sha256": "584a2eb660a79de5c60cbe642c3041debbb829405aeb17b5de1279a3b14e6aa2",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "eq-before.payload.bin",
+    "module": 6,
+    "source": "analysis/implementation/model-eq-preserve-return/current-before.payload.bin",
+    "sha256": "5b5df473eb657384d245c001f8d3c732ddb0353ca61d088a53911531c452d548",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "eq-after.payload.bin",
+    "module": 6,
+    "source": "analysis/implementation/model-eq-preserve-return/edited.payload.bin",
+    "sha256": "3fbda8af0c1cf2cf7286ba1e08b4f51ecfd3e2962d13429e5d72a14e2ea9a0f9",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "eq-return.payload.bin",
+    "module": 6,
+    "source": "analysis/implementation/model-eq-preserve-return/wire-returned.payload.bin",
+    "sha256": "655be0e2c0d94aa8b9ce176b04dc54c8271df24ed265bfcbe46c1c0ecf1d13c3",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "mod-before.payload.bin",
+    "module": 7,
+    "source": "analysis/implementation/model-mod-gchorus-defaults/current-before.payload.bin",
+    "sha256": "7709f7da7d7ad91c5be4b2f44526d7bed25c69af415a27d9973209319875910f",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "mod-after.payload.bin",
+    "module": 7,
+    "source": "analysis/implementation/model-mod-gchorus-defaults/edited.payload.bin",
+    "sha256": "97484a2d865c7b0b82819f146155258eb7eb3a78075c0ec1b16a6f2b664ea582",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "dly-before.payload.bin",
+    "module": 8,
+    "source": "analysis/implementation/model-dly-preserve-return/current-before.payload.bin",
+    "sha256": "0d6ef0cca4c2d08e1a9bb67f676e5699ca61891aab6848377a0ba9cd276e5f03",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "dly-after.payload.bin",
+    "module": 8,
+    "source": "analysis/implementation/model-dly-preserve-return/edited.payload.bin",
+    "sha256": "af8982e72049b1f82e4182bcf7c7e0738c9a1995598ca221f7504b8bf70fd15d",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "dly-return.payload.bin",
+    "module": 8,
+    "source": "analysis/implementation/model-dly-preserve-return/wire-returned.payload.bin",
+    "sha256": "67bef856047a7840b01e9a65113f8abbfe678c3f4d2b5eefd9442e2d69b1f741",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "rvb-before.payload.bin",
+    "module": 9,
+    "source": "analysis/implementation/model-rvb-hall-defaults/current-before.payload.bin",
+    "sha256": "787eb8cfe3c1d0f6485f576354085e9f95b8b5f76836df0a9899592bba8fd3b3",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "rvb-after.payload.bin",
+    "module": 9,
+    "source": "analysis/implementation/model-rvb-hall-defaults/edited.payload.bin",
+    "sha256": "b28a973a62aec21b7fcec0ee0091120ee6f794657f4915ed0b83fba004f71c1d",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "cab-return-before.payload.bin",
+    "module": 5,
+    "source": "analysis/implementation/model-cab-preserve-return/edited.payload.bin",
+    "sha256": "7efcdada3f2a55b6e1363aab3a661cb2a4e1b436e5dee3518374ecbfdf666d92",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "cab-return.payload.bin",
+    "module": 5,
+    "source": "analysis/implementation/model-cab-preserve-return/wire-returned.payload.bin",
+    "sha256": "d80750bb1080715d11656e260f35accda251b01e171fc6d77adab8b2e656433e",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "mod-return-before.payload.bin",
+    "module": 7,
+    "source": "analysis/implementation/model-mod-preserve-return/edited.payload.bin",
+    "sha256": "14ca4fed68515a4a60b87640f685ac905150f0bab8ae43d807175de0e55d30d5",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "mod-return.payload.bin",
+    "module": 7,
+    "source": "analysis/implementation/model-mod-preserve-return/wire-returned.payload.bin",
+    "sha256": "41bcdef902e8b609ccd237b0e18a76ff7e3a293638ee9a60178a8ce13def79a6",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "rvb-return-before.payload.bin",
+    "module": 9,
+    "source": "analysis/implementation/model-rvb-preserve-return/edited.payload.bin",
+    "sha256": "25aff209b37cdbd8c985a922923b01a2d6184a8eaaa11f87ebdec685373ef85e",
+    "evidence": "LiveVerified"
+  },
+  {
+    "file": "rvb-return.payload.bin",
+    "module": 9,
+    "source": "analysis/implementation/model-rvb-preserve-return/wire-returned.payload.bin",
+    "sha256": "4b6c129bf066c7bd19b3668c9effd4c44f18fb59238d308a87196f1de0eebeed",
+    "evidence": "LiveVerified"
+  }
+]

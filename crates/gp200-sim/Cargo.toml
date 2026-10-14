@@ -1,0 +1,22 @@
+[package]
+name = "gp200-sim"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gp200-protocol.workspace = true
+gp200-domain.workspace = true
+gp200-transport.workspace = true
+gp200-catalog.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+crossbeam-channel.workspace = true
+sha2.workspace = true
+
+[dev-dependencies]
+gp200-library.workspace = true
+
+[lints]
+workspace = true

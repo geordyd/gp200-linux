@@ -1,0 +1,22 @@
+#!/bin/sh
+# This launcher and the native executable stay next to one another.
+set -eu
+GP200_LAUNCHER_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ "${1-}" = "cli" ]; then
+    shift
+    exec "$GP200_LAUNCHER_DIR/gp200-cli" "$@"
+fi
+if [ "${1-}" = "--x11" ]; then
+    shift
+    if [ -z "${DISPLAY-}" ]; then
+        printf '%s\n' 'GP200 Linux: --x11 requires a working DISPLAY (X11 or XWayland).' >&2
+        exit 2
+    fi
+    unset WAYLAND_DISPLAY WAYLAND_SOCKET
+fi
+# A desktop launcher with no selected %f leaves a trailing --open. The GUI's
+# actual CLI still rejects a missing path; only this desktop adapter removes it.
+if [ "$#" -eq 1 ] && [ "$1" = "--open" ]; then
+    shift
+fi
+exec "$GP200_LAUNCHER_DIR/gp200-gui" "$@"

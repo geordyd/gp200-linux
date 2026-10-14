@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+GP200_APPDIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+export LD_LIBRARY_PATH="$GP200_APPDIR/usr/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+exec "$GP200_APPDIR/usr/bin/gp200-studio" "$@"

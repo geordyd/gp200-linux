@@ -1,0 +1,49 @@
+{
+  "schema": "gp200-studio.movement-preservation-policy",
+  "schema_version": 1,
+  "id": "gp200-inactive-movement-preservation-existing-2026-10-11-v1",
+  "status": "proposed-binding-of-existing-accepted-comparisons",
+  "pure_prepared_review_observation_to_backup": "exact raw hash; unchanged",
+  "preset_comparison": {
+    "implementation": "gp200_library::stored_readback_equal",
+    "corroborating_implementation": "gp200_transport::actor::preset_records_equal",
+    "equal_record_count_order_command_and_body_size": true,
+    "equal_context_and_embedded_slots": true,
+    "preserved_transfer_kind_equal": true,
+    "written_target_kind_policy": "existing full-stored expected/readback comparison; retain both kinds",
+    "excluded_offsets": [
+      {"command": 2, "body_bytes": 88, "offsets": [15]},
+      {"command": 8, "body_bytes": 16, "offsets": [15]},
+      {"command": 15, "body_bytes": 8, "offsets": [2, 3]}
+    ]
+  },
+  "global_comparison": {
+    "implementation": "gp200_protocol::GlobalRecords::control_state_equal",
+    "equal_transfer_kind_record_count_order_command_and_body_size": true,
+    "excluded_offsets": [
+      {"command": 4103, "body_bytes": 72, "offsets": [54, 55, 56]},
+      {"command": 4098, "body_bytes": 8, "offsets": [6, 7]},
+      {"command": 10, "body_bytes": 20, "offsets": [2, 3], "exclude_name_bytes_strictly_after_first_nul_from_offset": 4}
+    ]
+  },
+  "strict": {
+    "runtime_command": 4096,
+    "all_three_runtime_u16_words": true,
+    "auto_cab_command": 4112,
+    "current_selector": "original selected slot; must remain outside affected interval",
+    "physical_expression_overlay": false,
+    "patch_changed_latch_mask": false,
+    "unknown_records_and_parameter_bits": true,
+    "root_scratch_hardware_runtime": [0, 1, 1]
+  },
+  "retain": {
+    "complete_original_and_actual_raw_frames": true,
+    "all_raw_differences": true,
+    "raw_sha256_including_transfer_kind": true,
+    "description": "preserved under pinned policy; never claim exact raw equality when excluded bytes differ"
+  },
+  "prior_acceptance": "analysis/implementation/packaged-readonly-root-review/result.json",
+  "prior_root_comparator": "analysis/implementation/packaged-readonly-acceptance/run_packaged_readonly.py::compare_states",
+  "policy_is_hardware_write_authority": false,
+  "physical_movement_accepted": false
+}

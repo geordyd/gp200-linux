@@ -1,0 +1,44 @@
+[workspace]
+members = ["crates/gp200-domain", "crates/gp200-protocol", "crates/gp200-transport", "crates/gp200-catalog", "crates/gp200-sim", "crates/gp200-app", "crates/gp200-library", "crates/gp200-assets", "crates/gp200-gui", "crates/gp200-cli"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "=1.0.229", features = ["derive", "rc"] }
+serde_json = "=1.0.151"
+thiserror = "=2.0.21"
+crossbeam-channel = "=0.5.17"
+midir = "=0.11.1"
+eframe = { version = "=0.36.2", default-features = false, features = ["accesskit", "default_fonts", "glow", "wayland", "x11", "persistence", "__screenshot", "inspection"] }
+rfd = { version = "=0.17.2", default-features = false, features = ["xdg-portal"] }
+image = { version = "=0.25.10", default-features = false, features = ["png"] }
+sha2 = "=0.10.9"
+fs2 = "=0.4.3"
+alsa = "=0.12.1"
+zip = { version = "=8.6.0", default-features = false, features = ["deflate"] }
+gp200-protocol = { path = "crates/gp200-protocol" }
+gp200-domain = { path = "crates/gp200-domain" }
+gp200-transport = { path = "crates/gp200-transport" }
+gp200-catalog = { path = "crates/gp200-catalog" }
+gp200-sim = { path = "crates/gp200-sim" }
+gp200-app = { path = "crates/gp200-app" }
+gp200-library = { path = "crates/gp200-library" }
+gp200-assets = { path = "crates/gp200-assets" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+unexpected_cfgs = { level = "warn", check-cfg = ["cfg(gp200_private_evidence)"] }
+
+[workspace.lints.clippy]
+# Queue submission deliberately returns the original unsent command by value.
+result_large_err = "allow"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "debuginfo"

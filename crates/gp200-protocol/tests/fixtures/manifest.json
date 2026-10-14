@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "executable_sha256": "c06e9b1634b8dbb3f44d1726c691fc497867b977601d3ad67b02dc025a87ceb5",
+  "fixtures": [
+    {
+      "file": "identity-original.bin",
+      "source": "analysis/live/connection-query-response.bin",
+      "sha256": "f4f5d62de886413a9d93e25dc726dbfbc5a900cb2d323a0989e78f665b228434",
+      "bytes": 30,
+      "origin": "actual-hardware-capture",
+      "variant": "GP-200",
+      "firmware": null,
+      "usb_mode": "Normal",
+      "captured_date": "2026-10-10",
+      "observation_status": "verified capture bytes; semantics limited to stated operation"
+    },
+    {
+      "file": "current-original.bin",
+      "source": "analysis/live/read-current-response.bin",
+      "sha256": "8ccde29094075ee717b316162b8b94a7dedb2c36e801a53d637dae7b3338a2b2",
+      "bytes": 2450,
+      "origin": "actual-hardware-capture",
+      "variant": "GP-200",
+      "firmware": null,
+      "usb_mode": "Normal",
+      "captured_date": "2026-10-10",
+      "observation_status": "verified capture bytes; semantics limited to stated operation"
+    },
+    {
+      "file": "stored-23-original.bin",
+      "source": "analysis/live/read-preset-response.bin",
+      "sha256": "e9b062bb53b8cbc70b9acb14542b3595363f9652854b7b8a6a35135625c5e72c",
+      "bytes": 2450,
+      "origin": "actual-hardware-capture",
+      "variant": "GP-200",
+      "firmware": null,
+      "usb_mode": "Normal",
+      "captured_date": "2026-10-10",
+      "observation_status": "verified capture bytes; semantics limited to stated operation"
+    },
+    {
+      "file": "identity-with-notification.bin",
+      "source": "analysis/implementation/hardware-baseline/identity.bin",
+      "sha256": "0dde9d91179cd7b65ffa844cc5dc6d20a03d6634aa91b64b3428720d9fc1947d",
+      "bytes": 76,
+      "origin": "actual-hardware-capture",
+      "variant": "GP-200",
+      "firmware": null,
+      "usb_mode": "Normal",
+      "captured_date": "2026-10-10",
+      "observation_status": "verified capture bytes; semantics limited to stated operation"
+    },
+    {
+      "file": "current-baseline.bin",
+      "source": "analysis/implementation/hardware-baseline/current.bin",
+      "sha256": "f4e3c8e390747db9edd1d9f05c6de5861c9da726557262c4ae88ad6f0ccbc963",
+      "bytes": 2450,
+      "origin": "actual-hardware-capture",
+      "variant": "GP-200",
+      "firmware": null,
+      "usb_mode": "Normal",
+      "captured_date": "2026-10-10",
+      "observation_status": "verified capture bytes; semantics limited to stated operation"
+    },
+    {
+      "file": "parameter-edit-request.bin",
+      "source": "analysis/implementation/parameter-roundtrip/edit-request.bin",
+      "sha256": "e72f80f59e17b976e37df4de154041ead5d34c90378fab812076894982efdb24",
+      "bytes": 62,
+      "origin": "actual-hardware-capture",
+      "variant": "GP-200",
+      "firmware": null,
+      "usb_mode": "Normal",
+      "captured_date": "2026-10-10",
+      "observation_status": "verified capture bytes; semantics limited to stated operation"
+    },
+    {
+      "file": "parameter-restore-request.bin",
+      "source": "analysis/implementation/parameter-roundtrip/restore-request.bin",
+      "sha256": "aea658862adb5fcfafc8897dc8c9862ac6d6bcb881fc0f5fa07a54ac2b78ce99",
+      "bytes": 62,
+      "origin": "actual-hardware-capture",
+      "variant": "GP-200",
+      "firmware": null,
+      "usb_mode": "Normal",
+      "captured_date": "2026-10-10",
+      "observation_status": "verified capture bytes; semantics limited to stated operation"
+    }
+  ]
+}

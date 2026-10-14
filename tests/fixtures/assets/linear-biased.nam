@@ -1,0 +1,23 @@
+{
+  "version": "0.7.0",
+  "architecture": "Linear",
+  "sample_rate": 48000,
+  "metadata": {
+    "fixture": "synthetic deterministic acceptance profile; no guitar-tone claim"
+  },
+  "config": {
+    "receptive_field": 7,
+    "bias": true,
+    "implementation": "direct"
+  },
+  "weights": [
+    0.012,
+    0.01184282256727099,
+    0.011671688782303846,
+    0.011487200981953055,
+    0.01128996674448434,
+    0.01108059784505928,
+    0.0108597092306879,
+    -0.023
+  ]
+}

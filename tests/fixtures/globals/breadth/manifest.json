@@ -1,0 +1,1657 @@
+{
+  "schema": 1,
+  "classification": "independent-physical-GP-200-captures",
+  "comparison": "GlobalRecords::control_state_equal; raw bytes preserved exactly",
+  "entries": [
+    {
+      "name": "input-level",
+      "kind": "general",
+      "field": "InputLevel",
+      "source": "analysis/implementation/global-input-level",
+      "profile": "input-level",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "input-level-before.payload.bin",
+          "sha256": "06ca31ad96dd572c9961a61e61eb5680a320dac117b7de68782d177a3b775440"
+        },
+        "after.payload.bin": {
+          "file": "input-level-after.payload.bin",
+          "sha256": "7af5aa350b67b4f61d289c58829ad0b4942cb20ba960c2a0f6525eda1cecc64f"
+        },
+        "restored.payload.bin": {
+          "file": "input-level-restored.payload.bin",
+          "sha256": "bd260a51c62d7cdedc8a597b15412418d35a6fe3fcc9e3f83374252f687aa8b0"
+        },
+        "request.bin": {
+          "file": "input-level-request.bin",
+          "sha256": "2f5c45653367a79f58656a24ff858b09972082c6925f81d5988ed0d7ea211506"
+        },
+        "restore-request.bin": {
+          "file": "input-level-restore-request.bin",
+          "sha256": "b6bdee196ace7a5858115d9dc78ef4bfb62ed77c5460ea5f550d8e6996efc71a"
+        }
+      }
+    },
+    {
+      "name": "input-mode",
+      "kind": "general",
+      "field": "InputMode",
+      "source": "analysis/implementation/global-general-input-mode",
+      "profile": "general-input-mode",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "input-mode-before.payload.bin",
+          "sha256": "c0f09c9bffcacc5d8d9050a40ad03ae2eaff03cb8fbb77706d56eedf98049517"
+        },
+        "after.payload.bin": {
+          "file": "input-mode-after.payload.bin",
+          "sha256": "e39c194fe0c74046521209e7afd45e1f39468497bfca57b65ce6a9ef2e7e1c54"
+        },
+        "restored.payload.bin": {
+          "file": "input-mode-restored.payload.bin",
+          "sha256": "09b467599fb7b5a0b2c73f030c56050c8438af3200860f09a29cd88142c78b0e"
+        },
+        "request.bin": {
+          "file": "input-mode-request.bin",
+          "sha256": "5a6697c513bb54fe0009052ed5373fa0db22f7be8a7a57f03b59becfe0c07d77"
+        },
+        "restore-request.bin": {
+          "file": "input-mode-restore-request.bin",
+          "sha256": "aa5d23c90adc9e2a38bd05d8034ad4e7da3802e2e2594f2646fe30891977e2dd"
+        }
+      }
+    },
+    {
+      "name": "no-cab-left",
+      "kind": "general",
+      "field": "NoCabLeft",
+      "source": "analysis/implementation/global-general-no-cab-left",
+      "profile": "general-no-cab-left",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "no-cab-left-before.payload.bin",
+          "sha256": "e433b4196b1ebce0a6c75862b34c57799de391b482efdc0b9c9594d2fad58250"
+        },
+        "after.payload.bin": {
+          "file": "no-cab-left-after.payload.bin",
+          "sha256": "f926e94d5f527a626fa68a36f82e07dbf8f66eb82e02a0ec625612afa6cb9721"
+        },
+        "restored.payload.bin": {
+          "file": "no-cab-left-restored.payload.bin",
+          "sha256": "60478d1716cb5c12dc1ca36b90ffce30b6d48ec1aa4f8f0dc7dd10ab7acb118f"
+        },
+        "request.bin": {
+          "file": "no-cab-left-request.bin",
+          "sha256": "e2735c3cda7301a1153389003f4a6b6aacc2a8ddb1ffbb2418e2a52c2d1291ce"
+        },
+        "restore-request.bin": {
+          "file": "no-cab-left-restore-request.bin",
+          "sha256": "7905038493f216e56cf67dc1c12a4b18e5d3644f3810b8d81f7de369f526706f"
+        }
+      }
+    },
+    {
+      "name": "no-cab-right",
+      "kind": "general",
+      "field": "NoCabRight",
+      "source": "analysis/implementation/global-general-no-cab-right",
+      "profile": "general-no-cab-right",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "no-cab-right-before.payload.bin",
+          "sha256": "d08c2092589029378f046eaf8fba537f4cc6359d140fcce312268839ff9287af"
+        },
+        "after.payload.bin": {
+          "file": "no-cab-right-after.payload.bin",
+          "sha256": "af939f64907b0942630e25519b994cf9a1766b570b08808d9bd504902ceea4d3"
+        },
+        "restored.payload.bin": {
+          "file": "no-cab-right-restored.payload.bin",
+          "sha256": "c106cdbca2f0257467f6335dac3bfcc4e592cbd6066a1934022fc96ae30cc87d"
+        },
+        "request.bin": {
+          "file": "no-cab-right-request.bin",
+          "sha256": "3f7067d26c54514efc95b546634b3726dc0fb28ae61ea12389d2e0d76fc8561a"
+        },
+        "restore-request.bin": {
+          "file": "no-cab-right-restore-request.bin",
+          "sha256": "50defcaf2efe6d1da51e676c64f73133bd06f930eee43a41a3a0161fd7e3c490"
+        }
+      }
+    },
+    {
+      "name": "recording-level",
+      "kind": "general",
+      "field": "RecordingLevel",
+      "source": "analysis/implementation/global-general-recording-level",
+      "profile": "general-recording-level",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "recording-level-before.payload.bin",
+          "sha256": "1bc9b43bcca89cbb38b410c794d8e4e47eb810c9caead59d42887debc3360c12"
+        },
+        "after.payload.bin": {
+          "file": "recording-level-after.payload.bin",
+          "sha256": "e7a944a0c445bb0593aaea9749ed23a979bcb402681efe60fad89ed3db016499"
+        },
+        "restored.payload.bin": {
+          "file": "recording-level-restored.payload.bin",
+          "sha256": "3b4d9d75a90f544c3ba0723735a9cb6f4130e184776cfe48d668acc55a93a9b1"
+        },
+        "request.bin": {
+          "file": "recording-level-request.bin",
+          "sha256": "734f3f2eb553ae23a861ef1e739ba708b4c720b689a5b539de1116cee03e44ba"
+        },
+        "restore-request.bin": {
+          "file": "recording-level-restore-request.bin",
+          "sha256": "5bf0e7661420a119096f1448a50f3e877723ef5383b86c722a7421fe69719e62"
+        }
+      }
+    },
+    {
+      "name": "recording-mode-left",
+      "kind": "general",
+      "field": "RecordingModeLeft",
+      "source": "analysis/implementation/global-general-recording-mode-left",
+      "profile": "general-recording-mode-left",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "recording-mode-left-before.payload.bin",
+          "sha256": "1564532116dc17d1073a5c1e53461931771f8bd5eee41073c96bb6a3cacede81"
+        },
+        "after.payload.bin": {
+          "file": "recording-mode-left-after.payload.bin",
+          "sha256": "c27c011334921276999ebc4486eb2271dd902260f27dd1d7461c29243d569603"
+        },
+        "restored.payload.bin": {
+          "file": "recording-mode-left-restored.payload.bin",
+          "sha256": "0590d1f4b3ee9f6042d7e07949565a2311f79622a1fd66be9f3370042d2dd234"
+        },
+        "request.bin": {
+          "file": "recording-mode-left-request.bin",
+          "sha256": "f0a3810e80d46fae122c4ea65dac12fb69e467eaad192302a96fb9782378eafa"
+        },
+        "restore-request.bin": {
+          "file": "recording-mode-left-restore-request.bin",
+          "sha256": "81ff6b7a8e3ada6a6753cda1ee419999063c94a05bcd9ef1433fe7fafa10b1db"
+        }
+      }
+    },
+    {
+      "name": "recording-mode-right",
+      "kind": "general",
+      "field": "RecordingModeRight",
+      "source": "analysis/implementation/global-general-recording-mode-right",
+      "profile": "general-recording-mode-right",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "recording-mode-right-before.payload.bin",
+          "sha256": "836634fccaceb081852d9b16140286b9a249900e584fc3aa4d39be0a83c1fc16"
+        },
+        "after.payload.bin": {
+          "file": "recording-mode-right-after.payload.bin",
+          "sha256": "8245cd9ac9ef04a07660270b626ac63167ed3908dac5e0d055e3b2f48738e7b0"
+        },
+        "restored.payload.bin": {
+          "file": "recording-mode-right-restored.payload.bin",
+          "sha256": "0e8e9767f7a3ed71ab80d2bef5f450e6cfff350243740df0ec11cb99ec75ff77"
+        },
+        "request.bin": {
+          "file": "recording-mode-right-request.bin",
+          "sha256": "9011f24e107043a06af8346d2c19a6db3998e13530f48f646d182b683cc56784"
+        },
+        "restore-request.bin": {
+          "file": "recording-mode-right-restore-request.bin",
+          "sha256": "2a5aa7a4f724341da183056220d5d00c15e680ded9e02a594d4ec38a6d042a30"
+        }
+      }
+    },
+    {
+      "name": "aux-to-usb",
+      "kind": "general",
+      "field": "AuxToUsb",
+      "source": "analysis/implementation/global-general-aux-to-usb",
+      "profile": "general-aux-to-usb",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "aux-to-usb-before.payload.bin",
+          "sha256": "6b9d1c7a2fd6e856409c78199c2b3aa797ab349103cbc3018cdc8271037a2f2d"
+        },
+        "after.payload.bin": {
+          "file": "aux-to-usb-after.payload.bin",
+          "sha256": "df9206c4297bb2f41e07e40fd68e471297dbaeba51ebedc4710976fd2686eff5"
+        },
+        "restored.payload.bin": {
+          "file": "aux-to-usb-restored.payload.bin",
+          "sha256": "6e269eebe4251811a2eb028cdcc3fe651eb0d44532c007a2b64a1a5d8a00833c"
+        },
+        "request.bin": {
+          "file": "aux-to-usb-request.bin",
+          "sha256": "31952518b2aa2f83403cd39c79fe3d103ce4f669ec22e5962ae9e68a52bf222a"
+        },
+        "restore-request.bin": {
+          "file": "aux-to-usb-restore-request.bin",
+          "sha256": "d02c4b66fbe295afa7b140881d0c63a28fc4eae62b4ed39366d58f5b7c6a2b81"
+        }
+      }
+    },
+    {
+      "name": "monitor-level",
+      "kind": "general",
+      "field": "MonitorLevel",
+      "source": "analysis/implementation/global-general-monitor-level",
+      "profile": "general-monitor-level",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "monitor-level-before.payload.bin",
+          "sha256": "724b1aef27bba0d8195bf5bafee608daa9b8a276ff360f41e9a52c12440b6522"
+        },
+        "after.payload.bin": {
+          "file": "monitor-level-after.payload.bin",
+          "sha256": "2e2535c593f81f318d8dd051e697e9dcf523b3d9cf37250accf8549e5e528bb1"
+        },
+        "restored.payload.bin": {
+          "file": "monitor-level-restored.payload.bin",
+          "sha256": "6745568158d8fc5c18f36bf9f60be2b0f88a4f030232a62f793606eefa0239af"
+        },
+        "request.bin": {
+          "file": "monitor-level-request.bin",
+          "sha256": "840b8caa2344b22229eb99c6369c6e43488198f4b73177992f647f9463d0422f"
+        },
+        "restore-request.bin": {
+          "file": "monitor-level-restore-request.bin",
+          "sha256": "1cd022868e527e1299b38c387a4e99ebab515c03af9bf67741d1e7866a82dc3f"
+        }
+      }
+    },
+    {
+      "name": "external-mode",
+      "kind": "general",
+      "field": "ExternalMode",
+      "source": "analysis/implementation/global-general-external-mode",
+      "profile": "general-external-mode",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "external-mode-before.payload.bin",
+          "sha256": "ce4067211d16574c2008c8a3687e7ef5e620232fa8ed20a728485f98dad1ce87"
+        },
+        "after.payload.bin": {
+          "file": "external-mode-after.payload.bin",
+          "sha256": "e055ce38817dcec78071a0c87f39e5c0a4e2b3df2806bb76ca5caba4d9b214f7"
+        },
+        "restored.payload.bin": {
+          "file": "external-mode-restored.payload.bin",
+          "sha256": "3282a40588bfda3abbad34f744b086fd3cf1e7b69bbedc09c8d10ad2df0951a8"
+        },
+        "request.bin": {
+          "file": "external-mode-request.bin",
+          "sha256": "e4ff0a5077fdf4592e26e31264d9685ba76ee401d2d97064d3250686ac722993"
+        },
+        "restore-request.bin": {
+          "file": "external-mode-restore-request.bin",
+          "sha256": "de7dc5530926f4b9c05880da5e9187613495d25729f6f3784957253de6e23b85"
+        }
+      }
+    },
+    {
+      "name": "midi-clock-source",
+      "kind": "general",
+      "field": "MidiClockSource",
+      "source": "analysis/implementation/global-general-midi-clock-source",
+      "profile": "general-midi-clock-source",
+      "value": 3,
+      "files": {
+        "before.payload.bin": {
+          "file": "midi-clock-source-before.payload.bin",
+          "sha256": "927034f6a6ef5eb317399a7b16d4fd9a0bb9a054d875dd7316f274b08514dbc4"
+        },
+        "after.payload.bin": {
+          "file": "midi-clock-source-after.payload.bin",
+          "sha256": "b4e31b6c0f64ad2c317e2389facefba94801beaa78b4087070361644f717769b"
+        },
+        "restored.payload.bin": {
+          "file": "midi-clock-source-restored.payload.bin",
+          "sha256": "272701088cc4b980251b6c9d906cf648c0e48fa8c1d0a7580b668c11c91fc1ad"
+        },
+        "request.bin": {
+          "file": "midi-clock-source-request.bin",
+          "sha256": "060a9ef803b30dcc31b7494a7c3841043e46b6132f7361f32794fed8df37da94"
+        },
+        "restore-request.bin": {
+          "file": "midi-clock-source-restore-request.bin",
+          "sha256": "f775f7a34b7b9233df2c99ab39a90f2af2ef49f696fadc62a5933287a1e74be3"
+        }
+      }
+    },
+    {
+      "name": "midi-input-usb",
+      "kind": "general",
+      "field": "MidiInputUsb",
+      "source": "analysis/implementation/global-general-midi-input-usb",
+      "profile": "general-midi-input-usb",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "midi-input-usb-before.payload.bin",
+          "sha256": "85f75e5331ded1766f82782ef96d26478d1852a68ffe54bb99f3fe5efad26a1c"
+        },
+        "after.payload.bin": {
+          "file": "midi-input-usb-after.payload.bin",
+          "sha256": "7faa5929608f1c5ca3104e2638588b3bfd80270d3670a17ba0f62fc25afaeac2"
+        },
+        "restored.payload.bin": {
+          "file": "midi-input-usb-restored.payload.bin",
+          "sha256": "1e8955f43907f29ff0acd954af36fa706a33d7fc4f2db4d8a33b21a9f0f60ccf"
+        },
+        "request.bin": {
+          "file": "midi-input-usb-request.bin",
+          "sha256": "9c59b27dbe6b7eaaf8d9b1efca3323283f7799f5347c2c2d549276b7707d43e7"
+        },
+        "restore-request.bin": {
+          "file": "midi-input-usb-restore-request.bin",
+          "sha256": "c38270d43d149427219b60fbd0bc06fecf8c6ae21b4c3a33db4d9716aa74a6df"
+        }
+      }
+    },
+    {
+      "name": "midi-input-din",
+      "kind": "general",
+      "field": "MidiInputDin",
+      "source": "analysis/implementation/global-general-midi-input-din",
+      "profile": "general-midi-input-din",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "midi-input-din-before.payload.bin",
+          "sha256": "f3abde25e06bba36d73efea7d84254fdef5863ec04f4f6a9a90eca0c51b98c19"
+        },
+        "after.payload.bin": {
+          "file": "midi-input-din-after.payload.bin",
+          "sha256": "2a5b16e31e7abb4d8ab7c13c8ae0664e5b099fed1f41be89e3d16b8a01bb0bcf"
+        },
+        "restored.payload.bin": {
+          "file": "midi-input-din-restored.payload.bin",
+          "sha256": "8e58971d1ac1f55717d3ca12d01835b776331e825ad317d9a60b6ce4ccabd608"
+        },
+        "request.bin": {
+          "file": "midi-input-din-request.bin",
+          "sha256": "a5cd38c5438dd2e36b79b9c58f0e46e4a5c026cd94f9b14610d53755716e1855"
+        },
+        "restore-request.bin": {
+          "file": "midi-input-din-restore-request.bin",
+          "sha256": "64ec8557912c753a2d6b37dc472ba318c47c1dc0f80a5625e9a903c5f65882b3"
+        }
+      }
+    },
+    {
+      "name": "midi-output-usb",
+      "kind": "general",
+      "field": "MidiOutputUsb",
+      "source": "analysis/implementation/global-general-midi-output-usb",
+      "profile": "general-midi-output-usb",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "midi-output-usb-before.payload.bin",
+          "sha256": "0c76cbdef099580f4edf5322d05bc4bf87579e623cef8636f4c998e4e7f7fb37"
+        },
+        "after.payload.bin": {
+          "file": "midi-output-usb-after.payload.bin",
+          "sha256": "b24d4b8abf0c384cf5b4cff80fc92d4d326b296e887dab4a5047c49a6f7ae09e"
+        },
+        "restored.payload.bin": {
+          "file": "midi-output-usb-restored.payload.bin",
+          "sha256": "fe39422123a5b36730a9f548a30a45d7c1ff2c0a9c0d6c32d51a361c03377388"
+        },
+        "request.bin": {
+          "file": "midi-output-usb-request.bin",
+          "sha256": "c449778fa4b377603e467a0889516e23ca37f7ffddc7ad3c0578f0fcda80a5d1"
+        },
+        "restore-request.bin": {
+          "file": "midi-output-usb-restore-request.bin",
+          "sha256": "571e46875c12849f414d1baa9056983ce1d687256d540199bf9efa3fe04436e8"
+        }
+      }
+    },
+    {
+      "name": "midi-output-din",
+      "kind": "general",
+      "field": "MidiOutputDin",
+      "source": "analysis/implementation/global-general-midi-output-din",
+      "profile": "general-midi-output-din",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "midi-output-din-before.payload.bin",
+          "sha256": "6c438d167e643b4b77c09bf312092158d41357a6535a812a9cc11552c5092d58"
+        },
+        "after.payload.bin": {
+          "file": "midi-output-din-after.payload.bin",
+          "sha256": "82d8b05112a8d09326ed0d2b8a746fa0a41d2b5cd64a9f137e06042f1f0cd45b"
+        },
+        "restored.payload.bin": {
+          "file": "midi-output-din-restored.payload.bin",
+          "sha256": "afccacbdd77d19c8441a1263c1dffb7bb9d948f261dd7dcef474f0e68fa53c89"
+        },
+        "request.bin": {
+          "file": "midi-output-din-request.bin",
+          "sha256": "dc0c9c18e290044b10e0754559e2fbdd890acc84a1019a6c256e2712b9597ca9"
+        },
+        "restore-request.bin": {
+          "file": "midi-output-din-restore-request.bin",
+          "sha256": "1c0813e077738a8a26d17dc3ed14a1f29fee6f3b3fd3ca194c7085169231829f"
+        }
+      }
+    },
+    {
+      "name": "midi-input-source",
+      "kind": "general",
+      "field": "MidiInputSource",
+      "source": "analysis/implementation/global-general-midi-input-source",
+      "profile": "general-midi-input-source",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "midi-input-source-before.payload.bin",
+          "sha256": "49af66752116b4c8a7d7afe9e63af0238e3dbe2dd0fd88fe2bdba1089c3eac48"
+        },
+        "after.payload.bin": {
+          "file": "midi-input-source-after.payload.bin",
+          "sha256": "596b25cd9807abeff7cb407ee11e98bbcc574a886fd9a8efa1415b2d0ac22b1d"
+        },
+        "restored.payload.bin": {
+          "file": "midi-input-source-restored.payload.bin",
+          "sha256": "c4fe7ed75d03f035c1f0d2961bca1db3cfff2c73344234f31a83aa6423a52605"
+        },
+        "request.bin": {
+          "file": "midi-input-source-request.bin",
+          "sha256": "8a3df2b99c67b5f044b78cd725dd893cc2121cdabbfd9ed8996730299ce10197"
+        },
+        "restore-request.bin": {
+          "file": "midi-input-source-restore-request.bin",
+          "sha256": "273c8a3c8f5367f85bb66f52489c24712e61771ef6f27cb0fdc36366489ffc56"
+        }
+      }
+    },
+    {
+      "name": "midi-clock-out-usb",
+      "kind": "general",
+      "field": "MidiClockOutUsb",
+      "source": "analysis/implementation/global-general-midi-clock-out-usb",
+      "profile": "general-midi-clock-out-usb",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "midi-clock-out-usb-before.payload.bin",
+          "sha256": "064c0080155e07b4833d04c63e573128a1b077d1b5c43fd776971f763b668318"
+        },
+        "after.payload.bin": {
+          "file": "midi-clock-out-usb-after.payload.bin",
+          "sha256": "c62d6026a67a240bab68ee3259a219e951cb0b97e7a239b8ae17abb60f4e6ca0"
+        },
+        "restored.payload.bin": {
+          "file": "midi-clock-out-usb-restored.payload.bin",
+          "sha256": "ffa05415ec140755ab1c6e90b5d7741c839761cfdd2b23faa83d5dcccf02e934"
+        },
+        "request.bin": {
+          "file": "midi-clock-out-usb-request.bin",
+          "sha256": "b16591146e796e607a4a31683a589e7c95e0563874c0bab39594d225e47a7817"
+        },
+        "restore-request.bin": {
+          "file": "midi-clock-out-usb-restore-request.bin",
+          "sha256": "b7e187a675d71865cda1e3d54af9b6d8435ff1eb3ac4c1a5b9e8d85e8931ee20"
+        }
+      }
+    },
+    {
+      "name": "midi-clock-out-din",
+      "kind": "general",
+      "field": "MidiClockOutDin",
+      "source": "analysis/implementation/global-general-midi-clock-out-din",
+      "profile": "general-midi-clock-out-din",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "midi-clock-out-din-before.payload.bin",
+          "sha256": "ad0469f2f1175b61b2238853df5271c06e89424b938fd196592a9e3e9de1abda"
+        },
+        "after.payload.bin": {
+          "file": "midi-clock-out-din-after.payload.bin",
+          "sha256": "49ef20bc8cec3a303cbbff999073ce6d840662e56c5f25993f1f97d0ca535ff1"
+        },
+        "restored.payload.bin": {
+          "file": "midi-clock-out-din-restored.payload.bin",
+          "sha256": "f5ac31942bf22515be66c706937228b565b101f866c90eff81068c3e2029f367"
+        },
+        "request.bin": {
+          "file": "midi-clock-out-din-request.bin",
+          "sha256": "9aa22258356e9c141a0e9a99bad1fc88925a3bf250416ec1444ab6f07999b387"
+        },
+        "restore-request.bin": {
+          "file": "midi-clock-out-din-restore-request.bin",
+          "sha256": "37fb3441b7d56fca4ce491259f74d4158201be557cbf6b6b9025232b2cd950fe"
+        }
+      }
+    },
+    {
+      "name": "footswitch-template",
+      "kind": "general",
+      "field": "FootswitchTemplate",
+      "source": "analysis/implementation/global-general-footswitch-template",
+      "profile": "general-footswitch-template",
+      "value": 2,
+      "files": {
+        "before.payload.bin": {
+          "file": "footswitch-template-before.payload.bin",
+          "sha256": "75bf6f00df96b1cc1ae99d3bdba64f65a832fb7d5c97972bcf23b0402dd1bc24"
+        },
+        "after.payload.bin": {
+          "file": "footswitch-template-after.payload.bin",
+          "sha256": "2a849414169ba75fcc825316303a31ed36e279b224f1dbb58dd46d90241b64fb"
+        },
+        "restored.payload.bin": {
+          "file": "footswitch-template-restored.payload.bin",
+          "sha256": "aeb495ecc4ccf39c85ae2f0aa6493a367d190fc342414a20b526c15d818337f6"
+        },
+        "request.bin": {
+          "file": "footswitch-template-request.bin",
+          "sha256": "119db44ee071ca03c2066fdeb6d83fa8b64d787f169358d096713f4c79da14ab"
+        },
+        "restore-request.bin": {
+          "file": "footswitch-template-restore-request.bin",
+          "sha256": "320950b5e73596c26f0334fce8e3e0568d2d90adc6b418f1880ced166d48abee"
+        }
+      }
+    },
+    {
+      "name": "external-footswitch1",
+      "kind": "general",
+      "field": "ExternalFootswitch1",
+      "source": "analysis/implementation/global-general-external-footswitch1",
+      "profile": "general-external-footswitch1",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "external-footswitch1-before.payload.bin",
+          "sha256": "82e55b26751dc46745a1c2c1a96faf53761057b87e85650b276e36b741def9c8"
+        },
+        "after.payload.bin": {
+          "file": "external-footswitch1-after.payload.bin",
+          "sha256": "66b943f7fd1a7292ddbf659a028f25fb580e98cfb1662f73f4749212976d76a6"
+        },
+        "restored.payload.bin": {
+          "file": "external-footswitch1-restored.payload.bin",
+          "sha256": "50c3032f87b2a595ebb881f4a8085fa7d77c6a27df3f5149cf5eeab4808d282e"
+        },
+        "request.bin": {
+          "file": "external-footswitch1-request.bin",
+          "sha256": "2252dd3154e42105b9840ae5faaa3ea1c65970e9c3eba7d0da691851c5518a7e"
+        },
+        "restore-request.bin": {
+          "file": "external-footswitch1-restore-request.bin",
+          "sha256": "635ca971736f009c969af1d6c9e7f54f02a9a4b85fc2af94b220c4b0ac0c98dc"
+        }
+      }
+    },
+    {
+      "name": "external-footswitch2",
+      "kind": "general",
+      "field": "ExternalFootswitch2",
+      "source": "analysis/implementation/global-general-external-footswitch2",
+      "profile": "general-external-footswitch2",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "external-footswitch2-before.payload.bin",
+          "sha256": "dc61fbba4382a31926d759e38cd55e512845ee23540a04165676ef261965208e"
+        },
+        "after.payload.bin": {
+          "file": "external-footswitch2-after.payload.bin",
+          "sha256": "06533ab0322e1c0bf575f231a99629dc9cfbc8251f984274d6ae8622c8e6e253"
+        },
+        "restored.payload.bin": {
+          "file": "external-footswitch2-restored.payload.bin",
+          "sha256": "80d6b425f6cf075ecee60ff779f09690b5b442262c9b596cb99257142ffab32e"
+        },
+        "request.bin": {
+          "file": "external-footswitch2-request.bin",
+          "sha256": "8caa3ef8f180006f9d5e1a8a6a51e2140eca0771afdd3ee3eab99777d2f7f4a0"
+        },
+        "restore-request.bin": {
+          "file": "external-footswitch2-restore-request.bin",
+          "sha256": "9f207ebd91143fdf2ebed939f17bd65c3a864d38ee11e6fb29a5af987d3ac924"
+        }
+      }
+    },
+    {
+      "name": "footswitch-mode",
+      "kind": "general",
+      "field": "FootswitchMode",
+      "source": "analysis/implementation/global-general-footswitch-mode",
+      "profile": "general-footswitch-mode",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "footswitch-mode-before.payload.bin",
+          "sha256": "83cf9909e8f6f2a701a99c23ce17cd857e9fe89be47c7551d079527adf255572"
+        },
+        "after.payload.bin": {
+          "file": "footswitch-mode-after.payload.bin",
+          "sha256": "4c6cb5ca5d59132625a3b2488eae5f1872515334d6dd0a48b3868cf7fbb1c87d"
+        },
+        "restored.payload.bin": {
+          "file": "footswitch-mode-restored.payload.bin",
+          "sha256": "3fa4780687177daacc542ee2a71fc8016a6613614ea76fc6fe8b60344803e732"
+        },
+        "request.bin": {
+          "file": "footswitch-mode-request.bin",
+          "sha256": "4c3ea0a3fe6befba9a29610e3a2cc2212afbe46783383c3c5b54936b5186337f"
+        },
+        "restore-request.bin": {
+          "file": "footswitch-mode-restore-request.bin",
+          "sha256": "db9e57769d62ab821b2f5bdd4894400548e02b003a067e229b7a1b9edf5d7966"
+        }
+      }
+    },
+    {
+      "name": "auto-cab-match",
+      "kind": "general",
+      "field": "AutoCabMatch",
+      "source": "analysis/implementation/global-general-auto-cab-match",
+      "profile": "general-auto-cab-match",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "auto-cab-match-before.payload.bin",
+          "sha256": "52d06a99978e21cd10a03a7d913549e8e4a20c2b92700e76ed310c6239b88e03"
+        },
+        "after.payload.bin": {
+          "file": "auto-cab-match-after.payload.bin",
+          "sha256": "29dcbfa389a981b0547f2aa2120644d4f2541ebe3e32ac177a0e9255422b43f8"
+        },
+        "restored.payload.bin": {
+          "file": "auto-cab-match-restored.payload.bin",
+          "sha256": "8f264f872ccb016810ad03cc1adcc412289c7609d19d881716067578301893b1"
+        },
+        "request.bin": {
+          "file": "auto-cab-match-request.bin",
+          "sha256": "ac06fee51b146f4a3ae0c676cb1344adad02a455a3e02ebb229eb0bde8da0c2b"
+        },
+        "restore-request.bin": {
+          "file": "auto-cab-match-restore-request.bin",
+          "sha256": "79520b2c3c32d1e13ffffcd3e136205f844c51d7c21e4ce2e8818d9517030fb5"
+        }
+      }
+    },
+    {
+      "name": "display-mode",
+      "kind": "general",
+      "field": "DisplayMode",
+      "source": "analysis/implementation/global-display-mode",
+      "profile": "display-mode",
+      "value": 1,
+      "files": {
+        "before.payload.bin": {
+          "file": "display-mode-before.payload.bin",
+          "sha256": "813014275d404cec31c15385368ef5addf44f97b97fbb7b92aa654a7b7a67044"
+        },
+        "after.payload.bin": {
+          "file": "display-mode-after.payload.bin",
+          "sha256": "d2194a0e72b1972e52fb053cc91496aa47b6ea193da5ebf1f15483f22f76cbee"
+        },
+        "restored.payload.bin": {
+          "file": "display-mode-restored.payload.bin",
+          "sha256": "6a9664a6b53fd449fc5b2fe1f54263b9ded02dd055527b1abffbc99229746200"
+        },
+        "request.bin": {
+          "file": "display-mode-request.bin",
+          "sha256": "93d8b7560fee360e7c9624b92e5c26eed034e38c069964731627c2b60e2b83ef"
+        },
+        "restore-request.bin": {
+          "file": "display-mode-restore-request.bin",
+          "sha256": "7fe7701cdb48646df2e0949b8d9bc01ec7979419c8ef88dc0494941586ec33a2"
+        }
+      }
+    },
+    {
+      "name": "eq-0",
+      "kind": "eq",
+      "index": 0,
+      "source": "analysis/implementation/global-eq-field-0",
+      "profile": "global-eq-0",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-0-before.payload.bin",
+          "sha256": "0816bd9e558d643b9843bb3c1eb5ceac7faa951fd1b517ff43ec5174122db031"
+        },
+        "after.payload.bin": {
+          "file": "eq-0-after.payload.bin",
+          "sha256": "ef7fdf3fc009aca98d6d0a8ddb4b0b17696941eae470437fe37b2c3c6086824f"
+        },
+        "restored.payload.bin": {
+          "file": "eq-0-restored.payload.bin",
+          "sha256": "d44eec7ab97897fbcacad1ff2f492603f6772590dce4d05b324d4f59478d1a79"
+        },
+        "request.bin": {
+          "file": "eq-0-request.bin",
+          "sha256": "0610fa8071629d3e82fda285c35aea5fca346e44204edec40bd4c6b9b33cc184"
+        },
+        "restore-request.bin": {
+          "file": "eq-0-restore-request.bin",
+          "sha256": "65ad5c5cf9fd6e0d2d62d4202610333217d3cb7408d9e1d49fc9b35be1c2d018"
+        }
+      }
+    },
+    {
+      "name": "eq-1",
+      "kind": "eq",
+      "index": 1,
+      "source": "analysis/implementation/global-eq-field-1",
+      "profile": "global-eq-1",
+      "value": 1101004800,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-1-before.payload.bin",
+          "sha256": "12087837ebffe1145ad4bd3a2ffc2ab60e1aa091c2edaacb097cbd7c06dc9482"
+        },
+        "after.payload.bin": {
+          "file": "eq-1-after.payload.bin",
+          "sha256": "61ab3f1c99e3ff4b0843c175f5bfdf4aaa067c54ed537e5f170772732fdd5892"
+        },
+        "restored.payload.bin": {
+          "file": "eq-1-restored.payload.bin",
+          "sha256": "eb13cea6425a6f4269f58737a313fde9d139878899e57951d25afb9a49539c19"
+        },
+        "request.bin": {
+          "file": "eq-1-request.bin",
+          "sha256": "7f10d1706c7665f1fd48f19235aef8715d2e60cacc625ec4d600bf951648665b"
+        },
+        "restore-request.bin": {
+          "file": "eq-1-restore-request.bin",
+          "sha256": "e33f63e72a116dce171e1b1aae61b035fbedafcf0090b8752e5f1b90f394a47c"
+        }
+      }
+    },
+    {
+      "name": "eq-2",
+      "kind": "eq",
+      "index": 2,
+      "source": "analysis/implementation/global-eq-field-2",
+      "profile": "global-eq-2",
+      "value": 1062165545,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-2-before.payload.bin",
+          "sha256": "e9a8b8af4a45da56bdcd37039a8d6a06b72134cf528d2c3f6d5b5b1b72a4cca8"
+        },
+        "after.payload.bin": {
+          "file": "eq-2-after.payload.bin",
+          "sha256": "967f4123e548071ace992e0d9da88f181dd8b063153a4afb4c5c8f015fac7869"
+        },
+        "restored.payload.bin": {
+          "file": "eq-2-restored.payload.bin",
+          "sha256": "086b398d674490ad8bb2906d169387bc0d32c2ec1ea69d344296212c87701a96"
+        },
+        "request.bin": {
+          "file": "eq-2-request.bin",
+          "sha256": "510159a76d09f9e4a56c7fd9daf03fd264ccf45b41c650db1dcb65d376da8ec5"
+        },
+        "restore-request.bin": {
+          "file": "eq-2-restore-request.bin",
+          "sha256": "d0c5dd0d3a1f800fd85a3f67da03c4169600459586017c2a8479b479bdc05933"
+        }
+      }
+    },
+    {
+      "name": "eq-3",
+      "kind": "eq",
+      "index": 3,
+      "source": "analysis/implementation/global-eq-field-3",
+      "profile": "global-eq-3",
+      "value": 1065353216,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-3-before.payload.bin",
+          "sha256": "cecbea95d281055fcf45322e1d2dfb1685544fba5875322d6c6545dbab202146"
+        },
+        "after.payload.bin": {
+          "file": "eq-3-after.payload.bin",
+          "sha256": "86e84659449032f3ec48355e854ecc89866905b4e3873364437e026b1582612e"
+        },
+        "restored.payload.bin": {
+          "file": "eq-3-restored.payload.bin",
+          "sha256": "179025a2eb68a404f399e342bb229eb682b69512f8227eee90bccbe487836864"
+        },
+        "request.bin": {
+          "file": "eq-3-request.bin",
+          "sha256": "0dccd3dafd1f9961a2ba4243086695164c53fbeb2307837af23df2928702a091"
+        },
+        "restore-request.bin": {
+          "file": "eq-3-restore-request.bin",
+          "sha256": "16bd3871b466c67c60b5f131fe4c20e67d96648ddd2492ceb3815cc4e3aca50e"
+        }
+      }
+    },
+    {
+      "name": "eq-4",
+      "kind": "eq",
+      "index": 4,
+      "source": "analysis/implementation/global-eq-field-4",
+      "profile": "global-eq-4",
+      "value": 1101529088,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-4-before.payload.bin",
+          "sha256": "ec1bff10d50998968167fd32f4d683b74c93670ae6105a9d121aebeadf53e268"
+        },
+        "after.payload.bin": {
+          "file": "eq-4-after.payload.bin",
+          "sha256": "ca7c1d24623bafbb5311e4bbcd15e181a6bdfb8c5f3ba6d054aad474be9f6deb"
+        },
+        "restored.payload.bin": {
+          "file": "eq-4-restored.payload.bin",
+          "sha256": "e5dfa9830880a186875dd0e11065c30169207177effaa212a8e9747d1c0fd3b8"
+        },
+        "request.bin": {
+          "file": "eq-4-request.bin",
+          "sha256": "547d7ff49d18807cc40d463c498bad4b8e249cc3925d35892b9b5634165e27e8"
+        },
+        "restore-request.bin": {
+          "file": "eq-4-restore-request.bin",
+          "sha256": "76bd4c91c04e7210972feb8d7810e9c39e28f76d93ecf7570be590460a5da273"
+        }
+      }
+    },
+    {
+      "name": "eq-5",
+      "kind": "eq",
+      "index": 5,
+      "source": "analysis/implementation/global-eq-field-5",
+      "profile": "global-eq-5",
+      "value": 1062165545,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-5-before.payload.bin",
+          "sha256": "2ced9cab30da5cc7f3f8d9fdcbe849a6ee9ce85b2ffe162f42cbd8f4ab8f5abd"
+        },
+        "after.payload.bin": {
+          "file": "eq-5-after.payload.bin",
+          "sha256": "78704eb0f3a9a4aaae380b97ce7d292660974c246acecfb4247f67b4da183f34"
+        },
+        "restored.payload.bin": {
+          "file": "eq-5-restored.payload.bin",
+          "sha256": "d63c8103d25d55ed77bf4fdc02942372abcbfb1bdccfc5d399fa87930c3d2bd2"
+        },
+        "request.bin": {
+          "file": "eq-5-request.bin",
+          "sha256": "4a29edf875e2ad955887ab223ff094ee78d0e8d08bbf98a93645e17a0b135e1f"
+        },
+        "restore-request.bin": {
+          "file": "eq-5-restore-request.bin",
+          "sha256": "30ba122ec0afde758d5f92fec9c87cd2eff9f2ae57d1289d1cf6224de1745617"
+        }
+      }
+    },
+    {
+      "name": "eq-6",
+      "kind": "eq",
+      "index": 6,
+      "source": "analysis/implementation/global-eq-field-6",
+      "profile": "global-eq-6",
+      "value": 1036831949,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-6-before.payload.bin",
+          "sha256": "aa55f99fba9f81d26b2a13e78647eaaaaa04cb3eba1220f584e3d417a6e9cf81"
+        },
+        "after.payload.bin": {
+          "file": "eq-6-after.payload.bin",
+          "sha256": "8cdd7bf3fbf815f9dc852633a169b494bc5c37f27e328ce8338cf6ffbe15d9ac"
+        },
+        "restored.payload.bin": {
+          "file": "eq-6-restored.payload.bin",
+          "sha256": "642c7570be2af3b28f4fec0dea97b277e049cd0eacb15b83575165ec313fd4aa"
+        },
+        "request.bin": {
+          "file": "eq-6-request.bin",
+          "sha256": "b9b0dd8979146dff3a66620a262956d0c630d09c16f1b54047c4cef4b543eb53"
+        },
+        "restore-request.bin": {
+          "file": "eq-6-restore-request.bin",
+          "sha256": "e308748d3eb1088d16a5200a8c442e3838f09ec89ac5888e09f28caf662208bf"
+        }
+      }
+    },
+    {
+      "name": "eq-7",
+      "kind": "eq",
+      "index": 7,
+      "source": "analysis/implementation/global-eq-field-7",
+      "profile": "global-eq-7",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-7-before.payload.bin",
+          "sha256": "755248ff62033beaf7004cbdb0743e372f06b524db439f5d0361a6beef3a3bbf"
+        },
+        "after.payload.bin": {
+          "file": "eq-7-after.payload.bin",
+          "sha256": "3fb2d4347ff8b1bec9aa8a44d2dfedb6654cb0f04c8218b119cafd3237287119"
+        },
+        "restored.payload.bin": {
+          "file": "eq-7-restored.payload.bin",
+          "sha256": "c8759dadc5bb23baa37d6459485775dc4411af7716e9f0b96c401745fbcc163c"
+        },
+        "request.bin": {
+          "file": "eq-7-request.bin",
+          "sha256": "e0c3f80fe0644b0e5461b3e64f4df92560737745d39529ec8375fab757016a18"
+        },
+        "restore-request.bin": {
+          "file": "eq-7-restore-request.bin",
+          "sha256": "faa447c68a7d72b5d627f097b759cab6f073311760ed2d3e700ef8b95e9c182c"
+        }
+      }
+    },
+    {
+      "name": "eq-8",
+      "kind": "eq",
+      "index": 8,
+      "source": "analysis/implementation/global-eq-field-8",
+      "profile": "global-eq-8",
+      "value": 1120534528,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-8-before.payload.bin",
+          "sha256": "a3445a0a1c1e0138d3ae9e117980c0f8a4a89aa6d4c7c6260cc7d982698697ff"
+        },
+        "after.payload.bin": {
+          "file": "eq-8-after.payload.bin",
+          "sha256": "2a912cf2458e4ff1d222920ef33d94e29f8f550b16ba86be74cb3f6247721e10"
+        },
+        "restored.payload.bin": {
+          "file": "eq-8-restored.payload.bin",
+          "sha256": "7271c84c1ab6dd40d43b858ccd67c5152a75b83c301da28bdca3aa2dee76edc3"
+        },
+        "request.bin": {
+          "file": "eq-8-request.bin",
+          "sha256": "191d46e5c1543b222c3cbd9b9e9e4cabfac85b7fb1c4a299813c521b6ef3cc81"
+        },
+        "restore-request.bin": {
+          "file": "eq-8-restore-request.bin",
+          "sha256": "47a159be17b40c67b51f745a988e03627d2d9301f7a0421823a01a9f30869d71"
+        }
+      }
+    },
+    {
+      "name": "eq-9",
+      "kind": "eq",
+      "index": 9,
+      "source": "analysis/implementation/global-eq-field-9",
+      "profile": "global-eq-9",
+      "value": 1062165545,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-9-before.payload.bin",
+          "sha256": "165291e01197eaf6f3a41f428534c776d0ab9d87ceaee768d1b4dedc78183e13"
+        },
+        "after.payload.bin": {
+          "file": "eq-9-after.payload.bin",
+          "sha256": "7f8152e17a3d864b762e0c21e95c74bc63dc1e47c9973e4f3e84a6907a2b5089"
+        },
+        "restored.payload.bin": {
+          "file": "eq-9-restored.payload.bin",
+          "sha256": "38ace6a638e20d71acc74cca8ddc17836f85e5d55ba9d74baa3537d4c5afad8a"
+        },
+        "request.bin": {
+          "file": "eq-9-request.bin",
+          "sha256": "d919e991fc49db61e1b72023f66bd91e9cbc54b8ac2d2d993816c1fe68bde1a2"
+        },
+        "restore-request.bin": {
+          "file": "eq-9-restore-request.bin",
+          "sha256": "a02a5f58eda4d49beb6c4a9bef82aadf4b71abe0c2ddc2e80cd0e13198bdd148"
+        }
+      }
+    },
+    {
+      "name": "eq-10",
+      "kind": "eq",
+      "index": 10,
+      "source": "analysis/implementation/global-eq-field-10",
+      "profile": "global-eq-10",
+      "value": 1036831949,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-10-before.payload.bin",
+          "sha256": "f7f154e1f43612b90d4ece14f1034ff129b071dd2b77bf76c9c723729d66d1ad"
+        },
+        "after.payload.bin": {
+          "file": "eq-10-after.payload.bin",
+          "sha256": "52b4e30159c71fb429035ca5d5356617acd19e2b87b2a90e79874e97b903d99e"
+        },
+        "restored.payload.bin": {
+          "file": "eq-10-restored.payload.bin",
+          "sha256": "ed7097465e6b70dc0f1107f33439464213348b9275fcf07ae3c8f33853e0a773"
+        },
+        "request.bin": {
+          "file": "eq-10-request.bin",
+          "sha256": "7cee2eba4d06c6c0374d1bc7c0bbaab2ae0b2d580714abf35a0504c836578fab"
+        },
+        "restore-request.bin": {
+          "file": "eq-10-restore-request.bin",
+          "sha256": "8508facab6966d4721729435838460565c6a6db2af1773a44c871f638cb6c24d"
+        }
+      }
+    },
+    {
+      "name": "eq-11",
+      "kind": "eq",
+      "index": 11,
+      "source": "analysis/implementation/global-eq-field-11",
+      "profile": "global-eq-11",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-11-before.payload.bin",
+          "sha256": "1202a12b9e86cc00080946668e339f492dbd8d86aa509327d3db2dd068947254"
+        },
+        "after.payload.bin": {
+          "file": "eq-11-after.payload.bin",
+          "sha256": "8093f85ec34a870964f232f883959afc686249e79c5946a98220f99288c79839"
+        },
+        "restored.payload.bin": {
+          "file": "eq-11-restored.payload.bin",
+          "sha256": "0f700188587980d2f719114dc0359ef3db7e8cf5ec14107771e44235bdb9bc8e"
+        },
+        "request.bin": {
+          "file": "eq-11-request.bin",
+          "sha256": "39b4c00fd2c0efb473376642c0dcdaed2f5f3e68dbb935f4c926ea7e1196d385"
+        },
+        "restore-request.bin": {
+          "file": "eq-11-restore-request.bin",
+          "sha256": "2b5624e909560ecfdf2b8ace00ce686065195a700384d3bf2161d218fab85401"
+        }
+      }
+    },
+    {
+      "name": "eq-12",
+      "kind": "eq",
+      "index": 12,
+      "source": "analysis/implementation/global-eq-field-12",
+      "profile": "global-eq-12",
+      "value": 1140490240,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-12-before.payload.bin",
+          "sha256": "82f87dc39493c7a75f59403db8fcb548ee19806a72c44516b1ef20b062fae2d6"
+        },
+        "after.payload.bin": {
+          "file": "eq-12-after.payload.bin",
+          "sha256": "970adfc37c72a6fca9994eb382295125b22c433ccee2110f7d6503c51ab9d91e"
+        },
+        "restored.payload.bin": {
+          "file": "eq-12-restored.payload.bin",
+          "sha256": "2e018368c8bf5f3bae67776aa6030ccf6992e7bb3cd68e344a626492c7eaafbd"
+        },
+        "request.bin": {
+          "file": "eq-12-request.bin",
+          "sha256": "6cef73770de793c47f4db53706a343b370719a7e2798f5f0b981f89f2fd23aa0"
+        },
+        "restore-request.bin": {
+          "file": "eq-12-restore-request.bin",
+          "sha256": "14404815ce2369cbc4095627301d9896fc1ca225200f5eaaab36e2b3d0af9539"
+        }
+      }
+    },
+    {
+      "name": "eq-13",
+      "kind": "eq",
+      "index": 13,
+      "source": "analysis/implementation/global-eq-field-13",
+      "profile": "global-eq-13",
+      "value": 1062165545,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-13-before.payload.bin",
+          "sha256": "5f556c9f94d4e4a3dd91ebf274127b6806e77d38e3c1647838935e5777a7d66c"
+        },
+        "after.payload.bin": {
+          "file": "eq-13-after.payload.bin",
+          "sha256": "83cfd08729ade4389f55903b8d43a4d56b35d1d6dafc76fc254c7693be1fb295"
+        },
+        "restored.payload.bin": {
+          "file": "eq-13-restored.payload.bin",
+          "sha256": "60d4807f11669ec994b2058312b8b946654cd79420f8cf92a62b0adf71ee3f7b"
+        },
+        "request.bin": {
+          "file": "eq-13-request.bin",
+          "sha256": "7626b41dd794dbd36a29789a6229dabed30b6d8732818f1bd58d4ca0980d73ec"
+        },
+        "restore-request.bin": {
+          "file": "eq-13-restore-request.bin",
+          "sha256": "d18282f8ce30f145ab49878782da8e2a1bb659167ffef7c67e4d81f22bef9bab"
+        }
+      }
+    },
+    {
+      "name": "eq-14",
+      "kind": "eq",
+      "index": 14,
+      "source": "analysis/implementation/global-eq-field-14",
+      "profile": "global-eq-14",
+      "value": 1036831949,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-14-before.payload.bin",
+          "sha256": "c0a4e4320a95dba0f5a9189d3874fed0f9f8f02fc438ada5ccfff67109eb9a6b"
+        },
+        "after.payload.bin": {
+          "file": "eq-14-after.payload.bin",
+          "sha256": "89e4f7bcb331200c671487a0086cb359d5ead5baaf7334d4f5693e2d7e202c1e"
+        },
+        "restored.payload.bin": {
+          "file": "eq-14-restored.payload.bin",
+          "sha256": "beb0407f9c9223606e9c96e418fb46e156810d5376a3e88884f40eeb64a8c58f"
+        },
+        "request.bin": {
+          "file": "eq-14-request.bin",
+          "sha256": "0afd2ce783d131e935fcca9c181f58772ae3ed72147f8603cce0a0757765657e"
+        },
+        "restore-request.bin": {
+          "file": "eq-14-restore-request.bin",
+          "sha256": "dd525b1ae339df3c5a94a0be7066f51c3d6094e3f6a33c68c1ba18bd94e6bc27"
+        }
+      }
+    },
+    {
+      "name": "eq-15",
+      "kind": "eq",
+      "index": 15,
+      "source": "analysis/implementation/global-eq-field-15",
+      "profile": "global-eq-15",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-15-before.payload.bin",
+          "sha256": "b5b12beaff7e37b06c41953ada736b572344a895790d15dcdb08dfe724fcb349"
+        },
+        "after.payload.bin": {
+          "file": "eq-15-after.payload.bin",
+          "sha256": "00c26b3a3f04e585a617e6b01def4313abdc33d199b6895857955829ff7e5824"
+        },
+        "restored.payload.bin": {
+          "file": "eq-15-restored.payload.bin",
+          "sha256": "24ed97c4d9b4ec3798b538111cbb6084d20b745f20ff4d5d135bb30f52c0ed51"
+        },
+        "request.bin": {
+          "file": "eq-15-request.bin",
+          "sha256": "8f5f539670fb0c826d68cd7f61432d52b333d82e03bf32efe81e09a3e17b0e30"
+        },
+        "restore-request.bin": {
+          "file": "eq-15-restore-request.bin",
+          "sha256": "ff5f7dc2f2bf5c9eb717478af189ca29468481639cb9740b4064ebc30f62705f"
+        }
+      }
+    },
+    {
+      "name": "eq-16",
+      "kind": "eq",
+      "index": 16,
+      "source": "analysis/implementation/global-eq-field-16",
+      "profile": "global-eq-16",
+      "value": 1148862464,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-16-before.payload.bin",
+          "sha256": "7a907dc56eaa22b57ea7e8b168f704ca03dff22c52c25210cde9acd2c7c7a21d"
+        },
+        "after.payload.bin": {
+          "file": "eq-16-after.payload.bin",
+          "sha256": "8c4dc6f48c89b3d9e9d59eec60d8d717b3d2ec1b3d7d9307346206f5ab3bcd39"
+        },
+        "restored.payload.bin": {
+          "file": "eq-16-restored.payload.bin",
+          "sha256": "050d587610031d699b37c968d5a40db0f9248ece760d1015d00588a7130046c9"
+        },
+        "request.bin": {
+          "file": "eq-16-request.bin",
+          "sha256": "e1fd7211078e10298134847e1aca0989ff5072ddbc842eb9ef5704e2ddb669c9"
+        },
+        "restore-request.bin": {
+          "file": "eq-16-restore-request.bin",
+          "sha256": "f3e974097676df2148d49ee3df431fa8fff2fdef28b839d934b8bc76da8177aa"
+        }
+      }
+    },
+    {
+      "name": "eq-17",
+      "kind": "eq",
+      "index": 17,
+      "source": "analysis/implementation/global-eq-field-17",
+      "profile": "global-eq-17",
+      "value": 1062165545,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-17-before.payload.bin",
+          "sha256": "94f710a471c6e216f807f83abcb335e4504ff0a55e00314f18d2a09d35560334"
+        },
+        "after.payload.bin": {
+          "file": "eq-17-after.payload.bin",
+          "sha256": "a97ec998c57783dd7c7f69b68394ab44c435ec362b1842d612a84de5414fbe2c"
+        },
+        "restored.payload.bin": {
+          "file": "eq-17-restored.payload.bin",
+          "sha256": "ff66de1de2b8d6a146c119eeac22924082099ca19f1ddacc4d0eadea25a6a7cd"
+        },
+        "request.bin": {
+          "file": "eq-17-request.bin",
+          "sha256": "9dcfff35c0cb013df1004d58af0bb211a784f30f5dc9d15723f4b9e98aea36a3"
+        },
+        "restore-request.bin": {
+          "file": "eq-17-restore-request.bin",
+          "sha256": "0d93024abe09fad9ab2a5e0e497a077d8b25f031ecca0024422091d405b7c37c"
+        }
+      }
+    },
+    {
+      "name": "eq-18",
+      "kind": "eq",
+      "index": 18,
+      "source": "analysis/implementation/global-eq-field-18",
+      "profile": "global-eq-18",
+      "value": 1036831949,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-18-before.payload.bin",
+          "sha256": "b3d05578277b5a6d5ca07c18d04957435ba557c6f2553c5204108a1409fccc77"
+        },
+        "after.payload.bin": {
+          "file": "eq-18-after.payload.bin",
+          "sha256": "1e3c0ee7f41c4ce02884fa45b74073afc2fe58f23133417c5e1981bbb5520328"
+        },
+        "restored.payload.bin": {
+          "file": "eq-18-restored.payload.bin",
+          "sha256": "eb5673433b7577a4b811f0bf950eb6ef2ec40163da108861ea9edf23d9c7a241"
+        },
+        "request.bin": {
+          "file": "eq-18-request.bin",
+          "sha256": "3db4149d8dfee05863d5d932b065f2ecf9244333538acc614e7cfae4edd05a35"
+        },
+        "restore-request.bin": {
+          "file": "eq-18-restore-request.bin",
+          "sha256": "6e48051a2e5186e11c419bf7b12d02285028a5721ff7d80f61c666a45c17f6da"
+        }
+      }
+    },
+    {
+      "name": "eq-19",
+      "kind": "eq",
+      "index": 19,
+      "source": "analysis/implementation/global-eq-field-19",
+      "profile": "global-eq-19",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-19-before.payload.bin",
+          "sha256": "17df30de03f850b906526e27d25bc14f6ddd668a02994e24f2ed588905deed0d"
+        },
+        "after.payload.bin": {
+          "file": "eq-19-after.payload.bin",
+          "sha256": "12ede565d3f73d0f407375eab41a071ffee717aa505a8e7c425129274e3c02f7"
+        },
+        "restored.payload.bin": {
+          "file": "eq-19-restored.payload.bin",
+          "sha256": "035490393e36b3f68b78fa072542c1e032931cd69324a4f2e2c84875e1d75df2"
+        },
+        "request.bin": {
+          "file": "eq-19-request.bin",
+          "sha256": "f25d730e90d67c67b2c6ebce013c3cc6942861e412133e2f9a52733d32d2b350"
+        },
+        "restore-request.bin": {
+          "file": "eq-19-restore-request.bin",
+          "sha256": "b90e899d07364aae68869d62d06f14fa4d411d59ed092531049668e4ae7b280a"
+        }
+      }
+    },
+    {
+      "name": "eq-20",
+      "kind": "eq",
+      "index": 20,
+      "source": "analysis/implementation/global-eq-field-20",
+      "profile": "global-eq-20",
+      "value": 1167869952,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-20-before.payload.bin",
+          "sha256": "cbbd610c542e14eefe3b5a5a6c46cecd921319b63d7c56c9a3a9f37cae629617"
+        },
+        "after.payload.bin": {
+          "file": "eq-20-after.payload.bin",
+          "sha256": "c31adfe93d57e24a7bef384c0f3a6f9f3e02beb7a5a7c13c730eb00ddce0112a"
+        },
+        "restored.payload.bin": {
+          "file": "eq-20-restored.payload.bin",
+          "sha256": "d5e31206030500fab570befc58ff6302e4d3c7ef99a22c63530af6f0c34b0fde"
+        },
+        "request.bin": {
+          "file": "eq-20-request.bin",
+          "sha256": "966883e1498a18288247050fbff0ffccb92611418d16ec716d81cd8f4dd7dcfa"
+        },
+        "restore-request.bin": {
+          "file": "eq-20-restore-request.bin",
+          "sha256": "7c03701d4262a86c280539d26603aabae86f757f1e89fb35f8023d96dd529865"
+        }
+      }
+    },
+    {
+      "name": "eq-21",
+      "kind": "eq",
+      "index": 21,
+      "source": "analysis/implementation/global-eq-field-21",
+      "profile": "global-eq-21",
+      "value": 1062165545,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-21-before.payload.bin",
+          "sha256": "e34619efe00f9057828c5b0b0ee7c6e76479e39f911d59ce02464aae91a20db8"
+        },
+        "after.payload.bin": {
+          "file": "eq-21-after.payload.bin",
+          "sha256": "c93dea7d56078a083309333c480c6c66679763c56fcd54756e0e0b7bd7be855f"
+        },
+        "restored.payload.bin": {
+          "file": "eq-21-restored.payload.bin",
+          "sha256": "002021b3433375ff6ff3abefafc6252e95885eed83105b526aa7a92f58635b64"
+        },
+        "request.bin": {
+          "file": "eq-21-request.bin",
+          "sha256": "c989ee2e6a7cf406f446f8643dde3f504300734dc10abe0da3520e454ad85c20"
+        },
+        "restore-request.bin": {
+          "file": "eq-21-restore-request.bin",
+          "sha256": "de50808324da21285e6ef5d6b1b56005f90e65f848e8631c586771d4a4c6a779"
+        }
+      }
+    },
+    {
+      "name": "eq-22",
+      "kind": "eq",
+      "index": 22,
+      "source": "analysis/implementation/global-eq-field-22",
+      "profile": "global-eq-22",
+      "value": 1036831949,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-22-before.payload.bin",
+          "sha256": "3b830717fa2485cb78facbab39ad069a7bb4bef7cdec005a963799b59510b3d2"
+        },
+        "after.payload.bin": {
+          "file": "eq-22-after.payload.bin",
+          "sha256": "f261322b28abd0915dbaab68dad8d734f333bf341670747d387f8e6ac7cd3e7a"
+        },
+        "restored.payload.bin": {
+          "file": "eq-22-restored.payload.bin",
+          "sha256": "09b71c5c2bc18b7f282aeb698973952d6e5c915b7021bf5e63fe25bbed3b4fe7"
+        },
+        "request.bin": {
+          "file": "eq-22-request.bin",
+          "sha256": "bd89ab5c1e97839d6aea62540ad86637fb33268a2e446aa5e284525acccad3d1"
+        },
+        "restore-request.bin": {
+          "file": "eq-22-restore-request.bin",
+          "sha256": "1f1d46533d2fa48e0dd66ab444965d1255cd9ab7e3b6b2bf3a0e86c135dc2b1a"
+        }
+      }
+    },
+    {
+      "name": "eq-23",
+      "kind": "eq",
+      "index": 23,
+      "source": "analysis/implementation/global-eq-field-23",
+      "profile": "global-eq-23",
+      "value": 1065353216,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-23-before.payload.bin",
+          "sha256": "888757cd24ee020397c02a3045b39c3c28853d98c3493b8574eef80e9cea25ce"
+        },
+        "after.payload.bin": {
+          "file": "eq-23-after.payload.bin",
+          "sha256": "52a24b128b29a442792dcabf049bccaca27e01dbb51ba5437a1879c52d576591"
+        },
+        "restored.payload.bin": {
+          "file": "eq-23-restored.payload.bin",
+          "sha256": "f485aa272a45cda57bcd3945beb9c8b05fa47b6de7f2f3e73023edd4990fe6a1"
+        },
+        "request.bin": {
+          "file": "eq-23-request.bin",
+          "sha256": "c85584b32c82fb9f62bda241a23352805af3dd9a48d6a190ca2aed082a87807e"
+        },
+        "restore-request.bin": {
+          "file": "eq-23-restore-request.bin",
+          "sha256": "dacc103d3ebb2d545a731a5ae9d8a9796b3a46d074ebfcd42fe6113d529e5f4d"
+        }
+      }
+    },
+    {
+      "name": "eq-24",
+      "kind": "eq",
+      "index": 24,
+      "source": "analysis/implementation/global-eq-field-24",
+      "profile": "global-eq-24",
+      "value": 1184644608,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-24-before.payload.bin",
+          "sha256": "92cd4d4fdf2cf2a5e16f3b9c4ccf34218c0da93c1228b653fcd2eee52f04716f"
+        },
+        "after.payload.bin": {
+          "file": "eq-24-after.payload.bin",
+          "sha256": "9455cc97e12191cb8b37e6b8605f190f2379e791fa1cb328fcb9316a721db9c9"
+        },
+        "restored.payload.bin": {
+          "file": "eq-24-restored.payload.bin",
+          "sha256": "7162fce34c66c4de5a307ba8fe058afecb0d17e6e7627a22f0290c825ad7c1ea"
+        },
+        "request.bin": {
+          "file": "eq-24-request.bin",
+          "sha256": "b214a09d38af38bd7c991283341e6b6450135e204e68b895c87ff3ceb7b42ef9"
+        },
+        "restore-request.bin": {
+          "file": "eq-24-restore-request.bin",
+          "sha256": "c1908f88634c3d20aa5f126cb4a3852f394cdb8eb20a1eecf87d839ba7089966"
+        }
+      }
+    },
+    {
+      "name": "eq-25",
+      "kind": "eq",
+      "index": 25,
+      "source": "analysis/implementation/global-eq-field-25",
+      "profile": "global-eq-25",
+      "value": 1062165545,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-25-before.payload.bin",
+          "sha256": "ca2c2f2035406fef63bbd9fe52f15f52f7f878d163edac9f1e50beedd7628009"
+        },
+        "after.payload.bin": {
+          "file": "eq-25-after.payload.bin",
+          "sha256": "20106bbb0c1b5d2f2beb5944a7a8d73b46a2b00ad86e366a26eddb1f166ee1fc"
+        },
+        "restored.payload.bin": {
+          "file": "eq-25-restored.payload.bin",
+          "sha256": "9078c28a1c66733519cb9981a53ce07c13f7c1ec924aaabc7b023bea529657c2"
+        },
+        "request.bin": {
+          "file": "eq-25-request.bin",
+          "sha256": "1e34da415c054db239d87b0f5cf4b305d185e4262b7528fe50cb4507da664429"
+        },
+        "restore-request.bin": {
+          "file": "eq-25-restore-request.bin",
+          "sha256": "da61024cb0b4281d2dbf3d858bc3cb5d8405ae6a6d96da468203a155b008bde0"
+        }
+      }
+    },
+    {
+      "name": "eq-26",
+      "kind": "eq",
+      "index": 26,
+      "source": "analysis/implementation/global-eq-field-26",
+      "profile": "global-eq-26",
+      "value": 1036831949,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-26-before.payload.bin",
+          "sha256": "1947f59e7adab4b0bf5cc31b1522bcde1b354705b847504dba3c87488012baf3"
+        },
+        "after.payload.bin": {
+          "file": "eq-26-after.payload.bin",
+          "sha256": "dabd419043a3ec8d4d8cc0c3fba25a701342b99988bfd6c0e267b24d40105585"
+        },
+        "restored.payload.bin": {
+          "file": "eq-26-restored.payload.bin",
+          "sha256": "ae1e0e4ff9dc5073f28f2c96a0d95067c8c9c3d1256b715e1c05ab08943dc649"
+        },
+        "request.bin": {
+          "file": "eq-26-request.bin",
+          "sha256": "8eaff562d488a864ad1162f876d5424b8a025bac7b3bc7be97b0d8ea425080f3"
+        },
+        "restore-request.bin": {
+          "file": "eq-26-restore-request.bin",
+          "sha256": "513d47db167d4c7575d0824e394de3057d834bc2bf7040b959222abc4f43bdae"
+        }
+      }
+    },
+    {
+      "name": "eq-27",
+      "kind": "eq",
+      "index": 27,
+      "source": "analysis/implementation/global-eq-field-27",
+      "profile": "global-eq-27",
+      "value": 0,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-27-before.payload.bin",
+          "sha256": "908527a8b89c3a6fd9e4815218eb62136e59dc089ca7fc594238244ad76bed7e"
+        },
+        "after.payload.bin": {
+          "file": "eq-27-after.payload.bin",
+          "sha256": "b8f4d28d1baf6436aa238ae5faeea1843abe06058ecce9092617d14326facfbd"
+        },
+        "restored.payload.bin": {
+          "file": "eq-27-restored.payload.bin",
+          "sha256": "d6db1f797ea87ac66a618fb7545ab0dafe57884bf3c6c1f6bc0156db126b4d3a"
+        },
+        "request.bin": {
+          "file": "eq-27-request.bin",
+          "sha256": "5628f5361c69ee9b30fb9649917861886a5088b4134f851fba72ee4eeb6793d8"
+        },
+        "restore-request.bin": {
+          "file": "eq-27-restore-request.bin",
+          "sha256": "c2cdf4803b829c8c2684745bf3d060eea0203650225e66f1764c53e2be217415"
+        }
+      }
+    },
+    {
+      "name": "eq-28",
+      "kind": "eq",
+      "index": 28,
+      "source": "analysis/implementation/global-eq-field-28",
+      "profile": "global-eq-28",
+      "value": 1184645120,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-28-before.payload.bin",
+          "sha256": "6eecdcb2587b4eba250ab0704d8e08f0fd8dd8c11337766acf6a019e5e4b88ab"
+        },
+        "after.payload.bin": {
+          "file": "eq-28-after.payload.bin",
+          "sha256": "06226d40d3f680b0a70f183b536724a3d3dac325e237e47abd1cc6279b96e0f5"
+        },
+        "restored.payload.bin": {
+          "file": "eq-28-restored.payload.bin",
+          "sha256": "c47c91e668ba434ed4e31dc8c801a38920ed4bbffed3980abe87be16e7d7efcb"
+        },
+        "request.bin": {
+          "file": "eq-28-request.bin",
+          "sha256": "489c8f344d6b3ccb9d81f006eda6df5ddece8af6e127ff6ccc14cd3ce12fbe9a"
+        },
+        "restore-request.bin": {
+          "file": "eq-28-restore-request.bin",
+          "sha256": "e9dcf80d1d9b1d1a7e7e95f8f51898e4cea3cf830301a9475e140e392bbaf55e"
+        }
+      }
+    },
+    {
+      "name": "eq-29",
+      "kind": "eq",
+      "index": 29,
+      "source": "analysis/implementation/global-eq-field-29",
+      "profile": "global-eq-29",
+      "value": 1062165545,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-29-before.payload.bin",
+          "sha256": "0afc7000bcb223326fed7c4c17d90598504a88e0c126255b5cb1ca68531a6f7e"
+        },
+        "after.payload.bin": {
+          "file": "eq-29-after.payload.bin",
+          "sha256": "87d235e4e769dc3074c97fcf3032a87c1c25f955e48ddc4bb6c0345097f41596"
+        },
+        "restored.payload.bin": {
+          "file": "eq-29-restored.payload.bin",
+          "sha256": "82fcfa851ad3b929e918084304f1c71eff21e0d872faa4a8b4ef57d61477a720"
+        },
+        "request.bin": {
+          "file": "eq-29-request.bin",
+          "sha256": "8d9bb0f3704e26e06a34fe0827da8a11d2fd9f4db10fe247501f84430b6bd85e"
+        },
+        "restore-request.bin": {
+          "file": "eq-29-restore-request.bin",
+          "sha256": "144fe8b13d6541361ded344232e3ced82f67fd7d5908c69970924b7aa9ea2ad3"
+        }
+      }
+    },
+    {
+      "name": "eq-30",
+      "kind": "eq",
+      "index": 30,
+      "source": "analysis/implementation/global-eq-field-30",
+      "profile": "global-eq-30",
+      "value": 1112276992,
+      "files": {
+        "before.payload.bin": {
+          "file": "eq-30-before.payload.bin",
+          "sha256": "d8f0a436dc7d626dfe7365e9d16d717c48b65eed060fab16b37add9d6e8df535"
+        },
+        "after.payload.bin": {
+          "file": "eq-30-after.payload.bin",
+          "sha256": "ddd3445a78c096a339ff580f2ed56d2f0c2ccb71288955ac723572107c7161b1"
+        },
+        "restored.payload.bin": {
+          "file": "eq-30-restored.payload.bin",
+          "sha256": "401776df2095c66bbebdb8ecc3a850e37acc558c8c180b840e1f5acf0c27d39e"
+        },
+        "request.bin": {
+          "file": "eq-30-request.bin",
+          "sha256": "0768c908915d9480a7f77b2be162b04550e7a10ba50a347c22a650b5b32c830d"
+        },
+        "restore-request.bin": {
+          "file": "eq-30-restore-request.bin",
+          "sha256": "99d4065f838a20e0747ecd79f1484d85f090fcf451f9b423f1c736fa5548cdeb"
+        }
+      }
+    }
+  ]
+}

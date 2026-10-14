@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source": "analysis/live/read-current-response.bin",
+  "source_sha256": "8ccde29094075ee717b316162b8b94a7dedb2c36e801a53d637dae7b3338a2b2",
+  "decoded_payload_sha256": "84ca815ed3d9713ab98e92f58b1388cc19273d47cd39b7bce1b067670e558d1a",
+  "bytes": 1176,
+  "interpretation": "Captured GP-200 response reused in explicit simulator mode; synthetic stored slots are copies and do not claim hardware content",
+  "original_preset_name": "Fart Voice (Wah)"
+}

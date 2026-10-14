@@ -1,0 +1,37 @@
+# Build outputs and release artifacts
+/target/
+/dist/
+/*.AppImage
+/*.tar.gz
+/*.zip
+
+# Private investigation, plans, captures, and development notebooks
+# Keep these locally; they are not part of the public source distribution.
+/analysis/
+/implementation/
+/plans/
+/mockups/
+/screenshots/
+/tools/
+/packaging/firmware-strip-debug.py
+/packaging/firmware-strip-debug-tests.py
+/crates/gp200-transport/test-fixtures/firmware/genuine-entry-review.json
+/tests/fixtures/assets/andertons-profiles.json
+
+# Local application data, hardware sessions, and editor preferences
+/.dev-logs/
+/.local-data/
+/.hardware-session.lock
+/.cursor/
+.env
+.env.*
+!.env.example
+
+# Temporary/cache files
+**/__pycache__/
+*.pyc
+*.log
+*.tmp
+*.lock.tmp
+*~
+.DS_Store

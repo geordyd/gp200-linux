@@ -1,0 +1,37 @@
+GP200 Linux CLI — all results and errors are JSON
+Usage: gp200-studio cli COMMAND ACTION [OPTIONS]
+
+  inspect prst|wav|nam|clo|firmware|backup|bundle --input FILE
+    NAM inspection: [--nam-size 0..1] reports the actual selected bin and kernel cost.
+  library list|backup-list --store ABSOLUTE_DIRECTORY [--text TEXT]
+  library import|bundle-import|backup-import --store DIR --input FILE
+  library export --store DIR --version ID --output NEW.prst [--preset-only]
+  library bundle-export --store DIR --version ID --output NEW.gp200bundle [--include-assets]
+  library backup-export --store DIR --backup-id ID --output NEW.gp200backup
+  asset prepare --kind ir|nam --input FILE --store DIR --output NEW_FILE
+    IR: [--sample-rate HZ] [--channel preserve|average|INDEX]
+        [--normalize-peak VALUE] [--truncate-frames COUNT]
+    NAM: --input-wav FILE --input-channel average|INDEX
+         [--output-format wav|clo] [--activation standard|fast]
+         [--resample-input] [--max-operations COUNT] [--nam-size 0..1]
+         Size selection applies to WAV output; fixed models require full size 1.
+         [--calibration-timeout-seconds 1..900]
+         CLO requires the explicitly selected verified stimulus channel 0 or 1.
+         Omit --nam-size for CLO; its independently checked profile uses full size.
+  asset ir-pack --input MONO_PCM24_44100.wav --output NEW.bin [--truncate]
+  trace inspect --input RAW_MIDI.bin
+  trace replay --input CAPTURE_MANIFEST.json
+  support export --output NEW.zip [--session-summary CLI_RESULT.json]
+    [--include-preset FILE] [--include-audio FILE] [--include-midi FILE]
+  device ports
+  device identity|current|stored|globals|ir-metadata|bank|doctor --unique
+    OR --input-port EXACT_ID --output-port EXACT_ID
+    [--timeout-seconds 1..60] [--slot 0..255] [--output NEW_RAW_PAYLOAD]
+    ir-metadata requires --slot 0..19; bank requires --store DIR.
+
+No command edits the pedal. Bank acquisition saves each read durably; asset
+contents and SnapTone metadata remain unavailable and are reported explicitly.
+Offline commands do not access MIDI or the network. Outputs never overwrite files.
+Exit codes: 0 success; 2 arguments/data; 3 unsupported/unverified; 4 busy/conflict;
+5 device/timeout; 6 I/O/protocol; 7 cancelled; 8 indeterminate.
+Use --help or --version without opening a window or MIDI port.

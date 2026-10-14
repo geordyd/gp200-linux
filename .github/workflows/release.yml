@@ -1,0 +1,87 @@
+name: Linux release draft
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: linux-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  quality:
+    uses: ./.github/workflows/ci.yml
+
+  package:
+    needs: quality
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      CARGO_TERM_COLOR: always
+      # Durable capture tests must not saturate shared CI storage.
+      RUST_TEST_THREADS: '4'
+      CC: gcc-13
+      CXX: g++-13
+      LIBGL_ALWAYS_SOFTWARE: '1'
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Verify the SemVer tag matches the workspace version
+        env:
+          GP200_RELEASE_TAG: ${{ github.ref_name }}
+        run: python3 packaging/check-release-tag.py "$GP200_RELEASE_TAG"
+      - name: Install Linux packaging dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y build-essential gcc-13 g++-13 pkg-config libasound2-dev libdbus-1-dev libudev-dev libx11-dev libxkbcommon-dev libwayland-dev libegl1-mesa-dev libgl1-mesa-dev xvfb xauth desktop-file-utils libxcursor1 libxi6 libxrandr2 libxinerama1 libgl1 libegl1 libglx-mesa0 libgl1-mesa-dri dbus libxkbcommon-x11-0 libxcb-cursor0 squashfs-tools patchelf
+      - name: Activate the repository's pinned Rust toolchain
+        run: rustup show active-toolchain
+      - name: Build AppImage and portable archive
+        run: |
+          export SOURCE_DATE_EPOCH="$(git show -s --format=%ct HEAD)"
+          python3 packaging/build-linux-release.py --output target/dist
+      - name: Verify portable install, CLI, native GUI, upgrade and uninstall
+        run: python3 packaging/smoke-portable.py target/dist/GP200-Linux-*-x86_64.tar.gz --output target/portable-smoke
+      - name: Verify the actual AppImage entrypoint without FUSE
+        run: python3 packaging/smoke-native.py target/dist/GP200-Linux-*-x86_64.AppImage --appimage --output target/appimage-smoke
+      - name: Verify release checksums
+        working-directory: target/dist
+        run: sha256sum --check SHA256SUMS
+      - name: Retain packaging smoke evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: linux-release-smoke
+          path: |
+            target/portable-smoke/
+            target/appimage-smoke/
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Create a draft release for maintainer review
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
+        with:
+          name: GP200 Linux ${{ github.ref_name }}
+          draft: true
+          prerelease: true
+          make_latest: false
+          overwrite_files: false
+          fail_on_unmatched_files: true
+          body: |
+            Preview build for Linux x86_64. Supported baseline: Ubuntu 24.04 (glibc 2.39), ALSA, a C++ runtime, Mesa/OpenGL and a Wayland or X11 desktop.
+
+            Download the AppImage or portable archive, and verify it against SHA256SUMS. Packaging and simulator checks open no hardware MIDI ports.
+
+            These release bytes have not been validated on a pedal. The updater and public support resources are included; firmware images must be supplied by the user. Private acceptance receipts and vendor firmware bytes are excluded. See docs/firmware.md and docs/releasing.md for approval requirements, the tested development scope and limitations.
+
+            Maintainers: review the assets, licenses and smoke results, then edit these notes before publishing this draft.
+          files: |
+            target/dist/GP200-Linux-*-x86_64.AppImage
+            target/dist/GP200-Linux-*-x86_64.tar.gz
+            target/dist/SHA256SUMS

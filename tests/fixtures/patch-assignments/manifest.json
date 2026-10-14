@@ -1,0 +1,89 @@
+{
+  "source": "analysis/implementation/rust-raw-current/1-current.payload.bin",
+  "source_type": "root-captured-connected-GP-200-read",
+  "sha256": "bb96a5dbfce2b8397b990bef67df7b47d1160ee7461a0c2c1c9d0c25e2604218",
+  "kind": 17,
+  "records": [
+    {
+      "command": 12,
+      "body_hex": "000a00000000c84200000000"
+    },
+    {
+      "command": 12,
+      "body_hex": "01ff00000000c84200000000"
+    },
+    {
+      "command": 12,
+      "body_hex": "02ff00000000c84200000000"
+    },
+    {
+      "command": 12,
+      "body_hex": "100103000000c84200000000"
+    },
+    {
+      "command": 12,
+      "body_hex": "11ff00000000c84200000000"
+    },
+    {
+      "command": 12,
+      "body_hex": "12ff00000000c84200000000"
+    },
+    {
+      "command": 12,
+      "body_hex": "20ff00000000c84200000000"
+    },
+    {
+      "command": 12,
+      "body_hex": "21ff00000000c84200000000"
+    },
+    {
+      "command": 12,
+      "body_hex": "22ff00000000c84200000000"
+    },
+    {
+      "command": 16,
+      "body_hex": "00000000"
+    },
+    {
+      "command": 16,
+      "body_hex": "01020000"
+    },
+    {
+      "command": 16,
+      "body_hex": "020b0000"
+    },
+    {
+      "command": 15,
+      "body_hex": "00008e3501000000"
+    },
+    {
+      "command": 15,
+      "body_hex": "01010cb704000000"
+    },
+    {
+      "command": 15,
+      "body_hex": "0200bb3480000000"
+    },
+    {
+      "command": 15,
+      "body_hex": "0300fd3600000000"
+    },
+    {
+      "command": 15,
+      "body_hex": "04009a3600000000"
+    },
+    {
+      "command": 15,
+      "body_hex": "0500e13600000000"
+    },
+    {
+      "command": 15,
+      "body_hex": "0600d53600000000"
+    },
+    {
+      "command": 15,
+      "body_hex": "07002f3600000000"
+    }
+  ],
+  "native_sha256": "c06e9b1634b8dbb3f44d1726c691fc497867b977601d3ad67b02dc025a87ceb5"
+}

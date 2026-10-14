@@ -1,0 +1,18 @@
+[package]
+name = "gp200-assets"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gp200-domain.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+crossbeam-channel.workspace = true
+thiserror.workspace = true
+sha2.workspace = true
+fs2.workspace = true
+
+[lints]
+workspace = true

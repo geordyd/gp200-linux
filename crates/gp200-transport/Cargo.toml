@@ -1,0 +1,38 @@
+[package]
+name = "gp200-transport"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+default = []
+# Eligibility only; omitted from normal app builds pending root acceptance.
+dependent-model-trials = []
+factory-amp-trials = []
+# Explicit experimental entry only; never part of the normal app.
+firmware-entry-study = ["dep:serde", "dep:serde_json"]
+# Concrete experimental Linux owner; still omitted from ordinary app builds.
+firmware-linux-completion = ["firmware-entry-study"]
+
+[dependencies]
+gp200-protocol.workspace = true
+gp200-domain.workspace = true
+gp200-library.workspace = true
+gp200-catalog.workspace = true
+midir.workspace = true
+alsa.workspace = true
+crossbeam-channel.workspace = true
+thiserror.workspace = true
+serde = { workspace = true, optional = true }
+serde_json = { workspace = true, optional = true }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+rustix = { version = "=1.1.5", features = ["fs", "process"] }
+sha2.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
+
+[lints]
+workspace = true

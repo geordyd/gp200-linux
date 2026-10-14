@@ -1,0 +1,114 @@
+{
+  "classification": "read-only-hardware-observation",
+  "model": "GP-200",
+  "firmware": "unknown",
+  "kind": 18,
+  "body_bytes": 24,
+  "slot_count": 20,
+  "write_records_sent": 0,
+  "fixture_sha256": "cf64b1fd162b7d6bcd39e1808c841c7f830e7b4b42d69628039cabf9a529d84a",
+  "source": "analysis/implementation/assets-ir-bank",
+  "scope": "metadata names/flags/checksum only; no coefficient bytes, empty slot proof or content backup",
+  "captures": [
+    {
+      "slot": 0,
+      "capture_sha256": "dc1504f90d51e0bdba70502e9de9a92cb44325be1ad6376abbbd9d4a4b1fcb4e",
+      "payload_sha256": "7291e112b7c9f9076eb0d30aa4e2498f7e5d8706a52d2a23cfb88cb497c63dba"
+    },
+    {
+      "slot": 1,
+      "capture_sha256": "88af71d2f2377e92ef0b9ad8bc3cdf8d0213abd9b05e14e97acf7221275afa65",
+      "payload_sha256": "f024cdc14812f6879fa46478c16056e3b214423d22288e2584b1fec89e81bdbc"
+    },
+    {
+      "slot": 2,
+      "capture_sha256": "3ce010ba639a38a9de7ef72cd9154103be80da0c04f0860d17837089a3b2e9ae",
+      "payload_sha256": "1b0f13ec4243383bc5b63162bc7762470716aa83db5d75362632e54a7c043fa2"
+    },
+    {
+      "slot": 3,
+      "capture_sha256": "57aca068b0c2a8e31580ffd44217b87673bec456040932b9f43655a1c2b20c28",
+      "payload_sha256": "0764ef6144d2f0d34941f89f8a6bce3105df1228bc2e99b674c8d4be7f096074"
+    },
+    {
+      "slot": 4,
+      "capture_sha256": "04a7c85d4d340cb758a56af3db4ec3e011adbc6e9f43bad551ad09dc7dff92ea",
+      "payload_sha256": "e89871660a76e83b44b26c2dc17075359f37dfaa5c90e921bff4ed4bce1e7b80"
+    },
+    {
+      "slot": 5,
+      "capture_sha256": "8ab2eb5cb03429a3b5218edca6d866e558572d5cefac1b2bfca936779e02a67f",
+      "payload_sha256": "4ab3c0836410b9a1064edb31d788a2c6f36e1a66a9e7796dc8a5621a911d9962"
+    },
+    {
+      "slot": 6,
+      "capture_sha256": "6f1618f1720daf0f5f32775041f0fd7f27816c5b535155943c4d9bdec1843435",
+      "payload_sha256": "d193eaa1294a52dbde498368b491ea81b8acdc4d7b529c1f7d8864f4e4cd3aa6"
+    },
+    {
+      "slot": 7,
+      "capture_sha256": "8d617a197bfeb565dfbfbba2c249018e2839257bde23cd5bba88208a471e7877",
+      "payload_sha256": "f781dba76918eefe9389aba4e7369cbe0af7867174b4a0c4e7e98120b04bf511"
+    },
+    {
+      "slot": 8,
+      "capture_sha256": "444013f2893aa12c712fef7f30ceeaa110f519a4dad1742e285e8cfb4c238439",
+      "payload_sha256": "2be53cf82ce3c6f3f01c9fcdbdeb903ca106b7b9c90df5df605d0cb2e4d217d5"
+    },
+    {
+      "slot": 9,
+      "capture_sha256": "693e22f17b75ae688ca8237192954184d8edacd4b46fb6f92b955024f090b8a6",
+      "payload_sha256": "5c8dc32b577c52e1ce6c8ea066b1fe2c7f52684029799bf90c16645b12654b3f"
+    },
+    {
+      "slot": 10,
+      "capture_sha256": "4d4d66b720270ae61cf0d596eec10d325fdb46838c45a8d5855fa1ba6b34ffe0",
+      "payload_sha256": "005c4522cff9f952abbeebc08d92ced269b0dc6d0ade2e3f2a5775009f8c031f"
+    },
+    {
+      "slot": 11,
+      "capture_sha256": "962aa5b82f84ada4f5587e174645cf7f895b7f05560481a662e9a811fb4d911e",
+      "payload_sha256": "0dfc1bc30638ca858ea10d299935002aecd527eb2bfa963755f99f11e9d9d00e"
+    },
+    {
+      "slot": 12,
+      "capture_sha256": "d8fd85f2b4bb782a4c480697f4fa99edd9334838f633ced1b4250ea2bf3e6e08",
+      "payload_sha256": "2b72bfc62324aeabd0332f951516289b3faa533c7e511e7be60512f230b5bf42"
+    },
+    {
+      "slot": 13,
+      "capture_sha256": "adfb7c067905fd25ca8dc0ba1b8902c3e658078369afec1e649207a5aed79bd6",
+      "payload_sha256": "dba6daf67c22efc4014b5722f793fb38b22c3c821bc516f82395f778ad0ce5aa"
+    },
+    {
+      "slot": 14,
+      "capture_sha256": "b55d447294e35d211729af3a0e3365e5b584f1a9566fe75644d1edb34d355d7c",
+      "payload_sha256": "92a652ea4799e6e7add7cfc97de10a76db0d0758744297b4f99b846db754344e"
+    },
+    {
+      "slot": 15,
+      "capture_sha256": "f8aca5952a8804020a8c3102646cfa5231cda195f79db3c3fcb74f1ebbf89a80",
+      "payload_sha256": "5fb7afd1c116676cc98f476c463a35650de869d32fa386b8ad8f3eb50ef5b767"
+    },
+    {
+      "slot": 16,
+      "capture_sha256": "4720ada636b8cfd008b525ad0dab9ff1a59e19b3718c0fc44e960f647734fa18",
+      "payload_sha256": "aab868763a0174f1a309abbe49301016b8d8001881d61a6c76f0849dd74c90d4"
+    },
+    {
+      "slot": 17,
+      "capture_sha256": "9999fd3af415b58cc3c4696c28f7b01b91ca87911bed24c74e302ec7e9c93a3f",
+      "payload_sha256": "ab097902a28f61ead26e3a5e796328e056439e9d2e6699877509b32ab471367d"
+    },
+    {
+      "slot": 18,
+      "capture_sha256": "5dff67388b4105e0916e70f52e6cdd39d8d38626790f8a6197724a240c733293",
+      "payload_sha256": "fe781202a7c5cf8215fd33573ca1908c7922d7ec941a2730196180440d666cde"
+    },
+    {
+      "slot": 19,
+      "capture_sha256": "1e3ec02af47c1d824d9b4624526966b732ceed989cc8a0b183ddc39d394475c6",
+      "payload_sha256": "9523f0009a70dee020db6f993062190ceb3dbddfbe8a2b024bc5ffcd1cdb3734"
+    }
+  ]
+}

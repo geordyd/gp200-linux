@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "profile": {
+    "decoded_chunk_size": 185,
+    "callback_chunk_size": 7,
+    "latency_ms": 25,
+    "inter_packet_ms": 2,
+    "realtime_byte": 248
+  },
+  "steps": [
+    {
+      "at_ms": 100,
+      "request": {
+        "kind": 17,
+        "payload": [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          4,
+          0,
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "fault": {
+        "silent": false,
+        "disconnect": false,
+        "drop_packet": null,
+        "duplicate_packet": 2,
+        "reverse_packets": false,
+        "corrupt_packet": null,
+        "conflicting_duplicate": null,
+        "wrong_context": null,
+        "unsolicited_after_packet": 3
+      }
+    }
+  ]
+}

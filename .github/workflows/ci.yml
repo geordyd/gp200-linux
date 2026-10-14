@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Linux / ${{ matrix.features }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        features: [default, minimal]
+    env:
+      CARGO_TERM_COLOR: always
+      # Durable capture tests must not saturate shared CI storage.
+      RUST_TEST_THREADS: '4'
+      CC: gcc-13
+      CXX: g++-13
+      LIBGL_ALWAYS_SOFTWARE: '1'
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Check public source boundaries
+        run: python3 packaging/check-public-tree.py
+      - name: Install Linux build and rendering dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y build-essential gcc-13 g++-13 pkg-config libasound2-dev libdbus-1-dev libudev-dev libx11-dev libxkbcommon-dev libwayland-dev libegl1-mesa-dev libgl1-mesa-dev xvfb xauth desktop-file-utils libxcursor1 libxi6 libxrandr2 libxinerama1 libgl1 libegl1 libglx-mesa0 libgl1-mesa-dri dbus libxkbcommon-x11-0 libxcb-cursor0
+      - name: Activate the repository's pinned Rust toolchain
+        run: rustup show active-toolchain
+      - name: Check formatting
+        run: cargo fmt --all --check
+      - name: Check Clippy and run hardware-free tests
+        env:
+          GP200_CI_FEATURE_SET: ${{ matrix.features }}
+        run: |
+          feature_args=()
+          if [[ "$GP200_CI_FEATURE_SET" == minimal ]]; then
+            feature_args=(--no-default-features)
+          fi
+          cargo clippy --workspace --all-targets --locked "${feature_args[@]}" -- -D warnings
+          cargo test --workspace --all-targets --locked "${feature_args[@]}"
+      - name: Test package installer ownership and firmware resource validation
+        if: matrix.features == 'default'
+        run: |
+          python3 -m unittest discover -s packaging -p 'test_*.py'
+          python3 packaging/firmware-resources-tests.py
+      - name: Build native editor
+        if: matrix.features == 'default'
+        run: cargo build --locked -p gp200-gui
+      - name: Smoke the simulator through the native renderer
+        if: matrix.features == 'default'
+        run: python3 packaging/smoke-native.py target/debug/gp200-gui --output target/native-smoke
+      - name: Retain smoke screenshot and logs
+        if: always() && matrix.features == 'default'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: native-simulator-smoke
+          path: target/native-smoke/
+          if-no-files-found: ignore
+          retention-days: 7

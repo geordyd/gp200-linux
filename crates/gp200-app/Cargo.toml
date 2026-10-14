@@ -1,0 +1,26 @@
+[package]
+name = "gp200-app"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+default = []
+# Eligibility only; omitted from normal app builds pending root acceptance.
+dependent-model-trials = []
+factory-amp-trials = []
+
+[dependencies]
+gp200-domain.workspace = true
+gp200-protocol.workspace = true
+gp200-catalog.workspace = true
+gp200-library.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+gp200-transport.workspace = true
+
+[lints]
+workspace = true

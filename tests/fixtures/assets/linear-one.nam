@@ -1,0 +1,16 @@
+{
+  "version": "0.7.0",
+  "architecture": "Linear",
+  "sample_rate": 48000,
+  "metadata": {
+    "fixture": "synthetic deterministic acceptance profile; no guitar-tone claim"
+  },
+  "config": {
+    "receptive_field": 1,
+    "bias": false,
+    "implementation": "auto"
+  },
+  "weights": [
+    0.012
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "name": "GP-200 V1.8.2 Linux sequential firmware protocol",
+  "authority": "Public runtime description compiled into the app; no device permission or approval.",
+  "scope": {
+    "variant": "GP-200",
+    "image_size": 6452728,
+    "image_sha256": "c368618773097b07c556c951eb10792f9d57be929323366648eb6e083d0d23af",
+    "image_version_tag": "V182",
+    "excluded": [
+      "GP-200LT",
+      "GP-200JR",
+      "other images",
+      "empty sections",
+      "automatic retry",
+      "resume"
+    ]
+  },
+  "sections_in_transmission_order": [
+    {
+      "selector": 0,
+      "raw_table_slot": 0,
+      "start": 80,
+      "length": 4192632
+    },
+    {
+      "selector": 1,
+      "raw_table_slot": 2,
+      "start": 6026744,
+      "length": 294912
+    },
+    {
+      "selector": 2,
+      "raw_table_slot": 3,
+      "start": 6321656,
+      "length": 131072
+    },
+    {
+      "selector": 16,
+      "raw_table_slot": 1,
+      "start": 4192712,
+      "length": 1834032
+    }
+  ],
+  "framing": {
+    "prefix_hex": "f07e48",
+    "suffix_hex": "f7",
+    "interior_max_byte": 127,
+    "max_frame_bytes": 4096,
+    "global_error_hex": "f07e4806f7"
+  },
+  "identity": {
+    "query_hex": "f07e4801f7",
+    "reply_bytes": 39,
+    "product_range": [
+      4,
+      20
+    ],
+    "version_range": [
+      20,
+      36
+    ],
+    "chunk": "(raw[36] << 4) | raw[37]; each nibble <= 15; range 1..255",
+    "version_provenance": "Bootloader identity is not an application firmware-version confirmation."
+  },
+  "section_sequence": {
+    "announcement_hex": "f07e480b0156313832f7",
+    "announcement_gap_ms": 30,
+    "request": "F0 7E 48 7F selector F7",
+    "request_reply": "Safe frame of at least 6 bytes with raw[4] != 7E.",
+    "descriptor": "F0 7E 48 02, 16 high/low nibbles for big-endian u32 length then u32 block count, F7; 21 bytes.",
+    "descriptor_and_block_reply": "Safe frame of at least 6 bytes with raw[4] == 7F.",
+    "blocks": "Checked integer ceil(length/chunk); absolute cursor starts at 0 in each section. Copy at most chunk bytes; pad with FF.",
+    "block_packet": "F0 7E 48 04, cursor modulo 128, high/low nibbles of exactly chunk data bytes, two checksum nibbles, F7; 2*chunk+8 bytes.",
+    "checksum": "Wrapping u8 sum of transmitted data nibbles, including FF padding; exclude header, index and checksum.",
+    "terminator_hex": "f07e48057bf7",
+    "terminator_reply": "Safe frame of at least 6 bytes with raw[4] == 7F.",
+    "next": "Repeat announcement/request/descriptor/blocks/terminator for all four sections in the listed order."
+  },
+  "terminal_sequence": {
+    "query_hex": "f07e4807f7",
+    "reply": "Safe frame with opcode 03 or 07 and an even body of nibbles <= 0F; decoded body remains opaque.",
+    "opcode_03": "Retain observation without an offer or deadline extension.",
+    "opcode_07": "Offer finish control F0 7E 48 09 F7 once.",
+    "finish": "Full write/drain means host finished unverified; it proves no device persistence or contents."
+  },
+  "host_policy": {
+    "write_and_drain_budget_ms": 10000,
+    "reply_budget_ms": 10000,
+    "max_terminal_decoded_bytes": 255,
+    "offers_per_action": 1,
+    "approval_wait_seconds": 900,
+    "transition_seconds": 60,
+    "transfer_seconds": 3600,
+    "deadlines": "Absolute monotonic deadlines; unrelated traffic never extends a phase.",
+    "pairing": "Retain full write/drain and phase-appropriate raw receive decision durably before the next action.",
+    "failure": "Stop on malformed status, write/drain uncertainty, reader loss, cancellation, timeout or target-binding change; retain recovery hold.",
+    "unkeyed_status_limit": "Delayed old statuses cannot be distinguished from valid replies during later actions."
+  },
+  "admission_and_completion": {
+    "entry": "Explicit current normal capture/loss review and same-owner entry approval.",
+    "query": "Fresh target binding and separate live boot-query review approval.",
+    "transfer": "Fresh boot identity/chunk, exact retained image and contract, separate current transfer approval.",
+    "recovery": "Checked original local history, new complete-image review from section/block zero; no imported-journal resume.",
+    "return": "Fresh normal identity/current/globals reads, fresh manual pedal application-version V1.8.2 report, original owner retirement and durable closure.",
+    "contents": "Installed IR audio, preservation and restored contents require separate evidence; completion alone does not verify them."
+  }
+}

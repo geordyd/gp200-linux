@@ -1,0 +1,3533 @@
+{
+  "schema": 1,
+  "source_acceptance": {
+    "path": "analysis/implementation/footswitch-matrix-acceptance.json",
+    "sha256": "83d41a055d0c8027c8b6c525709512383c3e5069506e882760cd570cb5e914ee"
+  },
+  "evidence": "independent-root-physical-change-readback-and-restoration",
+  "meaningful_trials": 87,
+  "noop_trials": 3,
+  "scope": [
+    "20 event IDs tested in inactive User table2",
+    "26 tap choices at event0,17 hold at event1,25 combined at event16; None0 no-op separately counted, restoration supplies actual nonzero\u21920 evidence",
+    "Table routing0/1 testedevent0; table0 setupmode0\u21921\u21920 also restored"
+  ],
+  "limitations": [
+    "Not exhaustive table\u00d7event\u00d7function Cartesian matrix",
+    "No actual footswitch/external physical action, audible action, emittedMIDI or power-cycle persistence acceptance",
+    "Unknown connected firmware; only exactGP-200 normal identity variant tested",
+    "Global comparison excludes separately retained volatile bytes; no whole-raw equality claim"
+  ],
+  "entries": [
+    {
+      "index": 0,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-00/result.json",
+        "sha256": "aa7413e5d82a35fddcd8953e5f5509a6b97a576c38e701047ce00757467554c2"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-00/globals-before.payload.bin",
+          "sha256": "db0221270446072f5af4c2d493df10c00a6b116ce0cbab7cbd38455392386818",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-00/globals-after.payload.bin",
+          "sha256": "a8b4beeae570030b04ca4a0dfcff6b1446d4066b70d59d8777acded06f2eac6b",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-00/globals-restored.payload.bin",
+          "sha256": "2780997808538616e701c38df3cf37e48597e017fba3d3e84ce975cd77d777fa",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-00/inactive-footswitch-request.bin",
+          "sha256": "73602f6f4ac61e0558c59b713f6d6aaa9ce8003fd5e327ba492c6386bc64abaa",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-00/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 1,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-01/result.json",
+        "sha256": "eb540c856501b773e9ab6a0d88e898214e69e03a31bec2a0024c9af2ff353d32"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-01/globals-before.payload.bin",
+          "sha256": "9888dc65dc576c7db6944eec8fb43ff4ae3e94e2cedc6cf1dab96483aac26ae4",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-01/globals-after.payload.bin",
+          "sha256": "76e9da1419443aeafab19e278bb3013c4f25b5715b50cb80ef0a06ae8b7a2200",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-01/globals-restored.payload.bin",
+          "sha256": "4cf051f231bc4965d8b9afdf89d8fd8eb0f988f49c7f803b0e054d18984a55ba",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-01/inactive-footswitch-request.bin",
+          "sha256": "87eb618f152076de2f8f747c6920c63822be37307b0f91a06e599b53adc39ddd",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-01/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 2,
+      "table": 2,
+      "event": 2,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-02/result.json",
+        "sha256": "d18d0e2f8eb50f70bb2ce1abd4a9a1f183cbca7e286076eff1e2723be104de0c"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-02/globals-before.payload.bin",
+          "sha256": "ad9de8d6e2229749c1b3ce5f876b8fbe2d28a448f65d125e69c21a64f4eb696e",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-02/globals-after.payload.bin",
+          "sha256": "a650a293326b6c5a2837ba7038f1dfddb489727bf8839bc181ec231e8fa7363c",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-02/globals-restored.payload.bin",
+          "sha256": "180a2a1c208f5ff681a606c1eb5be4c8f1ccf5f1e9c85bfa5a464db7812e1c96",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-02/inactive-footswitch-request.bin",
+          "sha256": "a7158eaa68a36c9343560ac7389a865c711a65835b20cfa0a3de168595ce9a6b",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-02/restore-inactive-footswitch-request.bin",
+          "sha256": "a41b2bb8e1a912df31424b77eb0d2305756b6b140dbac04ade82adf0e8a06ff6",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 3,
+      "table": 2,
+      "event": 3,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-03/result.json",
+        "sha256": "dcc5e701c93095eb93c50df11047b6c1bd766eb8c287723f5d75b851c0f28eb3"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-03/globals-before.payload.bin",
+          "sha256": "d8a82a501f2a503a1450ebcbeb02650543146fbd7243cb5b5d34ea080ae54edc",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-03/globals-after.payload.bin",
+          "sha256": "19647ededdb0b81c393b9dc0a35449faed1bf86e6667d092eb0fb8a9dc9fa2e8",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-03/globals-restored.payload.bin",
+          "sha256": "7882bf2bb5e5c5984c7397c5227ac4acd59b4be15508bb3cfb6f59affcea78aa",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-03/inactive-footswitch-request.bin",
+          "sha256": "8e36fc56eea1d14b2c5a30bd5a4812774de0a714cf7af6df03ae5210296b6b73",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-03/restore-inactive-footswitch-request.bin",
+          "sha256": "6270ee9aac3738e0d95c4585c814786da1f582f4f81b99705dd10e5e78ce8bea",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 4,
+      "table": 2,
+      "event": 4,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-04/result.json",
+        "sha256": "7a6d3db8288da9db389eb768ad1ca47415033f4b74fea57f6364ce4f0003063c"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-04/globals-before.payload.bin",
+          "sha256": "a610e1b3c91c561435b70233c2c55b4d7b070684980fde776e0b30f452a7d282",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-04/globals-after.payload.bin",
+          "sha256": "01575813d9e7bd1a0225ce19767b2bb18d9e48acd22a93391b9195a76ff51cfe",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-04/globals-restored.payload.bin",
+          "sha256": "787ba3a96bac1061f6a5cc27cde01bd5de1590d0e8fa91e66b5a6e23b7bc0ca7",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-04/inactive-footswitch-request.bin",
+          "sha256": "f1857b5895e2c0d42ff6ed0d42421246962fa68282f0d50d94895448423a9e2c",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-04/restore-inactive-footswitch-request.bin",
+          "sha256": "0a3f1e92ef58e05d53c5e581947ee1a72420e0dc75f1a06a74144216baa27ce2",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 5,
+      "table": 2,
+      "event": 5,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-05/result.json",
+        "sha256": "3535d3fc98573b924f952695205bfbc03af559f1b4fa34e6dec49beca17f34fd"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-05/globals-before.payload.bin",
+          "sha256": "83359e13eafc09112a4124c8d5bb5bcfb3f80c4a3e7528a85bd1ffe5ae7fbdd1",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-05/globals-after.payload.bin",
+          "sha256": "afdbe204d6b16cc87ba1e8d80a4b8403a615a3ae41f7e61af9081c2cb4b7f25b",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-05/globals-restored.payload.bin",
+          "sha256": "c2760c361e2d8df94e6d049e04376076d996ae749507d5b8fb1d8eede2c73613",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-05/inactive-footswitch-request.bin",
+          "sha256": "065b38d639c0ee9d57ad9b9cd7cb05b1767216a60a27267910991447d39e3156",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-05/restore-inactive-footswitch-request.bin",
+          "sha256": "5a7ae70d99a8f0243185c06aa056e8489fd3c5d59698ef9fcbe04d4c323938ef",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 6,
+      "table": 2,
+      "event": 6,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-06/result.json",
+        "sha256": "633ec5d848fa72cf1de658fb58a91437039be1243d9a28e308eb0438bbc40766"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-06/globals-before.payload.bin",
+          "sha256": "c026abdf1ec100de2e12537514846f9d4ada3b343d57c78f4e9a2d74e084b947",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-06/globals-after.payload.bin",
+          "sha256": "dbc04ca372c80b8c606a4e508582eb892fa78872cc706fd3eb09d7e55ce2c18e",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-06/globals-restored.payload.bin",
+          "sha256": "7b200cf9e4a87d1c88555703afff13754f205570d00340e74c55a8526ca6a4dc",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-06/inactive-footswitch-request.bin",
+          "sha256": "1bd02c74043d4f29934f552418b51fa2d10cd7e01788d4ca4726567f65e78290",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-06/restore-inactive-footswitch-request.bin",
+          "sha256": "e4f1b0ea7144dd6b42464c7abb46990d7f9d8c0c4fc4d23b2cfb5ac778495837",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 7,
+      "table": 2,
+      "event": 7,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-07/result.json",
+        "sha256": "2c993180fc0c7cd04125b585a9a45c4b686d71bbdcc8599cba9d12277b5e4b77"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-07/globals-before.payload.bin",
+          "sha256": "58262a99b3eb54c6d180b1d518cdd2bb1717a2d5f120f4bd2e9001bef22ccb3b",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-07/globals-after.payload.bin",
+          "sha256": "0afcbcbfba0928b21bdddfd5d3f2f1f42fd3fa63c8f6a2c48ada335359b0dca3",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-07/globals-restored.payload.bin",
+          "sha256": "b2331d562173c85d8c135645f84608fd817aa670cd2d157fabd972493f680a2d",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-07/inactive-footswitch-request.bin",
+          "sha256": "3e1984a1c6d790152fe72bd04c4116de3af2eafe262d82c17496ce832267313e",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-07/restore-inactive-footswitch-request.bin",
+          "sha256": "4ec55b57508346048db9f88b0308f0d5fb0ded69662e358589f065dbe0fe7cfb",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 8,
+      "table": 2,
+      "event": 8,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-08/result.json",
+        "sha256": "c3b2e41a3f5b0a5714e1501e8241cb5c3fdf71f21e21adff9b88b21c64005ade"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-08/globals-before.payload.bin",
+          "sha256": "92e6e721c34da078122f0ad3f5043f5f573d6b23898169f327562fd8722919f0",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-08/globals-after.payload.bin",
+          "sha256": "5c7af1f0f6e3b5c129924f6e79e74dc55912bad0e80360adf524eaf0477c8906",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-08/globals-restored.payload.bin",
+          "sha256": "85837637a150d43759e195a76916841acdc99323541127bbdee4037635943de6",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-08/inactive-footswitch-request.bin",
+          "sha256": "d22cc43dcbd866ffe0a7e9f316cf14b1189a9a75c358038d733ed6437d385d34",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-08/restore-inactive-footswitch-request.bin",
+          "sha256": "e8d76d497083637592b22a6bad60c5baca1da5fdda214b0b51524ef7a6cea12c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 9,
+      "table": 2,
+      "event": 9,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-09/result.json",
+        "sha256": "3d4b5301886ae4852113c60842fd753feaa978157e7e6ac37edb27a18a6f9d3e"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-09/globals-before.payload.bin",
+          "sha256": "155983b42e4e57015da62288c551d079cc34a6a9b2ae53e679bdc71175623d3f",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-09/globals-after.payload.bin",
+          "sha256": "63f02d22bbca8a6d617b6a08d3f4f78fce0f35f6ba06be759b80a408a417d3c9",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-09/globals-restored.payload.bin",
+          "sha256": "d873bdaea52f180c093455c67d261411f190f009ebd95d83a8041b3e9b095b91",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-09/inactive-footswitch-request.bin",
+          "sha256": "549d8221421ad196e422d89757ebaf3cee27ed87373481ea7b5805e4566bc451",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-09/restore-inactive-footswitch-request.bin",
+          "sha256": "d04286fbeb1fdf718fd48fa82a724332edd512236b2e3d2afa15c1ff9a9cefcb",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 10,
+      "table": 2,
+      "event": 10,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-10/result.json",
+        "sha256": "54eeb85dbe56a882585c3cfe24e66d926b8a99c0b502231b54db48add052dca6"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-10/globals-before.payload.bin",
+          "sha256": "2ad64b94de1717d42db3ed49c59fe22d62bdbe867e8d511a709b36e3b3d62e17",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-10/globals-after.payload.bin",
+          "sha256": "b240cd40de8bf2458216a9810a333fecdee5bf23f237fbc81ed95746db911afe",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-10/globals-restored.payload.bin",
+          "sha256": "737ec69c28c526d98e5559df8c9be98b659d519a28180861fdc9b89b771da82c",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-10/inactive-footswitch-request.bin",
+          "sha256": "f2c0072a512e2f8c077a169520e1af1532e5c1ae33833776b124896fe3973f0a",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-10/restore-inactive-footswitch-request.bin",
+          "sha256": "c93edfdb216f67e6d2ce3e0de9795e2508de92e6f4da9a533f9d3869919654b8",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 11,
+      "table": 2,
+      "event": 11,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-11/result.json",
+        "sha256": "b6c81037635d64cf5f4d4001b01f24bb207010cea4744ad8229a31cac0071b1a"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-11/globals-before.payload.bin",
+          "sha256": "ac3c412b4df51c9881869caa3d7316a4de08dbe2479c3c6a9016bf33e71d28ff",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-11/globals-after.payload.bin",
+          "sha256": "c3c92ea6972f505ac3ada0fc8ce4beb6ed4639c57e64e61fe47bdf1f67c2b5b1",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-11/globals-restored.payload.bin",
+          "sha256": "3af075e1e9541256e6f22ed179afe2b627f1091200bc4c7afbad938d1dd63e6d",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-11/inactive-footswitch-request.bin",
+          "sha256": "f9f4a6eb28425de17e630197f1c1ae2a5e9f8142833f0c598f5ea2ed7e408bfc",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-11/restore-inactive-footswitch-request.bin",
+          "sha256": "8137e33f65fc54423db6a67e89fcf9851bd5b79a47cc15cb1e670c1fe2eef6a2",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 12,
+      "table": 2,
+      "event": 12,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-12/result.json",
+        "sha256": "76d6108db4855f43bb61dfd4a3ee139297482564a401fd060fb805285742b8c2"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-12/globals-before.payload.bin",
+          "sha256": "570dda985d5bb87373ff57d29b2e06d628b32219e1bff79616724c1e4ed8de88",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-12/globals-after.payload.bin",
+          "sha256": "8b48847c760337202cccd25ccd732c64e5ad4cb5289f493de4f7a2ecee7ec33a",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-12/globals-restored.payload.bin",
+          "sha256": "b4773abc033344807b2f4a97ea201c25a094d5ff1759129ccaf9e76465fc40cd",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-12/inactive-footswitch-request.bin",
+          "sha256": "170e05914b7ed1f3b67e4434df3aecacc9b8a52cfbf5ddea8c482d07dcf1dd9a",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-12/restore-inactive-footswitch-request.bin",
+          "sha256": "33016840dfc9b5eb98c613669f11406c25daa5615156338877f2dd7c89d18ce2",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 13,
+      "table": 2,
+      "event": 13,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-13/result.json",
+        "sha256": "52587487c5cbf0c68d7e3362369f876d9bcafe40b26ce797e3af6087f92f4a3c"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-13/globals-before.payload.bin",
+          "sha256": "6c6b68fced2813049e9d3b492246a4d1bb7f3d9bb7ecbb8f661f59e08dc91922",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-13/globals-after.payload.bin",
+          "sha256": "7edb7107e1e55932cc97979fa6a36b681d522f01bdb2d38bc4555db1492c4780",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-13/globals-restored.payload.bin",
+          "sha256": "114215288fd2a76d60b5900bf3417d20409d423b6c460b4cb90b953de6abb86c",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-13/inactive-footswitch-request.bin",
+          "sha256": "8e4e702a026edab1e2a873e0dd764d6d1d98774c0eb4208f51b1c6a41065bc96",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-13/restore-inactive-footswitch-request.bin",
+          "sha256": "dda7ca39f87dca34f1b28aa9b5678b046eab0750191c3f854eb4e013fb6064aa",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 14,
+      "table": 2,
+      "event": 14,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-14/result.json",
+        "sha256": "5f75c5fb2d095a2159f49d2bf018da3179fc196829ec1043b09d4232c90d50fe"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-14/globals-before.payload.bin",
+          "sha256": "a10fcc65133b6a1c440131b6995e6acc821cbe51c4d70ad9dd7d63e4f6bbac23",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-14/globals-after.payload.bin",
+          "sha256": "cc58256007858b43f927df3b191d6de2b50c335a946993a8a40366a06a67609a",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-14/globals-restored.payload.bin",
+          "sha256": "8357b74aab106500ab31c8ab2cefe31b75fca7a46fa1a2ca8895267fd6dcc28c",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-14/inactive-footswitch-request.bin",
+          "sha256": "69b27b726386d3aeca894fa44aa515efe55d99f7e9f0d075948c20c7375b9c31",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-14/restore-inactive-footswitch-request.bin",
+          "sha256": "af8323cde305dd8fbc1181c785c057360bc5fcf30c703d13c8a8160dde6c7070",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 15,
+      "table": 2,
+      "event": 15,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-15/result.json",
+        "sha256": "bd971fdde1e6a7720c7ab75320c1ca8ade45fcd27af60790ffe6d77750fccaa4"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-15/globals-before.payload.bin",
+          "sha256": "c861ed220ddd82ba23582fbfd4588ea2cc5c676a129d92193854ad19689fcc6c",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-15/globals-after.payload.bin",
+          "sha256": "5c15774a5bcdb738ec8969cbc301fdcaaa41dd1fe21073741b1ef19958c6c21b",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-15/globals-restored.payload.bin",
+          "sha256": "dd8faf76523f8ac4cd777559ba986daa97154b7fc504ce7251c4f6de1b026190",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-15/inactive-footswitch-request.bin",
+          "sha256": "5465c0f317ceff8265cde4cd58432f8231dc103582e342951033e5e521e974b7",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-15/restore-inactive-footswitch-request.bin",
+          "sha256": "e15dd289ef73631d44e70d11ab4cf2af35afa2fd2356496d8dd5b41009367578",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 16,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-16/result.json",
+        "sha256": "cf26e838950e2a49d6ad29fa4917a950e057b3489295e5c59c56ca83c587138e"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-16/globals-before.payload.bin",
+          "sha256": "31efac59a5a24fef7cedaf61ba84799766e21bed1e819d95c057920023b0e745",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-16/globals-after.payload.bin",
+          "sha256": "7a98dd04f6f4bce742be383057b884b01096f9b89ae739a0f7f3768f741db415",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-16/globals-restored.payload.bin",
+          "sha256": "5addf1c98c4d3271ec2cf551e297982bf214e982a71d8ab8ab00a4efefc9aea1",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-16/inactive-footswitch-request.bin",
+          "sha256": "5144e59f0e4c1dd1af760109737486d04d542308d8188e084d2f121be287426c",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-16/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 17,
+      "table": 2,
+      "event": 17,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-17/result.json",
+        "sha256": "2ee0c5e00cae34c6cac18e4d8f87bc9eb7ad93b38bd0193cdab68af28eab2e08"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-17/globals-before.payload.bin",
+          "sha256": "e3fa26c0e67a5649e04fc9aad49f857933b6f8dd01eaf1b7763607d698cf65d3",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-17/globals-after.payload.bin",
+          "sha256": "eac70cc1792abf41e27ac29e26234c6e81565cbcec7700e29fa2fe93ad12d45e",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-17/globals-restored.payload.bin",
+          "sha256": "a168fe64b4542c0f5ce6c00b305b1a8dee2c18185d35b40bce660490990262fe",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-17/inactive-footswitch-request.bin",
+          "sha256": "4bd9ae386383a9e091740df81e74fd9536315b95746122f35adde5018ec952bc",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-17/restore-inactive-footswitch-request.bin",
+          "sha256": "8a5ea0a267c9e9956b5ec00638ddba00ff9be1b42c5286202fe2be4c557bdc02",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 18,
+      "table": 2,
+      "event": 18,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-18/result.json",
+        "sha256": "adbe80f36f4eb6c9dd1755a2cc8c5004ea958dc0f3abdbd260c25b1fcf2211c8"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-18/globals-before.payload.bin",
+          "sha256": "3619d63668d07c8cc7ca18ccc6958bb39cf86ef0198fe7a31595f92dd657c1f6",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-18/globals-after.payload.bin",
+          "sha256": "24ee8441f90f4b9d499a90c0025e8bbde337bf0354d5171f8566c187b2caa245",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-18/globals-restored.payload.bin",
+          "sha256": "f847e3a04bcb74233a6211b3ae7ea392c6337a96b79daab7dd1cf05a2e614f43",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-18/inactive-footswitch-request.bin",
+          "sha256": "18eed910fa11c1e040b8793aa05ba2d0e8c7e1fc1e5b638f00059df08445bab3",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-18/restore-inactive-footswitch-request.bin",
+          "sha256": "8e25375655f64a87b2446ca3be2ce37806ebcee8ccac9d329b8b8ecdcaeba41d",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 19,
+      "table": 2,
+      "event": 19,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-19/result.json",
+        "sha256": "5f255718930b52e3395fc936e8038c6e3b7d8d70cb2e635d314e35b8e635752b"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-19/globals-before.payload.bin",
+          "sha256": "439f6dfc8e14ac9db9728cdfbf0892da0831e0f8817651651360e639a46fe8b7",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-19/globals-after.payload.bin",
+          "sha256": "0776a09e145be4e010cab76909365da1ad52ceca942f1ed5297db50c7cd77ba7",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-19/globals-restored.payload.bin",
+          "sha256": "ae9e8f6e0ee47fc6640a7531afbd3764da2e2329c7ebf3511f2beb2d799fb035",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-19/inactive-footswitch-request.bin",
+          "sha256": "c831321308ef1974478611bd667887c2a7101e47e33a3c46c92c6f150d668cf6",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-19/restore-inactive-footswitch-request.bin",
+          "sha256": "6e03ba603f9479ba5f7e298806a0dfd2fe5e80b5cb20a4ffcdcc8f5002bb1871",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 20,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-20/result.json",
+        "sha256": "11a64c2e764c6ab1089ce0a9ae087b01ce2d6c11228418e13efe6d90bf38e558"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-20/globals-before.payload.bin",
+          "sha256": "c4105ca1a70e03d94c34d28f145180ed19375a36ec8bcd5532f887eb7fcf4388",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-20/globals-after.payload.bin",
+          "sha256": "2f79063846167acf80f038a46dad145e0c41139a0dc1defac6d59f5605d20ab3",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-20/globals-restored.payload.bin",
+          "sha256": "6f8c026fc6205a4187fb401131464202ca58060785ce6d04200de73e589e31b5",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-20/inactive-footswitch-request.bin",
+          "sha256": "73602f6f4ac61e0558c59b713f6d6aaa9ce8003fd5e327ba492c6386bc64abaa",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-20/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 21,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 9,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-21/result.json",
+        "sha256": "c254d01add1f9a7755f463895153b72ad7c7d7453f5e80ba54c1239af3dc3da2"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-21/globals-before.payload.bin",
+          "sha256": "8cca93c494e22ab37b350f61dbbbcfc39412afaf8a29137622d11b38d7a8f6e3",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-21/globals-after.payload.bin",
+          "sha256": "96cd3a1b1f23607e2bfafdec9c883726115f1cdc0a7dc7fd6a2c46288a83ddd6",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-21/globals-restored.payload.bin",
+          "sha256": "00ec4caeca4b640f62590310f8e22cbc98bf3d998a50abf8a5fd31a8164b2492",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-21/inactive-footswitch-request.bin",
+          "sha256": "acaa6419ced23032e6226fecfc63936b81e4bb99efb5fe81c998562dd1510e38",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-21/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 22,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 10,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-22/result.json",
+        "sha256": "c1bf664041dfcae23e5acc49855a3931ee25dbea20c2d90e32d31eb4c6290048"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-22/globals-before.payload.bin",
+          "sha256": "7f015ce98f252ea7ae882b008c1d96dbda36a64ef6879e7f0dad4baba21e77ac",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-22/globals-after.payload.bin",
+          "sha256": "695a9cac44f162c70526093728008a19c3c68d9386dc00eb0684ff8296841667",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-22/globals-restored.payload.bin",
+          "sha256": "36f6d05165e1dd1f536be7c7c69bf217b192427b08847332dcbe2ebdb1ddfaff",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-22/inactive-footswitch-request.bin",
+          "sha256": "d35f5ded579f64a201c16d94c30f5b030021b30c3f0d4e37a5707bb90f273e25",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-22/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 23,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 11,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-23/result.json",
+        "sha256": "e51e5449ba74652c8c613175d94c42f11c985892f6556e8db0b5eee60c4c46d9"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-23/globals-before.payload.bin",
+          "sha256": "e0856cd53f8f2d110a13f53dcba560938f296283ab85da3947f53e989c4b7b9a",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-23/globals-after.payload.bin",
+          "sha256": "078e1487fc2c926f990b22ec86cabe04a775567fd07ea2fba40b8fd165f5cb83",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-23/globals-restored.payload.bin",
+          "sha256": "8a0177077207f3465ba51c1db293e0d5c2750b70d992ed6512eb8e993b037b67",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-23/inactive-footswitch-request.bin",
+          "sha256": "62bf8422644074c1ae659f9d183978abbc4df6fa0599519bb7c13ca7751acd67",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-23/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 24,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 12,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-24/result.json",
+        "sha256": "40a20c3e543030deb931ca7ad8a37994b5effa840c77695d683d67eb39dae653"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-24/globals-before.payload.bin",
+          "sha256": "0f1f6ee57f20f4eac1b2cc8a5c0e21ad9e239b5698ac7bc4ed38d8d88fa8e955",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-24/globals-after.payload.bin",
+          "sha256": "ab60f67926e137352ecfa7f84bff60b97bca62b6cdabfcec0463cf7f73517fb5",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-24/globals-restored.payload.bin",
+          "sha256": "e4d9b02819b30de202747d93ebfc6a117489f697dc0352a679614b4fd3930247",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-24/inactive-footswitch-request.bin",
+          "sha256": "983be85951aba5c1ef06752fbf6676b565d346784782e273a3f1c61aef44d5f9",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-24/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 25,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 13,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-25/result.json",
+        "sha256": "a3b2209b2bb46f419e9529daef2155c9cbaba73400241f49de5ebf891802952c"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-25/globals-before.payload.bin",
+          "sha256": "9e141e45223c3c2c0eb88ba2b89880c12de6fe768895d9356141c7b34eeba709",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-25/globals-after.payload.bin",
+          "sha256": "4ef6e5db549b69c65058b3cae033354cc1c91fa00d3acd63f8a89899dd458c31",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-25/globals-restored.payload.bin",
+          "sha256": "20fb75013ed3e52966281083f126d3d7a1bfafb0a7eac9605b0ece81c67bcbd3",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-25/inactive-footswitch-request.bin",
+          "sha256": "af00b6f5e9b42dc8421be114174bea4599dfd2821a3698086c881e431fc5edf2",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-25/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 26,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 14,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-26/result.json",
+        "sha256": "7b16e3471e644278549f4a7f6dad5b5bd66b9dd15e520fb886ec8495f9c672fb"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-26/globals-before.payload.bin",
+          "sha256": "2c26339263466796f301117a0528769a905429d2fed71f1015c5274114198d9f",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-26/globals-after.payload.bin",
+          "sha256": "61e38ef8acaf1fc58b363b7d4dac96f5c297fac8fa7a3a2ef2f79932bba7dc75",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-26/globals-restored.payload.bin",
+          "sha256": "7a8087965c298b5975f7272ad02ede31bee6bf1c07f2cc8205e078599694073a",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-26/inactive-footswitch-request.bin",
+          "sha256": "50f32e0dbaac5928b4f0a577f78f390cc3af550f3686bb39553dd1655bc3eb5a",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-26/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 27,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 15,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-27/result.json",
+        "sha256": "ec3e3d790071dcb66522b54de6fe6e20aa509fb14b9874f3d4e118ed7b1b5963"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-27/globals-before.payload.bin",
+          "sha256": "5498756627718197a445b5aaac64bc294b5ad838bba827c4030c4b52eb3b67aa",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-27/globals-after.payload.bin",
+          "sha256": "eb9613b4a9f8ef5a12428125fa560da882675770e77a639ec27c6b71c8166ec4",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-27/globals-restored.payload.bin",
+          "sha256": "acf238fafb7fe3f462342e01d81504fc9fe64ae15f499ad4fcbd888c9c899250",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-27/inactive-footswitch-request.bin",
+          "sha256": "9f6d547bbdd107ca9ec9fbe957b5bdfeec2fec665385f27785b2573169ae38d4",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-27/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 28,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 16,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-28/result.json",
+        "sha256": "c24c680d8dae53599eb014b6011450706867cc70319b8e96fb4a38686454ee02"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-28/globals-before.payload.bin",
+          "sha256": "a9aba44bb1b13491da627edfb3457a74b365211362ba5c26e5e8969a19729cec",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-28/globals-after.payload.bin",
+          "sha256": "a8c2db2d216f6fc1756acaa54f7376eb2988641f07e77e1cff3194eb5729b46b",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-28/globals-restored.payload.bin",
+          "sha256": "46d2e043f74c442421334200d6a272c94fa5c1e4d07a2ef69bbb5dfbd7d9bbd3",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-28/inactive-footswitch-request.bin",
+          "sha256": "e3642d6d72c36c6f0968248044ec16df843d25f4931199c09a61b46e4fa2bbff",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-28/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 29,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 5,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-29/result.json",
+        "sha256": "06a5647a4f970c1a72a581d566d27af7152461dab9ba7315edeb25b105f2e484"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-29/globals-before.payload.bin",
+          "sha256": "7d9c4445fae6589af9aed35a172c7d9ba7d014c14028ed1caa429c50a466e5d8",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-29/globals-after.payload.bin",
+          "sha256": "fdc173799da2498b8a2886b294cd29dac091fb3b83871ed07f10e08e260b6472",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-29/globals-restored.payload.bin",
+          "sha256": "45871c314998aefb539774f9aa8d6fd43019ed00e7a66ed2865afd47091b9ec4",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-29/inactive-footswitch-request.bin",
+          "sha256": "f863c1154711a85f17d68b182a4961f5cef47c392ab40a6bd4f10241b9aae25b",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-29/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 30,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 6,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-30/result.json",
+        "sha256": "1420a819d777090586f7501629cf773aadbbd9bbc46e3b905b8266d569ce63b6"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-30/globals-before.payload.bin",
+          "sha256": "dc0a8075e880ed900e6a26985e884e6f58eded55859a7c71b30aac332de880dc",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-30/globals-after.payload.bin",
+          "sha256": "24fdffb08f78f0d0ad001e418332eff296b4b6322c6bcf75e13908cfa8b397b1",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-30/globals-restored.payload.bin",
+          "sha256": "b51d5ccedf1ef591f44504f86c806267de3626fdc78a4261255567ab5965d39c",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-30/inactive-footswitch-request.bin",
+          "sha256": "c37a39882a0120fb9c0bb27f36bca66d32affd2ca501dc1be49bd74e89cec44f",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-30/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 31,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 18,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-31/result.json",
+        "sha256": "1648f156a26ba70ed6242276b06ac334e38638c616f7a4a539cbbf3d27b4d8ae"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-31/globals-before.payload.bin",
+          "sha256": "20fb75013ed3e52966281083f126d3d7a1bfafb0a7eac9605b0ece81c67bcbd3",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-31/globals-after.payload.bin",
+          "sha256": "93e619735668c82d18b359b58245e5e692cf2d3304cd93705486091a3914724a",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-31/globals-restored.payload.bin",
+          "sha256": "5a13db65ba80273ce3f808985e5117f66fb1b0024055c1e2ab0acff69854f225",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-31/inactive-footswitch-request.bin",
+          "sha256": "5d6d0c36530115636123a1d84bce98233a0b6f26618c4f13daeb2c699875fe1d",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-31/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 32,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 19,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-32/result.json",
+        "sha256": "593c2e7caf4e3cb94b51a05905f5ae3c2f0a10a8ed0e4b9895754e608e808953"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-32/globals-before.payload.bin",
+          "sha256": "eb5ea387b2370d6ab1d8827f7015a9b225bfd42747550d689ece0adb21281c1d",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-32/globals-after.payload.bin",
+          "sha256": "0e613206a0458cbd743e215e0048fa2456fd1ad517d4266011dd512adafae7d4",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-32/globals-restored.payload.bin",
+          "sha256": "1e7a7c97666b9be9570e20d84db989292b3c05c1f3bdaa99170e2d213ca64026",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-32/inactive-footswitch-request.bin",
+          "sha256": "7e9a76d0c52d702706d0c8b187d28f37636f585c2cfb8da5dadfc494e34d03e2",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-32/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 33,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 20,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-33/result.json",
+        "sha256": "f22511debf4a17c16a036312c1fb892570c6dc8f03e55eb9340aac9ae90ea449"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-33/globals-before.payload.bin",
+          "sha256": "783df827908177aad2a09e067a620df6bd8ae560dd148245f2aa0ae703b7d9e7",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-33/globals-after.payload.bin",
+          "sha256": "a4b8e351a3712c4e3a0dce0977c2a781e4d29c3650d20a306a0434a401decd97",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-33/globals-restored.payload.bin",
+          "sha256": "45c245ddb0510b91feba0c7dc6c36b6825233ebb4791fca67a2e17f3c469ae7e",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-33/inactive-footswitch-request.bin",
+          "sha256": "f1ac826751e3f5537180ad0587f8e9e9a9294068a0ec1bf984f17d301c284411",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-33/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 34,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 21,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-34/result.json",
+        "sha256": "6bec2cd924a68e2483ccdbf5ff0a6dc2aaaedd02681471ecc5ae7f026a414387"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-34/globals-before.payload.bin",
+          "sha256": "f152b5fac6f804ab406ec8e10c7394564fece5cce31b46c9d3ab834de2299042",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-34/globals-after.payload.bin",
+          "sha256": "aad966089a619223399a43453f38a0dcf9a3de6c0ecef5da95478b8419d73bdb",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-34/globals-restored.payload.bin",
+          "sha256": "aa6a4c43dcdabc42db0654ad5f7560a7012f3777762aeac76d52d764322c112b",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-34/inactive-footswitch-request.bin",
+          "sha256": "128a8beb5cb38026e27f4d27cb9daf0ffa376dff44943603ca4fef9ef361e7ac",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-34/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 35,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 7,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-35/result.json",
+        "sha256": "ba5f748bafabf1ee48d782dca4cd5914d009b3adb746cd1e51d9e5e12377b73e"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-35/globals-before.payload.bin",
+          "sha256": "b5a09b9ed3c4ea2620cb191c160c80e109299c863c8e5eb7772a3431361d773f",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-35/globals-after.payload.bin",
+          "sha256": "74b264f8709f923c0da3511846a3a835d729e7f21e3122715fb346800bf63289",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-35/globals-restored.payload.bin",
+          "sha256": "5de68c174e20cd43d48cea371769a91fa4dbabd444bdca958e9d94774e6de00a",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-35/inactive-footswitch-request.bin",
+          "sha256": "cc8005069dc8b3cb4156492baa1ac8c48d489dad5bfccf9d19047845e0d1adec",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-35/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 36,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 1,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-36/result.json",
+        "sha256": "87151b5624d5cc4eae3536f8d9e806ed1f5dc904dc28f128b20592c2af5c7324"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-36/globals-before.payload.bin",
+          "sha256": "fa37817f5c47c941a921f808b8963421c1903667e3551045bc12f191603b8c40",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-36/globals-after.payload.bin",
+          "sha256": "9af1b31f5d37a8e19e8464d6f56b3b840df07744aba235476ef92adc0b9d8d8f",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-36/globals-restored.payload.bin",
+          "sha256": "ce600372b3294b9bb5f100819ed562b1613f1c2d352ae5416dc8bfc6d85a79e0",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-36/inactive-footswitch-request.bin",
+          "sha256": "6572ac27c8b483875d1d6872f1936e599ab9707748317287ecac347960957e3d",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-36/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 37,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 2,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-37/result.json",
+        "sha256": "bc210813394d4c4c0aa38d1b8b84538fb50d965f434b3e8751fcf2b0895faaf8"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-37/globals-before.payload.bin",
+          "sha256": "83c641da8b024bc1411f9f68db9d10df68359a85400967dc18f042674277ddc0",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-37/globals-after.payload.bin",
+          "sha256": "ef4fc36c745fed30a22194fb5daa266d6b3a51c9f842ed6882339f6a26f41200",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-37/globals-restored.payload.bin",
+          "sha256": "4f351d989b3c1d2dd3a8c6da3cfc75f6a50e62ddd2c83ce9dd04c5744e79ba7c",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-37/inactive-footswitch-request.bin",
+          "sha256": "9efba44aef3869210dac1f6e9391a977fbfc325abd61d482acd3a4ca6ea19d36",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-37/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 38,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 3,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-38/result.json",
+        "sha256": "db3b11f77a2971919e40d8a213b5b8a271e1d353dfe4dcbcf7dfc56cd3a6a90f"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-38/globals-before.payload.bin",
+          "sha256": "f81543fda9b5ad11e6f67faee9b58bab351408d19ae7486ea3695625e9534e47",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-38/globals-after.payload.bin",
+          "sha256": "4fec5124e0867b591eea83b8d76be21ebe6767c3fa177a5dd5b6c4c3439b5966",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-38/globals-restored.payload.bin",
+          "sha256": "fee743c9ca60776d8b20c5e90f24139d1e209e557d1903120cbbd38cfdcff338",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-38/inactive-footswitch-request.bin",
+          "sha256": "a6641db941e9ab054c1a1d79816149587b767957064736c19e7c2f090be2eed0",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-38/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 39,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 4,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-39/result.json",
+        "sha256": "50e018b416498513f488290c4ae6319ad876ec3c3b931747bfc4e6ec5e095c17"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-39/globals-before.payload.bin",
+          "sha256": "81e2592c932354b1206bf8be3cce0f521be5701ef47d0e2dc21db1756da84c8b",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-39/globals-after.payload.bin",
+          "sha256": "58e6405f4ad7ab8952ccc42dc2700c298b0eef6fb99ce4974c556ab8dc55b6c6",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-39/globals-restored.payload.bin",
+          "sha256": "70034f801887e37dec8caea715a57589c4abfa1f3b9dc7681614a026c2545d97",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-39/inactive-footswitch-request.bin",
+          "sha256": "76734a3442883628b19b60f2ced139710848aaabb1f32047522e799f98ad936f",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-39/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 40,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 23,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-40/result.json",
+        "sha256": "864259a5412c3e5eb5dde7e365e9a2d9cce5e6acbd749ecff32ccd12e0050e23"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-40/globals-before.payload.bin",
+          "sha256": "0928b0e132799ac1f376518b20d42545fca2e97486fe3ef21aee2f2552ff5641",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-40/globals-after.payload.bin",
+          "sha256": "3827ccea2d825a10c0efac7a89932789fe913ed61b4154470bbb1e83f4f6324d",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-40/globals-restored.payload.bin",
+          "sha256": "f590e4efee52f0036dd1ea198390b97ae9b01a91a2b8ce07984fa12b4a90b8bb",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-40/inactive-footswitch-request.bin",
+          "sha256": "3cc1558b87df90a0433027695578963089a36c126d30b5c84943aa953fb021e8",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-40/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 41,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 24,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-41/result.json",
+        "sha256": "0d546af217c62fbedac06e74b0ca7da8d8faee8547df3f6c1bbc5b189f2d9004"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-41/globals-before.payload.bin",
+          "sha256": "3c96967d453117db0f1b9812ab8285a475ff3f80916307e7c9ede7cd8dd1f85b",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-41/globals-after.payload.bin",
+          "sha256": "f117f55d4c66610acd27328892860d3fe15ef0fc9dbc12d906a4d0dd88c5b6d3",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-41/globals-restored.payload.bin",
+          "sha256": "11f52c15f1babe312be93c6a8378316fca05614f1493b162df5e808c0ea50b15",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-41/inactive-footswitch-request.bin",
+          "sha256": "59d7cd503c9960eea0171c766aa1d9c0b0d78893c0e6e4d3517d73793105c707",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-41/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 42,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 25,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-42/result.json",
+        "sha256": "0612fedcaa1169c85811cb2afbd10f648b5c75acd7851670bff9848301dad8db"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-42/globals-before.payload.bin",
+          "sha256": "c565660f73b374e8f539996a9069849a16742d0437529c15d034032342166f07",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-42/globals-after.payload.bin",
+          "sha256": "a68e87522ea5c3e1240c16dc38e208e813a30b5e2b3ec9ea3615a8261f3f2ede",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-42/globals-restored.payload.bin",
+          "sha256": "26cdabc3ab1a29afb7e02698379b0b49e7f77b3b4e3a346ca278243abaa5bfd2",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-42/inactive-footswitch-request.bin",
+          "sha256": "8913437fc666f68ee5770071b2083d8ae1af4b6bedd08bdab7d46f9dcef37bfe",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-42/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 43,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 26,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-43/result.json",
+        "sha256": "79c448863105bb2516ab732dfa2124770bbb949369152304de96bfe314ac146f"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-43/globals-before.payload.bin",
+          "sha256": "a48820c93198ed457dc026a5a7a482e42d06c84deafce64e88d21b734d610e21",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-43/globals-after.payload.bin",
+          "sha256": "13ac40e80d15e341cc8f6ce89bd1f5e3099bb18e8b2ec41af2268fc4cc1d3b95",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-43/globals-restored.payload.bin",
+          "sha256": "efd3a90d33848b3bdfe6f686e43e41f8fa549717f74ce84c142199af3fe05a44",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-43/inactive-footswitch-request.bin",
+          "sha256": "eccb68b3dcb5bc8a942174d73f471d5190fe75b91a70a484bb1c3ea22fa8ada1",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-43/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 44,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 8,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-44/result.json",
+        "sha256": "ac55c106b1c91894533f51e3b3dfd361f8ba7a1f6a62357cb03983554c292465"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-44/globals-before.payload.bin",
+          "sha256": "0266f96f43882b4a324e6a6b61bc9a0a0347edf740317c5c741bfd079e79cb15",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-44/globals-after.payload.bin",
+          "sha256": "70aa727f4e11c81af243c10f23029cc0b98fa096af589da1ac3c3a6dd1d588fa",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-44/globals-restored.payload.bin",
+          "sha256": "6bf8d87c2297e984949f8e3a2b03e4b8cfd963754f75cdbe840c1846c4ae5a01",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-44/inactive-footswitch-request.bin",
+          "sha256": "01b1cae15130880b1e3536904f61665d6eca41adb6376a55d50b58a6aca1d4cb",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-44/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 45,
+      "table": 2,
+      "event": 0,
+      "original": 0,
+      "requested": 0,
+      "meaningful_delta": false,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-45/result.json",
+        "sha256": "be7d4bbc057be193db4e45f432cd880f27fac9941e5a0e6e9848a906bebc181f"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-45/globals-before.payload.bin",
+          "sha256": "66a9ce54b451ad220937966fc7dd51edd52f543034382991d3b93d592155c321",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-45/globals-after.payload.bin",
+          "sha256": "80b494d38505e61aa79c7a0f5954b71d50522aeaff2fd22b7901e46062475e2a",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-45/globals-restored.payload.bin",
+          "sha256": "461b8cba2de52f5550a8e2d446e6816c01b4e62835f72b0d10aee6eb94fb3f54",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-45/inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-45/restore-inactive-footswitch-request.bin",
+          "sha256": "59b0265582483fbbd4b8b2def06abb977d3b8bc5d50905f836c9b2bedd15680c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 46,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-46/result.json",
+        "sha256": "e479259c4e65fcc5296e66d0c11e49745f7e5df86a4f4dcdc8516cb40f305ab9"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-46/globals-before.payload.bin",
+          "sha256": "2c8eb07430027b54ed00c07af45fb2d93840c19e8d09ae5deb3f9cd854324272",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-46/globals-after.payload.bin",
+          "sha256": "a7097decc9d40fafe97fac66fa5a1ee3f7d026bd37199935c96da8866f4cc760",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-46/globals-restored.payload.bin",
+          "sha256": "2251feb96bab27a500d3cde69fa29a4dd065b10ffea01272604b018942391eb6",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-46/inactive-footswitch-request.bin",
+          "sha256": "87eb618f152076de2f8f747c6920c63822be37307b0f91a06e599b53adc39ddd",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-46/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 47,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 9,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-47/result.json",
+        "sha256": "06db2f4e12916e779f8d91fb4dfcdb8fdfd4920011ef036796ef9f2ae717627d"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-47/globals-before.payload.bin",
+          "sha256": "594c4ed2817ea50dc74cf1b23ceabed9f57f4930d65deb0558efe2e005324fcb",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-47/globals-after.payload.bin",
+          "sha256": "df1f61d8f80257e4f0d4e2e15be86c9470a0e8421326577616a08683d2cb228b",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-47/globals-restored.payload.bin",
+          "sha256": "6c8cb27253b03ffdf0cbd6225f63b07badfcbb6d9a56d7f31c3c0dc7c582cd82",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-47/inactive-footswitch-request.bin",
+          "sha256": "4a64119fc9895362f9aca1ac0255cb1188bd893a7d6a50c9dfdd8da2ceaab26a",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-47/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 48,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 10,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-48/result.json",
+        "sha256": "7cda59395491ad1d8430ada5f9ac8a57826d4fd4372707145316dd6b90fe3b47"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-48/globals-before.payload.bin",
+          "sha256": "dacaac8cf028f271225901657541cda1cbe75db4461b1c718298db72eebb6478",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-48/globals-after.payload.bin",
+          "sha256": "029f8c4726580e6140153163eb74427c32f14114f14fed0a9f6390eac84c614e",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-48/globals-restored.payload.bin",
+          "sha256": "3cd9864a840986cfccec7bdb457056d34cdc7343ae9dd007cf8d00cf4f476b85",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-48/inactive-footswitch-request.bin",
+          "sha256": "a5d72dec82e31f8841134bf107d2f9faa56c91114d0ea3dae8e438440a6fe526",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-48/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 49,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 11,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-49/result.json",
+        "sha256": "82aeb32a32ec57e06e2f03b7aae209a7423c72d94e75a374bb4354d50e0a6095"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-49/globals-before.payload.bin",
+          "sha256": "a716856edb89ab8b80232f4633b4fe4f831d42a8345c30797c8ca37680c1488e",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-49/globals-after.payload.bin",
+          "sha256": "ec1aa937fd89e120f6431eebe176a43bba581dd8124e5b9edcb6c42c48d57591",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-49/globals-restored.payload.bin",
+          "sha256": "743aeb6407fe4ab727e6a3b64d58ec4ba99176c52474fa8b09e6e994fc8af63c",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-49/inactive-footswitch-request.bin",
+          "sha256": "89508edd196d6762dc2c28052afbf1e6ec34306fc39e8662271317434abea5ea",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-49/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 50,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 12,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-50/result.json",
+        "sha256": "d0c5a47dce0cf867d52db146887baabdb9d5c14132393d26b6e601c2f3aee83b"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-50/globals-before.payload.bin",
+          "sha256": "b9166054465677deb3977a8813a4db88896cc43edcf296094a988f52df4d88f5",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-50/globals-after.payload.bin",
+          "sha256": "2f53cb0d077985f65aa6e66fe46f25d20a750cdf531e9fab86bfb37b0db46a49",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-50/globals-restored.payload.bin",
+          "sha256": "bd89e823949856a594903b86a5a93ee783f96d4f791c6ade2db167cfd9ed2141",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-50/inactive-footswitch-request.bin",
+          "sha256": "3f70e473622c7393953bbf667ef79d778885f4b7a201d92eb3ae1c786080d33c",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-50/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 51,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 13,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-51/result.json",
+        "sha256": "47679b080c5cc8556f9cffac6e68917c8d6a59143082fbad02bfeff09d7e98d0"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-51/globals-before.payload.bin",
+          "sha256": "55e1afc75272d3f80848607188f7e4295b8174a8e6c863b2a5a9769d24cd7506",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-51/globals-after.payload.bin",
+          "sha256": "f96c5c51a2b74559df94340d51528260e91d6cfb238e6823a2c5bebe92ce2fc9",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-51/globals-restored.payload.bin",
+          "sha256": "c84b65f9bca5fa42daedec01330f7bfee10e19d93d282d61dd3a1f36ec263dd6",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-51/inactive-footswitch-request.bin",
+          "sha256": "0ef5261f0635e5945d3f8edc0b4c8eeb28e6d8ec7d0cf4c7125bfd2a359ad5b4",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-51/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 52,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 14,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-52/result.json",
+        "sha256": "e0f228725d1e5e5ac62a19cba9d025660f852856f6ec28bbb33af91faaa6a4b1"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-52/globals-before.payload.bin",
+          "sha256": "20fb75013ed3e52966281083f126d3d7a1bfafb0a7eac9605b0ece81c67bcbd3",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-52/globals-after.payload.bin",
+          "sha256": "bc31ded5051eaf5fe3990088501d9255f90e2c851e990b8930894cdf8036a889",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-52/globals-restored.payload.bin",
+          "sha256": "91731a57a37d267c7232a433be094171bd5a58ac4eda6fc3904fd3139ffce1b2",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-52/inactive-footswitch-request.bin",
+          "sha256": "ce297d5d217c0adf9d732597574086b3f571b93d71bdf2d7eb83a5d0e5c6a1d5",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-52/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 53,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 15,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-53/result.json",
+        "sha256": "a059e83c01053ce0c7b05fc0353e683bcab5c874be1c3c1b1727ce0a661f69b5"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-53/globals-before.payload.bin",
+          "sha256": "6426a81e5ca8c5ce2817ec5580e049b39eee4f642f3beadae0d90a34c7383314",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-53/globals-after.payload.bin",
+          "sha256": "7e38ac294edd6a8896c2857b7ccd3bd139f7e10393b8f81f5be7ef7fa7ca3456",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-53/globals-restored.payload.bin",
+          "sha256": "dd3364f25afa85f744c717d59b357b5eb503d2acb9735942f5ea1838528f6b6d",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-53/inactive-footswitch-request.bin",
+          "sha256": "59b82746fcd64568854b0e1479e2865f05885dc594f55cb8a3275605854c60bf",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-53/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 54,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 16,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-54/result.json",
+        "sha256": "4e23a1f7b77f3879a7b327841c449c0570ab8b511a810deb0600dbbde0187c0d"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-54/globals-before.payload.bin",
+          "sha256": "76c1f24a3ec984c4a3bebee97eceb950e536551c6f314449f3f72be0f8e284f9",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-54/globals-after.payload.bin",
+          "sha256": "a7d998adec91d36787d1aeed840b6dc45e87496919c4bf4f7ac1f0b5874b75e4",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-54/globals-restored.payload.bin",
+          "sha256": "c4581e5dfa8eab21dbcbe9544226f9e97a4165aa219ce3399418d30759b637d6",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-54/inactive-footswitch-request.bin",
+          "sha256": "113168a4dcb321c6690eb397271ed216f5f6c4e6b7fc0a0312e78ad889624a8c",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-54/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 55,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 5,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-55-reviewed/result.json",
+        "sha256": "2e680192bccb42e7df6ee0a95fa975083083a528b49b8b3ce753ab6f93aec33d"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-55-reviewed/globals-before.payload.bin",
+          "sha256": "02482356139cea1cc838b3d77f1e4f029e4a4e08de7ada9fa2db9b4afc2be29e",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-55-reviewed/globals-after.payload.bin",
+          "sha256": "477ae8f59444d5a4feda084de5ac368f55de00324a4ca1ab9ed04c83543591ca",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-55-reviewed/globals-restored.payload.bin",
+          "sha256": "06afa96c9a6317f1f58edddd61b59d6809b3908357207610cf116d5cfff4e603",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-55-reviewed/inactive-footswitch-request.bin",
+          "sha256": "fb5026470cdfa85bf511ec299536d9fda0f3048504ace3d5b0de5646871958c3",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-55-reviewed/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 56,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 6,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-56/result.json",
+        "sha256": "1820bb4d2366944c81214ef714d24cac5c63a1acf1ecf9e57c18946834aaeea9"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-56/globals-before.payload.bin",
+          "sha256": "b57a29b017c7922751b2d82e0b39ea9113fb6cbe8230ebbc7d6f51c30c61412a",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-56/globals-after.payload.bin",
+          "sha256": "07e557882265a205a95028bbb5a04f0430f96ddca9c3c5f5cc6ee9fffe0cf86e",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-56/globals-restored.payload.bin",
+          "sha256": "79cec7d633aaaa7a2ff3163fc32a5c2d7d87a34b3b314406024f1a1f231b5c53",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-56/inactive-footswitch-request.bin",
+          "sha256": "caf25ca256900c968e109e65d827d8336e101739f5f43933cb86e396b53a3f2b",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-56/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 57,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 18,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-57/result.json",
+        "sha256": "f80c9c9e8268ff31360df131691e354204eeaad359f6f07be83686b940dca485"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-57/globals-before.payload.bin",
+          "sha256": "10a884db42e8493888dd6da09e0d236fb9da93deacb80ae0e5ce7b7af0fd37a1",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-57/globals-after.payload.bin",
+          "sha256": "f35380b82248c75aa154ccb812ca4841cd6607c27b99bd24a23b0078f530fd96",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-57/globals-restored.payload.bin",
+          "sha256": "0a3315e3eadb2f38213bd24342dbe2f819e3fd7a612b7dd8a54175683eea3a15",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-57/inactive-footswitch-request.bin",
+          "sha256": "661085bfbf3a17d9e6af785a8b301a0395b3655257dcde6807385d7212a964f3",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-57/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 58,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 19,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-58/result.json",
+        "sha256": "a00b357504ed13f72726ab8f6959a7f40d9171b7b9a6902f0cf55e4265f23025"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-58/globals-before.payload.bin",
+          "sha256": "081e177a1cff00b68ee8d218b055965aa7c5dff86747e2ce0338b1d4bb08418d",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-58/globals-after.payload.bin",
+          "sha256": "a24532d864110b97b364ab5c27d433c798696e330be47225544a8fb29b6d65e6",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-58/globals-restored.payload.bin",
+          "sha256": "ab44bd32b27f0ef8257ee2f6faef237648b2edbbbc60c02773b9a212ff851105",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-58/inactive-footswitch-request.bin",
+          "sha256": "8e430a6b84deb76aa956533d0a1ed4e188ddb978d3dbf9e11aba1ed1018dd6dd",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-58/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 59,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 20,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-59/result.json",
+        "sha256": "94ddc666db8467ee3ddf035e0a3701490f2401bf7ac56dd2e7cfb7074d55aad0"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-59/globals-before.payload.bin",
+          "sha256": "8eb8b84938451ea6dcd924da9951829111eb52227d432b65d6c9c00e5b306a85",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-59/globals-after.payload.bin",
+          "sha256": "922e37b1d0ccd27167fe9b6d9bbd2bda0d88571b0a3b4cbd5b13ecf8007598c6",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-59/globals-restored.payload.bin",
+          "sha256": "3261738d25d5dedd0bf646c626675e668294b92ef48681b044fe7a006169e7fb",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-59/inactive-footswitch-request.bin",
+          "sha256": "2c5bbd6aa83d337fa4b7da4ab0760b172df3b1f796acc583c7b60cdc1ebc7ca4",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-59/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 60,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 21,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-60/result.json",
+        "sha256": "4d3c27bc1a71089feb9f1f7ebb6744d29a379cbc2f0186970ae8c01c92d188b0"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-60/globals-before.payload.bin",
+          "sha256": "8c0572b4530400382515d16fe282cab44f176ea36352759e66c2f9ce8ceed1f0",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-60/globals-after.payload.bin",
+          "sha256": "14c94c6c4477149fb41178fda6e460c82706c95edf8565e97e14f9f8619e5011",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-60/globals-restored.payload.bin",
+          "sha256": "6c3924f1b8a46f757097ee6f7a51a6c4708538c798574b30b9323eca4900cbb7",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-60/inactive-footswitch-request.bin",
+          "sha256": "f026cc6a4bed1f5532c40b104227ab2203f949046a4ab805adad69db87decfe4",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-60/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 61,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 7,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-61/result.json",
+        "sha256": "7aec6d3c785be5b985bbf614fbb0f5fadd876ba77435a8b70ac90aded12a649b"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-61/globals-before.payload.bin",
+          "sha256": "506e1cc3687041ff96d8728392e26f810bc4f60f740fcb388e811878dc16f099",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-61/globals-after.payload.bin",
+          "sha256": "0d3b06f0db1f59514b61c608177acbfca18bd4b13581a8cad529f355e6a94ee6",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-61/globals-restored.payload.bin",
+          "sha256": "9556cb9dc0b808124ed5690642610a63d96f69b58422d11f1994765ebad0df0f",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-61/inactive-footswitch-request.bin",
+          "sha256": "2cc8ea1e195a74db03a128f7a0890101baad9cd3ac701baadcfc84db469208d3",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-61/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 62,
+      "table": 2,
+      "event": 1,
+      "original": 0,
+      "requested": 0,
+      "meaningful_delta": false,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-62/result.json",
+        "sha256": "496e69edf3a376880c1d35c4b4748d604efbd71d07088dca1ac71cb1d1f3dc0b"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-62/globals-before.payload.bin",
+          "sha256": "87335b80a8b1803ccb96b568fca84fdfc354857f5ec04e4c1239195b81c4e41e",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-62/globals-after.payload.bin",
+          "sha256": "825fb21fc61b10aa28dba4d30eacd512f846b48d46107bbe6d0c91c6c5fe0460",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-62/globals-restored.payload.bin",
+          "sha256": "bca124841b18b70e96bd68ca5817577c6f94ca3c7b61a46be53fa6cb2fbe31b7",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-62/inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-62/restore-inactive-footswitch-request.bin",
+          "sha256": "6480f6073f8b522786ed75a818451dcd7034b9676181e120ee28a65a633bd251",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 63,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 17,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-63/result.json",
+        "sha256": "2cc60a6dc0b954697d8c0ac2713d6963215de4eda9a975d742bb858d35331c17"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-63/globals-before.payload.bin",
+          "sha256": "88a07986dc0b9ee3c7f359d9cad70d516f2701297a2e87199ec6e2c732b829fa",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-63/globals-after.payload.bin",
+          "sha256": "966b3b7a881da8291738e68f917d484359738c17021108b12915466e26918a69",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-63/globals-restored.payload.bin",
+          "sha256": "daeefc31785aa4ff08eb0914e92e71ed8684c86d2ae86e76072f4a43e329d159",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-63/inactive-footswitch-request.bin",
+          "sha256": "5144e59f0e4c1dd1af760109737486d04d542308d8188e084d2f121be287426c",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-63/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 64,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 9,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-64/result.json",
+        "sha256": "c3efb31e50c2b5d9accc80661a38fa64d99e3b20f1b869892f6e9f2f620c5aa0"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-64/globals-before.payload.bin",
+          "sha256": "ef1db689a496904af2e4d3dd74c26be96f6ce912021130866846d573904e7dd9",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-64/globals-after.payload.bin",
+          "sha256": "24980068f64fdf93f9cba17507dddd0e1ebe738ffd8e5ffdbe411f7d328450f2",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-64/globals-restored.payload.bin",
+          "sha256": "9e883e476b87950775fca42881a4a566d74da02a3bd06fecbf4dc801fdcb45e1",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-64/inactive-footswitch-request.bin",
+          "sha256": "c8b66b2bc134658236044b746a85125fcf66076c4dead2e508588c235d6770ef",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-64/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 65,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 10,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-65/result.json",
+        "sha256": "86292730a30613bd84ff8d1f3df5bfae5790e96f94a3275b5de08e5f33d6506e"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-65/globals-before.payload.bin",
+          "sha256": "904f22bbe1c61789c844114def0d790619c5392465c98e21c0c501b2359110e4",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-65/globals-after.payload.bin",
+          "sha256": "11b0d4de17808643be589d320a69ca3ccf1ff7872298630887a28bb2c6f5320f",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-65/globals-restored.payload.bin",
+          "sha256": "1e2ba73e208bcdc03de969a0095b46ae7dba4e03c322b9bd7e708be89d5cc638",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-65/inactive-footswitch-request.bin",
+          "sha256": "054617b7c9dc49a36516dac17ed7941d4a2d64630030a5c2ffd9ea7d1fbfe5a4",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-65/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 66,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 11,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-66/result.json",
+        "sha256": "54d025e29d2706db73d499d111869452bfe5d04f55ea848c6dd785e39d68e169"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-66/globals-before.payload.bin",
+          "sha256": "bca124841b18b70e96bd68ca5817577c6f94ca3c7b61a46be53fa6cb2fbe31b7",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-66/globals-after.payload.bin",
+          "sha256": "5470d08e0dc066091e5d5d94d3eaa115a8abb6a029cfc39980a86d1ff838f6bc",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-66/globals-restored.payload.bin",
+          "sha256": "d74ecffb4544982d2c2bc58a5816fa6fefd03219a46d69f011df2aa7f2dc2c07",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-66/inactive-footswitch-request.bin",
+          "sha256": "aa1a6b30e9ba490a6fdb2abf5c8d55a7b97d1fc92d634f05ce21db08cdd7e9d5",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-66/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 67,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 12,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-67/result.json",
+        "sha256": "ab7c2b2b7ce2a898e1b14b330d1d44c78c25781831585aa601ac36e6c87f0494"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-67/globals-before.payload.bin",
+          "sha256": "9cc2d08e974d41871366e9daf15cdca164c48923f8595ef0b954d6f6e7d94470",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-67/globals-after.payload.bin",
+          "sha256": "0b2e7e3f80aa96b7e6cf1a28dff65c96e258bd6d2b0c4feee9498f2114722770",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-67/globals-restored.payload.bin",
+          "sha256": "92f0ffa2f31ad97d9dbf48b4a933cf159adbf858da09ef00e475ddab05c376e3",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-67/inactive-footswitch-request.bin",
+          "sha256": "1be8c5c2bb8836269a34202ff0bbc2fd59a144dfa9707529c69193cfc604ae42",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-67/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 68,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 13,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-68/result.json",
+        "sha256": "64333c282b7ed52ace516dba679cd7bd111c4db2197679907c95a75b6d78a3bd"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-68/globals-before.payload.bin",
+          "sha256": "2bc90dac51949d09ec739c7273b421b490590b5f580fe040e38518bf85693434",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-68/globals-after.payload.bin",
+          "sha256": "4597d5186ef70d41d3248193c97141e63be15e5d952329d72d50705ee7ca3ccc",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-68/globals-restored.payload.bin",
+          "sha256": "05e87f7a6b34ba147219254a36718cb7931f4484a5549ecff9dd4ba74d5603c7",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-68/inactive-footswitch-request.bin",
+          "sha256": "fedfcf6461339c93cf8e6102f19b3ec5e96a54cf672793d8eee464e770f0a257",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-68/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 69,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 14,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-69/result.json",
+        "sha256": "2b2fd7b2563e20adf95a492946e564b264668e27801aabec3bd74b10772f0067"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-69/globals-before.payload.bin",
+          "sha256": "7febc9156e0c4afda79a51b9c0b5b460d489db2b6d96d036fa60fe3f5c448a4c",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-69/globals-after.payload.bin",
+          "sha256": "a132d6fcd0afe3218e43688fd07df480b673bc6c0951b5d20a5e43b81f0af398",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-69/globals-restored.payload.bin",
+          "sha256": "d368170728888fdc368cd2f2cf7873fcc8dbd6c351648afb6b81f3ace8eeeebd",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-69/inactive-footswitch-request.bin",
+          "sha256": "d46b5ae03e86e22099f904d2ef1d3c2db3153dc3f290f8894b5429dedcde0ab8",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-69/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 70,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 15,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-70/result.json",
+        "sha256": "a48b1c8a71be08e5f7214bffc7994df02e647168689dc35708c02f69083d2e48"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-70/globals-before.payload.bin",
+          "sha256": "039d990f68e08f0e523a36842dbeed0256fcdfa635fc237bf321459d5543f243",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-70/globals-after.payload.bin",
+          "sha256": "728a271dbfa2a145abe1e747207bfb2b139a337d6491924c49564bc8c279b071",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-70/globals-restored.payload.bin",
+          "sha256": "ef6f346fa2774eb3faaf88a580eabf5cb40646eaaa489fcf32c878216c339feb",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-70/inactive-footswitch-request.bin",
+          "sha256": "6a7f900e8b81c62f616d2879f21537873bdbce064fc97eaa641d1b2e313682b2",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-70/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 71,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 16,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-71/result.json",
+        "sha256": "f094679c7393a84fc59cdf0143260c80e9084192d958e2eb47333a03b3cb06f6"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-71/globals-before.payload.bin",
+          "sha256": "191f08df17a720c4efd2a55da77bd29a02206313f861e5bf8e10c861862aeede",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-71/globals-after.payload.bin",
+          "sha256": "451df2d75bb8903c96b4b45c6bbb307344572353713660c2c817e373817e7afa",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-71/globals-restored.payload.bin",
+          "sha256": "e35c0f7e1f1a12dd4e665a45a24c556d76e07b4d5847782c6c8ad068a29a2962",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-71/inactive-footswitch-request.bin",
+          "sha256": "cf7140f10f39ea8ea497d2d7fd20b47e45676d96c07734024ab0f51088f945cc",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-71/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 72,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 5,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-72/result.json",
+        "sha256": "37c106504ea7e1af14f0f751f8d79c0ea0c843b3ca234d8b26bb54b6c30d2d44"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-72/globals-before.payload.bin",
+          "sha256": "80cbf4f7f86c81275cb07ae56d395894535b1f683df370b27cb818e22644f7d9",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-72/globals-after.payload.bin",
+          "sha256": "dcf218daaa2f9d807563f16c8a0304eaebe52269dc02162ad353a956230f7df0",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-72/globals-restored.payload.bin",
+          "sha256": "65b5d3da0cc8d9cd1ce74727a8b1bb9f9b16ffb453f14ee85154ee425df2ac27",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-72/inactive-footswitch-request.bin",
+          "sha256": "01c05c2f714825b794ca2d553c2b97b03012baede58c8279635734f47164103e",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-72/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 73,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 6,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-73/result.json",
+        "sha256": "7a7588ed011bca90efcac29c9f43b95b101642d4c0f292a2ab6a77bfb354baf2"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-73/globals-before.payload.bin",
+          "sha256": "d1b4183f6b700d74d72a3b3c72007b6845fdb4d94023387fa94d5f6bfc23defb",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-73/globals-after.payload.bin",
+          "sha256": "bf4b207191de59cecc28de565bd683dee56b851be0af0fa443620079e7edf6fe",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-73/globals-restored.payload.bin",
+          "sha256": "f3010d88960081de37ca4e3719d5ed5654fe04800351ef9567eb829b71fb88b7",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-73/inactive-footswitch-request.bin",
+          "sha256": "14a2047d9c728225567d5798b992dd94508bee50a22519f4c2de6926647e4856",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-73/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 74,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 18,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-74/result.json",
+        "sha256": "0a88e2bfa1684f257025a3e9a6104f22c664cbbb91645f3fedad3ef0309e10a8"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-74/globals-before.payload.bin",
+          "sha256": "bef8aed95d220dbdbbd9edbb9cfb148d4cd417d447eee13cf8ced34968cf61f3",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-74/globals-after.payload.bin",
+          "sha256": "cf854682ec5f11761d754f3e5f10467778ad8c8d292fc73b050a949bfb33efee",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-74/globals-restored.payload.bin",
+          "sha256": "6ff76f023500deddd3b93d30c8db074b901ba9f160a2d54bb89fecce684f59df",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-74/inactive-footswitch-request.bin",
+          "sha256": "679fc566de3bbc722d299090cdd534eff636ff33a380c4c14ec3c4e8488dc1f7",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-74/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 75,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 19,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-75/result.json",
+        "sha256": "233e5880f57d427f73be5e9a62be1d339d7dcb1eddfaa642786a580b0a8c3e5f"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-75/globals-before.payload.bin",
+          "sha256": "eba458703d576e80d90efd3cba750925e38fdf1cc93f82b3a69fab99bd0a66bc",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-75/globals-after.payload.bin",
+          "sha256": "38205e9af3c76a4f61ae59e0f8578d85cc79f6eb31e22848d79b3adc972befcb",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-75/globals-restored.payload.bin",
+          "sha256": "8b42ef61b957d56e37a1551ff55b22cd4ab5c46487fd84e1a4304da3cb4113cd",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-75/inactive-footswitch-request.bin",
+          "sha256": "5be1c2614e434d644a6c4fa853c58e26a2bb4de679a2fa408b5c568be3cb790e",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-75/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 76,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 20,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-76/result.json",
+        "sha256": "900c2ac82d5726af60725e42c2d0f8ee8e9ba7a01a896a16f0c7414f27b8fd0c"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-76/globals-before.payload.bin",
+          "sha256": "fa521d2244de0bd9c2f1f6d4bc0d89ebcf2676c2e1aefc47697f413c135189c6",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-76/globals-after.payload.bin",
+          "sha256": "780353d19a52a6e02dbb865345d517c213c7b450648a92b819303441f38d1aa0",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-76/globals-restored.payload.bin",
+          "sha256": "0153cb80e05affb6ebf68f2fcba3a02e998cc4b2ca66c8a43b6491c925cf7989",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-76/inactive-footswitch-request.bin",
+          "sha256": "10e18c0608defb9371dd61c1d8c64c44539fa3b2377ac021214be330c604ba57",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-76/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 77,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 21,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-77/result.json",
+        "sha256": "f7665229ac544757dc25e9b40c387956cc45b09c99fb68f579ca5d37385b5984"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-77/globals-before.payload.bin",
+          "sha256": "72f99e436ea4e402e02765f0e446517b7a873ffbe874fe0426789190eeb76d85",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-77/globals-after.payload.bin",
+          "sha256": "698524cb9b8f1d77c2688912353e80f59bd3811a0da95225b1b0c9d7f7438547",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-77/globals-restored.payload.bin",
+          "sha256": "f1998df4344cf7d4e05800afc756988a80f6d04cb16d3e8f330927d23767c19d",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-77/inactive-footswitch-request.bin",
+          "sha256": "d76293f3c8bce9808f1e83838561d73f15c79139aeb92f2176e774f15167ff37",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-77/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 78,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 7,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-78/result.json",
+        "sha256": "f6a6cda314f2667d4827c570bdf658c2842c26cb7711184dd4b2a5de4ce3bc1d"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-78/globals-before.payload.bin",
+          "sha256": "f2e5abfccd7146d0e33d6a66b04469b05ad3539e7c72e0e44ed2d5ea2b5fd656",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-78/globals-after.payload.bin",
+          "sha256": "0bedbecee8f1b8624136cff67640fd126a2fc4f25bbfef3797de67a6bc9963ba",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-78/globals-restored.payload.bin",
+          "sha256": "c8274ab05138fcc09ec52a4de235451c1122c40e30be065e8e49f4e9c6d7590e",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-78/inactive-footswitch-request.bin",
+          "sha256": "1ca56c931da9d7d94f4d021331d69c024ee4ec7f021261404f9f696727b75f76",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-78/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 79,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 1,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-79/result.json",
+        "sha256": "45d5b8e2f9ed121ea2c4cde5b429c9bd31ec3e46beb7449dd761a3d93764a2fd"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-79/globals-before.payload.bin",
+          "sha256": "eb5ea387b2370d6ab1d8827f7015a9b225bfd42747550d689ece0adb21281c1d",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-79/globals-after.payload.bin",
+          "sha256": "9d646440530e3fa7137038bd76d61b2ddcbc62ce2a0bdb2f4f0d03bd9b05f681",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-79/globals-restored.payload.bin",
+          "sha256": "6cb0f695a264364c05d3d10566ef316f9beba0b6f29190ed6aca9f137f9b3740",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-79/inactive-footswitch-request.bin",
+          "sha256": "fe3bbbbd2717795767e2776edc219cee0747048a54311c9b047f33cb75c6662a",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-79/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 80,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 2,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-80/result.json",
+        "sha256": "4fb58cf5edd053d1712985649636154c8d486318cf3dd21f0fbbb241e28c7874"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-80/globals-before.payload.bin",
+          "sha256": "e5930656a3b5b3c491fb3d5558f1eaf52693973f5fe647ba9a1d99c5528310ce",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-80/globals-after.payload.bin",
+          "sha256": "2a4d4a34db55bf26429e07e87a782b2c1c73df9675b8d7fd3c230cc05983feb6",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-80/globals-restored.payload.bin",
+          "sha256": "7b182463187e0a449e2cf05fc47e1f5c92be091a57477fa40f291c363c928158",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-80/inactive-footswitch-request.bin",
+          "sha256": "1891af70ca46d3c28d1f9b664f8e96d8515854b0f37d6189f3908dbdb058b1b7",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-80/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 81,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 3,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-81/result.json",
+        "sha256": "a98d10bef95cf08574f5748e6c4cd6c7dce1e44fde69d829be5462713c12e1a8"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-81/globals-before.payload.bin",
+          "sha256": "c8c83ec6742101235bd3af9154b8895c5490ddd2a1b599de967075e506346864",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-81/globals-after.payload.bin",
+          "sha256": "38709045560c3167112c1dbefa26d183364f50c028fb0b148ce2a047377d5a2f",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-81/globals-restored.payload.bin",
+          "sha256": "c55f6d934db00dc92a6f2408d3fdc0743e0f1f9765cfc570d054e6e881ca02c7",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-81/inactive-footswitch-request.bin",
+          "sha256": "9a076fa4e5cad2058a3198e18e169aa13904be0a63c41c421dd01a889a1198d5",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-81/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 82,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 4,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-82/result.json",
+        "sha256": "6e43cb550b1eab16779a7028cdeba3d7474063bcb146d957e11e4e083700739b"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-82/globals-before.payload.bin",
+          "sha256": "bb1112dad46b435c03678e8226cc042dee8148eea3f4e15b02b62cb8d116eb1f",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-82/globals-after.payload.bin",
+          "sha256": "0ee2d159bbb42d7fac48fac5eaec46e00e3763fd421134d64f7f983a2f7b892f",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-82/globals-restored.payload.bin",
+          "sha256": "44883f2bde56482d4075298bf29e6ff643f9ac34e41243ac065d175e151f9d8f",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-82/inactive-footswitch-request.bin",
+          "sha256": "cfc0c3b0175795db238bd38cc8d094b56eca551ad1de3cc0560eb8940b212273",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-82/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 83,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 23,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-83/result.json",
+        "sha256": "8b55ec6b95c0c1a32e74585bb7f2c22214affcece40edd1f164789e9f6851f88"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-83/globals-before.payload.bin",
+          "sha256": "2717c5e7f865d8095a4ac503fab45d5336ab13aff5cff356f8d8846052d2baed",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-83/globals-after.payload.bin",
+          "sha256": "d9a2dc98e73fe23e5190890e786901c098a274397d7d1d1c12502f2fbccc3b4b",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-83/globals-restored.payload.bin",
+          "sha256": "e51947f8b536b454378742c4cdf1ab89fb99ec70dad0731593553680713fdbf4",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-83/inactive-footswitch-request.bin",
+          "sha256": "6b28088285b0cdb8929de2d33e070317810fca13974962905fdfb0cc49e9d08b",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-83/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 84,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 24,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-84/result.json",
+        "sha256": "8cbfe467be798990d4fc971011c7194dee7709526e6bf6b7a4ae885daadf52e6"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-84/globals-before.payload.bin",
+          "sha256": "77f084ef9e8b51eb5d58b43f348f6ed4e79bb50f968068ae555fc3b11cd06f40",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-84/globals-after.payload.bin",
+          "sha256": "793df0f0cc803ed9274b504d6562f889cad53bca0600ff0197126c416b5d633a",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-84/globals-restored.payload.bin",
+          "sha256": "20f6acd47fd9a01e4d9b8afa72ed1a9b6a534df5a81639df19d969069cf134bb",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-84/inactive-footswitch-request.bin",
+          "sha256": "105d8322fe590cc8487456c80da2a595fc28150d5b561b3900036df0529e42ec",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-84/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 85,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 25,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-85/result.json",
+        "sha256": "590855e9a34c30cddf5915c39628a8d2c0dacfa763559acd47cd91278bb3db40"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-85/globals-before.payload.bin",
+          "sha256": "5a64e80012263d451eb1958f10107404d7bf0c5d46d4cc5078714d8a619cac49",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-85/globals-after.payload.bin",
+          "sha256": "cfb7935564d7e89de05ba199617908f231f66c324e76d6bae2b04e4a020a2324",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-85/globals-restored.payload.bin",
+          "sha256": "b16cf5845e7b0d8279461826c1f7b6c5ebdc1dcbd9b49fc7abe09a6763b43fdf",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-85/inactive-footswitch-request.bin",
+          "sha256": "4b29e04014cd9e1694323ba504d255530e127a83d7635bb5ecdecece56f9a7e0",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-85/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 86,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 26,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-86/result.json",
+        "sha256": "6e92a06e6b4f80bbc54630e3c72f30fabfc1169f5070ff553360fbcd7130e739"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-86/globals-before.payload.bin",
+          "sha256": "14948509861985097790b55a7924ca199ff06764fabc3e497dda171d849232d6",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-86/globals-after.payload.bin",
+          "sha256": "c270c99fe4dcd7bd94b2261746baafb071ba404d5b56306c8d50324a72265229",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-86/globals-restored.payload.bin",
+          "sha256": "9cc07b4634374d431ca22dd1d0d79c10f1e1c1b5ea6f93c95e6fbc824db54a84",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-86/inactive-footswitch-request.bin",
+          "sha256": "4fcd4b54b838156ee45d943ba977a05aa866e121da6598a092a26d16bacd4c73",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-86/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 87,
+      "table": 2,
+      "event": 16,
+      "original": 0,
+      "requested": 0,
+      "meaningful_delta": false,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-87/result.json",
+        "sha256": "c375be978edced8e0c2a20f377db5c8a0c8df8197bc5035cf3b66c1be5816ba3"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-87/globals-before.payload.bin",
+          "sha256": "6967dd0f9cc33ff3fb716575ffbf02fd8a0e239433cd226892cb48400638934c",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-87/globals-after.payload.bin",
+          "sha256": "7be440c7530b7f5bebe99a54efd03f9f8908876e9e351f40ea477c8c7683bd5e",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-87/globals-restored.payload.bin",
+          "sha256": "a137622b0b58cdf87efceb268b46179ec620a2c5453fa58460f001396e1c5b7e",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-87/inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-87/restore-inactive-footswitch-request.bin",
+          "sha256": "db1d271d8e9c3de434da3411198da46d655a1d5220f3447840d29f0523c8cc3c",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 88,
+      "table": 0,
+      "event": 0,
+      "original": 10,
+      "requested": 0,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-88-reviewed/mapping-trial/result.json",
+        "sha256": "c00f3a777b9081a1251772f662416aa05cfbb79c3de16b18e3159b07bce20c51"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-88-reviewed/mapping-trial/globals-before.payload.bin",
+          "sha256": "fa82cfe06459a25251a62b7dd27e51a7b9aebe20cbac2632aac570f6b7a77dd9",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-88-reviewed/mapping-trial/globals-after.payload.bin",
+          "sha256": "1eb4021dceb80f6121d952d3e684a09cd16726ba5b46ed845b34209980d4c5ea",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-88-reviewed/mapping-trial/globals-restored.payload.bin",
+          "sha256": "9567f4487b8d3bd180113c066dd73b4bbd2822b03ced59af18b5103a3ee13008",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-88-reviewed/mapping-trial/inactive-footswitch-request.bin",
+          "sha256": "a712f231a81c414398f09f7dbab67c83f53a8bf0cbfccbed693eb67d45748350",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-88-reviewed/mapping-trial/restore-inactive-footswitch-request.bin",
+          "sha256": "620853d7fad64524c2f17bc2132a3b45ef05c9ee2c1a08dfbf6b17c960221e23",
+          "bytes": 30
+        }
+      }
+    },
+    {
+      "index": 89,
+      "table": 1,
+      "event": 0,
+      "original": 12,
+      "requested": 0,
+      "meaningful_delta": true,
+      "result": {
+        "path": "analysis/implementation/footswitch-matrix-89/result.json",
+        "sha256": "54534801288e239b1868f46623fc9b578eacff8555ca24f04a29d66224167e5e"
+      },
+      "files": {
+        "before": {
+          "path": "analysis/implementation/footswitch-matrix-89/globals-before.payload.bin",
+          "sha256": "b96407f6fd3f5b594729070ff469679529219f61db036008909e5c5767bb31de",
+          "bytes": 846
+        },
+        "after": {
+          "path": "analysis/implementation/footswitch-matrix-89/globals-after.payload.bin",
+          "sha256": "e7c88c41dfa311485b0e5905701b9e4eef7a42be27bece473ad4b7a0131cdca3",
+          "bytes": 846
+        },
+        "restored": {
+          "path": "analysis/implementation/footswitch-matrix-89/globals-restored.payload.bin",
+          "sha256": "70518c2b49cb33864073b702aea23c34a14459b794272098e64c57be14253ddf",
+          "bytes": 846
+        },
+        "request": {
+          "path": "analysis/implementation/footswitch-matrix-89/inactive-footswitch-request.bin",
+          "sha256": "9cef2ae8d6033879ccbf908ab5c7028a9234b2727e5914ce46a0e996cc5b6c64",
+          "bytes": 30
+        },
+        "restore_request": {
+          "path": "analysis/implementation/footswitch-matrix-89/restore-inactive-footswitch-request.bin",
+          "sha256": "9fb7fc28e437f89f87a381198ccdc103cf686835cc880be81fb9586e9ac6a3cf",
+          "bytes": 30
+        }
+      }
+    }
+  ]
+}

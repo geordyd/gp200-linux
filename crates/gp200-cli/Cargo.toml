@@ -1,0 +1,21 @@
+[package]
+name = "gp200-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gp200-domain.workspace = true
+gp200-protocol.workspace = true
+gp200-transport.workspace = true
+gp200-library.workspace = true
+gp200-assets.workspace = true
+gp200-sim.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+zip.workspace = true
+
+[lints]
+workspace = true
