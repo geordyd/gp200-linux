@@ -4283,24 +4283,50 @@ fn settled_completion_host_close_rejects_stale_kind_source_original_root_outcome
     // Direct re-acceptance of even identical DTO/store is not a consumed owner
     // event and must revoke the old proof. Re-retire and return that exact store.
     let closed_outcome = app.firmware_coordinator.completion_outcome.clone().unwrap();
+    let view = app.firmware_coordinator_view();
+    let mut before = (view.diagnostics.len(), view.omitted_diagnostics);
+    let mut contention_retries = 0;
     app.firmware_coordinator
         .begin_retirement(StorePurpose::Recovery)
         .unwrap();
     let deadline = Instant::now() + Duration::from_secs(30);
     while app.firmware_coordinator.retirement.is_none() {
+        // Native frames do not busy-poll this nonblocking admission mutex.
+        std::thread::sleep(Duration::from_millis(1));
         app.firmware_coordinator.poll_runtime(&mut app.controller);
-        assert!(
-            app.firmware_coordinator.retirement.is_some()
-                || app.firmware_coordinator.runtime_request.is_some(),
-            "retirement was rejected: {:?}",
-            app.firmware_coordinator_view()
-        );
+        if app.firmware_coordinator.retirement.is_none()
+            && app.firmware_coordinator.runtime_request.is_none()
+        {
+            let view = app.firmware_coordinator_view();
+            let fresh = view.diagnostics.get(before.0..).unwrap_or_default();
+            assert_eq!(view.phase, FirmwareCoordinatorPhase::ReadOnlyReview);
+            assert!(
+                contention_retries < 10
+                    && view.omitted_diagnostics == before.1
+                    && !fresh.is_empty()
+                    && fresh.iter().all(|reason| matches!(
+                        reason.as_str(),
+                        "Admission gate unavailable" | "Capture route gate unavailable"
+                    )),
+                "only freshly acknowledged mutex contention may be retried: {fresh:?}"
+            );
+            assert!(app.firmware_coordinator.restoration.is_none());
+            assert!(app.firmware_coordinator.retained_store.is_none());
+            assert_eq!(log.lock().unwrap().opens, opens);
+            assert_eq!(log.lock().unwrap().offers, offers);
+            before = (view.diagnostics.len(), view.omitted_diagnostics);
+            contention_retries += 1;
+            // Test fixture only: deliberately reissue an acknowledged request
+            // before store transfer. Production admission never retries itself.
+            app.firmware_coordinator
+                .begin_retirement(StorePurpose::Recovery)
+                .unwrap();
+        }
         assert!(
             Instant::now() < deadline,
             "retirement reply missing: {:?}",
             app.firmware_coordinator_view()
         );
-        std::thread::yield_now();
     }
     let store = loop {
         if let Some(result) = app
@@ -4313,7 +4339,7 @@ fn settled_completion_host_close_rejects_stale_kind_source_original_root_outcome
             break result.unwrap();
         }
         assert!(Instant::now() < deadline);
-        std::thread::yield_now();
+        std::thread::sleep(Duration::from_millis(1));
     };
     app.firmware_coordinator.retirement = None;
     app.services.retire_library_clients();
