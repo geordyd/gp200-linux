@@ -573,6 +573,62 @@ fn firmware_coordinator_conditional_observation_cannot_hide_actual_cancel_or_adj
     }
 }
 
+fn return_reviewed_capture_fixture(app: &mut StudioApp, log: &Mutex<Log>) {
+    let mut before = {
+        let view = app.firmware_coordinator_view();
+        (view.diagnostics.len(), view.omitted_diagnostics)
+    };
+    let original_counts = {
+        let log = log.lock().unwrap();
+        (log.opens, log.closes, log.offers)
+    };
+    for _ in 0..10 {
+        app.return_from_firmware_preparation().unwrap();
+        assert!(app.firmware_close_blocked());
+        until(app, |a| {
+            matches!(
+                a.firmware_coordinator_view().phase,
+                FirmwareCoordinatorPhase::Idle
+                    | FirmwareCoordinatorPhase::RecoveryRequired
+                    | FirmwareCoordinatorPhase::ReadOnlyReview
+            )
+        });
+        let view = app.firmware_coordinator_view();
+        if view.phase != FirmwareCoordinatorPhase::ReadOnlyReview {
+            assert_eq!(
+                view.phase,
+                FirmwareCoordinatorPhase::Idle,
+                "{:?}",
+                view.diagnostics
+            );
+            return;
+        }
+        let fresh = view.diagnostics.get(before.0..).unwrap_or_default();
+        assert!(
+            view.omitted_diagnostics == before.1
+                && !fresh.is_empty()
+                && fresh.iter().all(|reason| matches!(
+                    reason.as_str(),
+                    "Admission gate unavailable" | "Capture route gate unavailable"
+                )),
+            "only freshly acknowledged zero-offer contention may be retried: {fresh:?}"
+        );
+        assert!(app.firmware_coordinator.retirement.is_none());
+        assert!(app.firmware_coordinator.restoration.is_none());
+        assert!(app.firmware_coordinator.retained_store.is_none());
+        let counts = {
+            let log = log.lock().unwrap();
+            (log.opens, log.closes, log.offers)
+        };
+        assert_eq!(counts, original_counts);
+        before = (view.diagnostics.len(), view.omitted_diagnostics);
+        // Deliberate test-fixture retry after an acknowledged refusal; the
+        // application still requires an explicit user action to request again.
+        std::thread::sleep(Duration::from_millis(1));
+    }
+    panic!("reviewed capture fixture remained contended before store transfer");
+}
+
 #[test]
 fn firmware_coordinator_genuine_capture_publish_revalidate_accept_and_same_store_return_reconnect()
 {
@@ -654,12 +710,7 @@ fn firmware_coordinator_genuine_capture_publish_revalidate_accept_and_same_store
     });
     assert!(app.firmware_coordinator_view().preparation.is_none());
     std::fs::write(&archive, original).unwrap();
-    app.return_from_firmware_preparation().unwrap();
-    assert!(app.firmware_close_blocked());
-    until(&mut app, |a| {
-        a.firmware_coordinator_view().phase == FirmwareCoordinatorPhase::Idle
-            || a.firmware_coordinator_view().phase == FirmwareCoordinatorPhase::RecoveryRequired
-    });
+    return_reviewed_capture_fixture(&mut app, &log);
     assert_eq!(
         app.firmware_coordinator_view().phase,
         FirmwareCoordinatorPhase::Idle,
@@ -689,10 +740,7 @@ fn firmware_coordinator_genuine_capture_publish_revalidate_accept_and_same_store
         app.firmware_coordinator_view().phase,
         FirmwareCoordinatorPhase::ReadOnlyReview
     );
-    app.return_from_firmware_preparation().unwrap();
-    until(&mut app, |a| {
-        a.firmware_coordinator_view().phase == FirmwareCoordinatorPhase::Idle
-    });
+    return_reviewed_capture_fixture(&mut app, &log);
 }
 #[test]
 fn firmware_coordinator_original_never_offered_connect_discover_are_settled_before_seal() {
