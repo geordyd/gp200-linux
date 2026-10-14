@@ -42,9 +42,21 @@ fn wait(c: &mut LibraryFirmwareRuntimeClient) -> LibraryFirmwareEvent {
     }
 }
 fn take(c: &mut LibraryFirmwareRuntimeClient) -> LibraryStore {
-    let address = c
-        .try_request(LibraryFirmwareAction::RelinquishStore)
-        .unwrap();
+    // Consuming a reply does not guarantee an uncontended admission mutex.
+    // Busy returns the original, unoffered action, so retry only that action.
+    let until = Instant::now() + Duration::from_secs(10);
+    let mut action = LibraryFirmwareAction::RelinquishStore;
+    let address = loop {
+        match c.try_request(action) {
+            Ok(address) => break address,
+            Err(SubmitError::Busy(original)) => {
+                assert!(Instant::now() < until, "retirement admission stayed busy");
+                action = original;
+                std::thread::sleep(Duration::from_millis(2));
+            }
+            Err(error) => panic!("retirement admission failed: {error:?}"),
+        }
+    };
     let event = wait(c);
     assert_eq!(event.address, address);
     let mut handle = match event.result.unwrap() {
@@ -327,14 +339,24 @@ fn actual_producer_racing_retirement_is_either_admitted_before_barrier_or_reject
                 }
             }
             Err(SubmitError::Busy(_)) => {
-                assert!(offered.is_ok());
-                let end = Instant::now() + Duration::from_secs(5);
-                loop {
-                    if worker.try_next_workflow_event().is_some() {
-                        break;
+                match offered {
+                    Ok(()) => {
+                        let end = Instant::now() + Duration::from_secs(5);
+                        loop {
+                            if worker.try_next_workflow_event().is_some() {
+                                break;
+                            }
+                            assert!(Instant::now() < end);
+                            std::thread::sleep(Duration::from_millis(2));
+                        }
                     }
-                    assert!(Instant::now() < end);
-                    std::thread::sleep(Duration::from_millis(2));
+                    Err(SubmitError::Busy(original)) => {
+                        // The worker can briefly hold the gate while both
+                        // contenders try it. Neither action was offered.
+                        assert_eq!(original.intent, IntentId(99));
+                        assert!(matches!(original.action, WorkflowAction::ListBackups));
+                    }
+                    Err(error) => panic!("producer failed before retirement: {error:?}"),
                 }
                 drop(take(&mut c));
             }
