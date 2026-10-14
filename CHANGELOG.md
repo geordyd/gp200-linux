@@ -2,6 +2,10 @@
 
 Changes to GP200 Linux are recorded here.
 
+## 0.1.1 — 2026-10-14 (preview)
+
+- Fix pedal connection after reboot on filesystems such as Btrfs whose device numbers can change. Completed firmware recovery history now checks retained files against the currently opened registry filesystem, keeping inode, content, journal and complete-set validation. Live recovery identity checks and unresolved-attempt blocking remain enforced.
+
 ## 0.1.0 — 2026-10-14 (preview)
 
 - Native Rust/egui Linux editor with an English interface, dark/light/system themes and adjustable scale.

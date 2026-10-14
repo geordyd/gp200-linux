@@ -740,11 +740,22 @@ fn catalogue_reports_partial_and_unknown_history_conservatively() {
 }
 
 fn completed_linked_fixture() -> Fixture {
+    completed_linked_fixture_with_device(None)
+}
+
+fn completed_linked_fixture_with_device(recorded_device: Option<u64>) -> Fixture {
     let f = Fixture::new();
     let a = f.initial('a');
     let b = f.create('b', f.checked(&a).unwrap().review().predecessors.clone());
-    let refs = f.checked(&b).unwrap().review().predecessors.clone();
+    let mut refs = f.checked(&b).unwrap().review().predecessors.clone();
     let c = f.create('c', refs.clone());
+    // Simulate a completed history retained across a Btrfs remount/reboot.
+    // st_dev is allocated by the running kernel; inode numbers and bytes stay put.
+    if let Some(device) = recorded_device {
+        for r in &mut refs {
+            r.registry.device = device;
+        }
+    }
     let description = refs
         .iter()
         .map(|r| {
@@ -836,6 +847,66 @@ fn completed_linked_fixture() -> Fixture {
     append(&f.path(&c, false), &frame(b"GP2QUAR1", &payload));
     registry.admit_normal().unwrap();
     f
+}
+
+#[test]
+fn completed_linked_history_survives_device_renumbering_without_recovery_authority() {
+    let f = completed_linked_fixture_with_device(Some(u64::MAX));
+    let registry = crate::firmware_quarantine::QuarantineRegistry::mock(&f.registry).unwrap();
+    registry.admit_normal().unwrap();
+    let catalog = review_linux_firmware_history_at(&f.library, &f.registry).unwrap();
+    assert_eq!(catalog.rows.len(), 3);
+    assert!(catalog.diagnostics.is_empty());
+    assert!(
+        catalog
+            .rows
+            .iter()
+            .all(|r| r.resolved && !r.physical_authority)
+    );
+    assert!(f.checked(&f.attempt('c')).is_err());
+    f.initial('d');
+    assert!(registry.admit_normal().is_err());
+}
+
+#[test]
+fn renumbered_completed_history_still_rejects_changed_files_and_journal() {
+    for mutation in 0..5 {
+        let f = completed_linked_fixture_with_device(Some(u64::MAX));
+        let member = f.path(&f.attempt('a'), false);
+        let journal = f.path(&f.attempt('c'), true);
+        match mutation {
+            0 => append(&member, b"partial tail"),
+            1 => {
+                let mut bytes = std::fs::read(&member).unwrap();
+                let n = u32::from_le_bytes(bytes[8..12].try_into().unwrap()) as usize;
+                let body = String::from_utf8(bytes[45..44 + n].to_vec()).unwrap();
+                let changed = body.replace("generation=1", "generation=2");
+                assert_ne!(changed, body);
+                bytes[45..44 + n].copy_from_slice(changed.as_bytes());
+                // Keep the frame checksum valid: the committed content pin must reject it.
+                let checksum = Sha256::digest(&bytes[44..44 + n]);
+                bytes[12..44].copy_from_slice(&checksum);
+                write_private(&member, &bytes);
+            }
+            2 => {
+                // Identical content at the expected name must not hide an inode replacement.
+                let replacement = f.registry.join("replacement");
+                write_private(&replacement, &std::fs::read(&member).unwrap());
+                std::fs::rename(replacement, &member).unwrap();
+            }
+            3 => append(&journal, b"partial tail"),
+            _ => {
+                let mut bytes = std::fs::read(&journal).unwrap();
+                bytes[60] ^= 1;
+                write_private(&journal, &bytes);
+            }
+        }
+        let registry = crate::firmware_quarantine::QuarantineRegistry::mock(&f.registry).unwrap();
+        assert!(
+            registry.admit_normal().is_err(),
+            "mutation {mutation} admitted"
+        );
+    }
 }
 
 #[test]

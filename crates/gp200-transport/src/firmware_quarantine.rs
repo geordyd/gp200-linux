@@ -1426,6 +1426,13 @@ pub(crate) fn linked_attempt_closed(
     attempt: &FirmwareAttemptId,
     allow_mock: bool,
 ) -> Result<bool, ServiceError> {
+    // st_dev is a kernel mount identifier, not a persistent filesystem ID.
+    // Btrfs can renumber it on reboot. For already committed history, bind each
+    // retained inode to the currently opened registry filesystem instead. Keep
+    // the recorded device values in the complete-set digest and cross-record
+    // checks below, and still check exact bytes, hashes, permissions and inode.
+    // Live recovery publication continues to require its original dev/ino pins.
+    let current_device = fs::fstat(directory).map_err(bad)?.st_dev;
     let mut file: File = fs::openat(
         directory,
         format!("{}.quarantine", attempt.as_str()).as_str(),
@@ -1497,7 +1504,7 @@ pub(crate) fn linked_attempt_closed(
             &mut member,
             p.after_bytes,
             &p.after_sha,
-            p.device,
+            current_device,
             p.inode,
             true,
         )?;
@@ -1505,7 +1512,7 @@ pub(crate) fn linked_attempt_closed(
             &mut member,
             p.before_bytes,
             &p.before_sha,
-            p.device,
+            current_device,
             p.inode,
             false,
         )?;
@@ -1606,6 +1613,48 @@ mod persistent_tests {
             "/private/test-only-library/firmware-attempt-ledger",
         )
         .unwrap()
+    }
+    #[test]
+    fn live_prefix_validation_still_requires_the_original_device_and_inode() {
+        use std::os::unix::fs::MetadataExt;
+        let t = Temp::new();
+        let path = t.0.join("live-prefix");
+        let bytes = b"live recovery evidence";
+        std::fs::write(&path, bytes).unwrap();
+        let mut file = File::open(path).unwrap();
+        let meta = file.metadata().unwrap();
+        let sha = JobSha256::of(bytes).hex();
+        stable_prefix(
+            &mut file,
+            bytes.len() as u64,
+            &sha,
+            meta.dev(),
+            meta.ino(),
+            true,
+        )
+        .unwrap();
+        assert!(
+            stable_prefix(
+                &mut file,
+                bytes.len() as u64,
+                &sha,
+                meta.dev() ^ 1,
+                meta.ino(),
+                true
+            )
+            .is_err()
+        );
+        assert!(
+            stable_prefix(
+                &mut file,
+                bytes.len() as u64,
+                &sha,
+                meta.dev(),
+                meta.ino() ^ 1,
+                true
+            )
+            .is_err()
+        );
     }
     #[test]
     fn permanent_physical_keys_bind_topology_and_serial_across_endpoint_aliases() {

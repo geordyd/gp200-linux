@@ -66,4 +66,6 @@ For compatibility with existing installations, configuration remains under `$XDG
 
 If a file dialog fails, check that `xdg-desktop-portal` and a backend for your desktop are running. If connection fails, confirm normal USB mode and that another editor has not opened the MIDI endpoint. Use the Diagnostics view or the CLI's `device doctor --unique` for a read-only connection check.
 
+Version 0.1.0 can report `Linked exact file identity/extent differs` after reboot following a completed firmware recovery on Btrfs. Upgrade to 0.1.1 or newer; keep the firmware history and journals intact. The fix validates the retained history without deleting it or repeating the firmware update.
+
 Support archives are created locally and are not sent automatically. Review their contents before sharing, especially if you explicitly included presets, MIDI or audio. See [SECURITY.md](../SECURITY.md) before posting sensitive material.

@@ -1428,7 +1428,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-app"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "gp200-catalog",
  "gp200-domain",
@@ -1441,7 +1441,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-assets"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "crossbeam-channel",
  "fs2",
@@ -1454,7 +1454,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-catalog"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "gp200-domain",
  "serde",
@@ -1464,7 +1464,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "gp200-assets",
  "gp200-domain",
@@ -1480,7 +1480,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-domain"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "gp200-protocol",
  "serde",
@@ -1491,7 +1491,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-gui"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "eframe",
  "gp200-app",
@@ -1511,7 +1511,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-library"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "crossbeam-channel",
  "fs2",
@@ -1527,7 +1527,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-protocol"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "serde",
  "thiserror 2.0.21",
@@ -1535,7 +1535,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-sim"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "crossbeam-channel",
  "gp200-catalog",
@@ -1550,7 +1550,7 @@ dependencies = [
 
 [[package]]
 name = "gp200-transport"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "alsa",
  "crossbeam-channel",
