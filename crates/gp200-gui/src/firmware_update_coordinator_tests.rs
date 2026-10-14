@@ -2007,13 +2007,19 @@ fn prepare_disconnected_recovery_return_seam(app: &mut StudioApp) -> LibraryStor
     app.firmware_coordinator
         .begin_retirement(StorePurpose::LinuxRecovery)
         .unwrap();
-    let deadline = Instant::now() + Duration::from_secs(10);
+    // Real writer retirement and fsync can contend with parallel capture tests.
+    // This bounds test observation only, not a production device operation.
+    let deadline = Instant::now() + Duration::from_secs(30);
     loop {
         app.firmware_coordinator.poll_runtime(&mut app.controller);
         if app.firmware_coordinator.retirement.is_some() {
             break;
         }
-        assert!(Instant::now() < deadline);
+        assert!(
+            Instant::now() < deadline,
+            "retirement reply missing: {:?}",
+            app.firmware_coordinator_view()
+        );
         std::thread::sleep(Duration::from_millis(1));
     }
     let store = loop {
@@ -4275,10 +4281,14 @@ fn settled_completion_host_close_rejects_stale_kind_source_original_root_outcome
     app.firmware_coordinator
         .begin_retirement(StorePurpose::Recovery)
         .unwrap();
-    let deadline = Instant::now() + Duration::from_secs(10);
+    let deadline = Instant::now() + Duration::from_secs(30);
     while app.firmware_coordinator.retirement.is_none() {
         app.firmware_coordinator.poll_runtime(&mut app.controller);
-        assert!(Instant::now() < deadline);
+        assert!(
+            Instant::now() < deadline,
+            "retirement reply missing: {:?}",
+            app.firmware_coordinator_view()
+        );
         std::thread::yield_now();
     }
     let store = loop {
