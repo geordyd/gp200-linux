@@ -1617,6 +1617,9 @@ mod help_preferences_tests {
             .unwrap();
         wait_until(&mut service, |service| {
             service.directory_update.is_some()
+                // The cached directory update is inspected below; only the
+                // real command/reply work counter must be settled for cleanup.
+                && service.commands.work.settled()
                 && fs::read(&path)
                     .ok()
                     .and_then(|bytes| serde_json::from_slice::<AppPreferences>(&bytes).ok())

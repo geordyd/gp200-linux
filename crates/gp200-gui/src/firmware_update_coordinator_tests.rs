@@ -853,6 +853,11 @@ fn firmware_coordinator_actual_returned_store_retry_requires_explicit_fresh_norm
         if app.firmware_coordinator.retirement.is_some() {
             break;
         }
+        assert!(
+            app.firmware_coordinator.runtime_request.is_some(),
+            "retirement was rejected: {:?}",
+            app.firmware_coordinator_view()
+        );
         assert!(Instant::now() < deadline);
         std::thread::sleep(Duration::from_millis(1));
     }
@@ -4284,6 +4289,12 @@ fn settled_completion_host_close_rejects_stale_kind_source_original_root_outcome
     let deadline = Instant::now() + Duration::from_secs(30);
     while app.firmware_coordinator.retirement.is_none() {
         app.firmware_coordinator.poll_runtime(&mut app.controller);
+        assert!(
+            app.firmware_coordinator.retirement.is_some()
+                || app.firmware_coordinator.runtime_request.is_some(),
+            "retirement was rejected: {:?}",
+            app.firmware_coordinator_view()
+        );
         assert!(
             Instant::now() < deadline,
             "retirement reply missing: {:?}",
