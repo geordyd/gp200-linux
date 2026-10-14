@@ -24,6 +24,9 @@ impl Drop for Temp {
     }
 }
 static NEXT: std::sync::atomic::AtomicU64 = std::sync::atomic::AtomicU64::new(0);
+// The sequence-wrap fixture durably journals 272 one-byte blocks. Debug
+// validation can exceed 30 seconds; this bounds observation, not wire pacing.
+const MOCK_LEDGER_TEST_BUDGET: Duration = Duration::from_secs(180);
 pub(crate) fn job() -> Arc<ReviewedFirmwareUpdate> {
     let mut b = vec![0; 96 + 260 + 3 + 4 + 5];
     b[..4].copy_from_slice(b"FRMW");
@@ -210,7 +213,7 @@ fn owner(
     (FirmwareUpdateOwner::start(req, handoff).ok().unwrap(), log)
 }
 fn finish(o: &mut FirmwareUpdateOwner) {
-    let end = Instant::now() + Duration::from_secs(30);
+    let end = Instant::now() + MOCK_LEDGER_TEST_BUDGET;
     while !o.stopped() {
         o.tick();
         assert!(Instant::now() < end, "owner deadline: {:?}", o.summary());
@@ -542,7 +545,7 @@ fn actual_midi_worker_quiesces_and_owns_the_genuine_mock_ledger() {
         service.try_submit(DeviceCommand::Discover),
         Err(SubmitError::Busy(_))
     ));
-    let deadline = Instant::now() + Duration::from_secs(30);
+    let deadline = Instant::now() + MOCK_LEDGER_TEST_BUDGET;
     let final_event = loop {
         if let Some(e) = service.try_next_firmware_event() {
             break e;
@@ -1214,7 +1217,7 @@ fn run_transition(
         )),
     };
     let ticket = service.try_start_firmware(request).ok().unwrap();
-    let deadline = Instant::now() + Duration::from_secs(30);
+    let deadline = Instant::now() + MOCK_LEDGER_TEST_BUDGET;
     let event = loop {
         if let Some(event) = service.try_next_firmware_event() {
             break event;
