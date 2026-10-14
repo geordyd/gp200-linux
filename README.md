@@ -23,8 +23,8 @@ Native captures using the labelled simulator and synthetic demo presets; no peda
 For an installable preview, use the [GitHub releases](https://github.com/geordyd/gp200-linux/releases). Packages target Linux **x86_64**, Ubuntu 24.04 or a compatible runtime with glibc 2.39 or newer. Choose the AppImage, make it executable and run it:
 
 ```sh
-chmod +x GP200-Linux-0.1.0-x86_64.AppImage
-./GP200-Linux-0.1.0-x86_64.AppImage
+chmod +x GP200-Linux-0.1.1-x86_64.AppImage
+./GP200-Linux-0.1.1-x86_64.AppImage
 ```
 
 If FUSE is unavailable, run it with `--appimage-extract-and-run`. The portable `.tar.gz` is an alternative: extract it and run `python3 install-user.py` from its folder. Checksums accompany both downloads. See [release instructions](docs/releasing.md) for runtime requirements and package validation.

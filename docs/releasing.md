@@ -66,8 +66,9 @@ assets.
 
 1. Update the workspace version in `Cargo.toml`, regenerate `Cargo.lock` if
    needed, and commit the reviewed source with a Conventional Commit message.
-2. Confirm CI passes on a clean public checkout. Review documentation, included
-   third-party notices and the hardware scope stated in the release notes.
+2. Write the release notes in `docs/releases/v<workspace version>.md` and commit
+   them. Confirm CI passes on a clean public checkout. Review documentation,
+   included third-party notices and the hardware scope stated in the notes.
 3. Tag that commit as `v<workspace version>` and push the tag using local Git.
    For the initial version this is `v0.1.0`; prereleases such as
    `v0.2.0-rc.1` must match the workspace version exactly.
@@ -76,8 +77,8 @@ assets.
    `GP200-Linux-<version>-x86_64.AppImage`,
    `GP200-Linux-<version>-x86_64.tar.gz`, and `SHA256SUMS`.
 5. Inspect the draft's artifacts and smoke screenshots, test on the supported
-   desktop, and replace the generated notes with the actual changes and known
-   limitations before publishing. A stable release requires an explicit
+   desktop, and review the versioned notes attached by the workflow before
+   publishing. A stable release requires an explicit
    maintainer decision; the workflow never marks a release stable or latest.
 
 The workflow requires GitHub Actions and the repository's `GITHUB_TOKEN` to

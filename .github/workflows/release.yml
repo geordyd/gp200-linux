@@ -36,7 +36,9 @@ jobs:
       - name: Verify the SemVer tag matches the workspace version
         env:
           GP200_RELEASE_TAG: ${{ github.ref_name }}
-        run: python3 packaging/check-release-tag.py "$GP200_RELEASE_TAG"
+        run: |
+          python3 packaging/check-release-tag.py "$GP200_RELEASE_TAG"
+          test -s "docs/releases/$GP200_RELEASE_TAG.md"
       - name: Install Linux packaging dependencies
         run: |
           sudo apt-get update
@@ -73,14 +75,7 @@ jobs:
           make_latest: false
           overwrite_files: false
           fail_on_unmatched_files: true
-          body: |
-            Preview build for Linux x86_64. Supported baseline: Ubuntu 24.04 (glibc 2.39), ALSA, a C++ runtime, Mesa/OpenGL and a Wayland or X11 desktop.
-
-            Download the AppImage or portable archive, and verify it against SHA256SUMS. Packaging and simulator checks open no hardware MIDI ports.
-
-            These release bytes have not been validated on a pedal. The updater and public support resources are included; firmware images must be supplied by the user. Private acceptance receipts and vendor firmware bytes are excluded. See docs/firmware.md and docs/releasing.md for approval requirements, the tested development scope and limitations.
-
-            Maintainers: review the assets, licenses and smoke results, then edit these notes before publishing this draft.
+          body_path: docs/releases/${{ github.ref_name }}.md
           files: |
             target/dist/GP200-Linux-*-x86_64.AppImage
             target/dist/GP200-Linux-*-x86_64.tar.gz
