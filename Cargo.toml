@@ -20,7 +20,7 @@ image = { version = "=0.25.10", default-features = false, features = ["png"] }
 sha2 = "=0.10.9"
 fs2 = "=0.4.3"
 alsa = "=0.12.1"
-zip = { version = "=8.6.0", default-features = false, features = ["deflate"] }
+zip = { version = "=9.0.1", default-features = false, features = ["deflate"] }
 gp200-protocol = { path = "crates/gp200-protocol" }
 gp200-domain = { path = "crates/gp200-domain" }
 gp200-transport = { path = "crates/gp200-transport" }
