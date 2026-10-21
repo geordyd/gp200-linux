@@ -17,7 +17,7 @@ midir = "=0.11.1"
 eframe = { version = "=0.36.2", default-features = false, features = ["accesskit", "default_fonts", "glow", "wayland", "x11", "persistence", "__screenshot", "inspection"] }
 rfd = { version = "=0.17.2", default-features = false, features = ["xdg-portal"] }
 image = { version = "=0.25.10", default-features = false, features = ["png"] }
-sha2 = "=0.10.9"
+sha2 = "=0.11.1"
 fs2 = "=0.4.3"
 alsa = "=0.12.1"
 zip = { version = "=8.6.0", default-features = false, features = ["deflate"] }
